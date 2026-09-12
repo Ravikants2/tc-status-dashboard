@@ -238,11 +238,17 @@
     "status": "partial",
     "log": [
       {
+        "type": "remarks",
+        "detail": "Remarks: \"Camera 2 offline\"",
+        "time": "12 Sept 2026, 12:27:55 pm"
+      },
+      {
         "type": "status",
         "detail": "Status changed: Offline -> Partial Live",
         "time": "12 Sept 2026, 12:27:40 pm"
       }
-    ]
+    ],
+    "remarks": "Camera 2 offline"
   },
   {
     "tcCode": "9338",
