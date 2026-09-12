@@ -28,56 +28,18 @@
 
 <!-- ── DASHBOARD ── -->
 <div id="tab-dashboard" class="tab-content active">
-
-  <!-- Exam / Client / Post / Shift filters -->
-  <div class="hier-bar">
-    <select id="d-exam" onchange="onHierChange('d')"><option value="">All Exam Dates</option></select>
-    <select id="d-client" onchange="onHierChange('d')"><option value="">All Clients</option></select>
-    <select id="d-post" onchange="onHierChange('d')"><option value="">All Posts</option></select>
-    <select id="d-shift" onchange="onHierChange('d')"><option value="">All Shifts</option></select>
-  </div>
-
-  <div class="summary">
-    <div class="card live" onclick="filterStatusTab('live')"><span id="count-live">0</span><p>Live</p></div>
-    <div class="card partial" onclick="filterStatusTab('partial')"><span id="count-partial">0</span><p>Partial Live</p></div>
-    <div class="card offline" onclick="filterStatusTab('offline')"><span id="count-offline">0</span><p>Offline</p></div>
-    <div class="card total"><span id="count-total">0</span><p>Total TCs</p></div>
-  </div>
-
-  <div class="section-title">Zone-wise Summary</div>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Zone</th><th>Live</th><th>Partial Live</th><th>Offline</th><th>Total</th></tr></thead>
-      <tbody id="zone-tbody"></tbody>
-    </table>
-  </div>
+  <!-- Breadcrumb nav -->
+  <div class="breadcrumb" id="d-breadcrumb"></div>
+  <!-- Drill-down grid or TC table -->
+  <div id="d-drill"></div>
 </div>
 
 <!-- ── STATUS ── -->
 <div id="tab-status" class="tab-content">
-  <div class="hier-bar">
-    <select id="s-exam" onchange="onHierChange('s')"><option value="">All Exam Dates</option></select>
-    <select id="s-client" onchange="onHierChange('s')"><option value="">All Clients</option></select>
-    <select id="s-post" onchange="onHierChange('s')"><option value="">All Posts</option></select>
-    <select id="s-shift" onchange="onHierChange('s')"><option value="">All Shifts</option></select>
-  </div>
-  <div class="toolbar">
-    <input id="s-search" type="text" placeholder="Search TC Code, Name, City…" oninput="renderStatus()" />
-    <select id="s-filter" onchange="renderStatus()">
-      <option value="all">All Status</option>
-      <option value="live">Live</option>
-      <option value="partial">Partial Live</option>
-      <option value="offline">Offline</option>
-    </select>
-  </div>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>TC Type</th><th>Assigned To</th><th>Candidates</th><th>Shift</th><th>Status</th><th>Change Status</th><th>Issue</th></tr>
-      </thead>
-      <tbody id="status-tbody"></tbody>
-    </table>
-  </div>
+  <!-- Breadcrumb nav -->
+  <div class="breadcrumb" id="s-breadcrumb"></div>
+  <!-- Drill-down grid or TC table -->
+  <div id="s-drill"></div>
 </div>
 
 <!-- ── UPLOAD ── -->
@@ -133,12 +95,6 @@
 
 <!-- ── RECORDS ── -->
 <div id="tab-records" class="tab-content">
-  <div class="hier-bar">
-    <select id="r-exam" onchange="onHierChange('r')"><option value="">All Exam Dates</option></select>
-    <select id="r-client" onchange="onHierChange('r')"><option value="">All Clients</option></select>
-    <select id="r-post" onchange="onHierChange('r')"><option value="">All Posts</option></select>
-    <select id="r-shift" onchange="onHierChange('r')"><option value="">All Shifts</option></select>
-  </div>
   <div class="toolbar">
     <input id="r-search" type="text" placeholder="Search records…" oninput="renderRecords()" />
     <button class="btn-primary" onclick="openAdd()">+ Add TC</button>

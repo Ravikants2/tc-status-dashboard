@@ -1,6 +1,5 @@
 const STORAGE_KEY = 'ion_tc_data';
 
-// Issue categories from template Dropdown sheet
 const ISSUE_CATEGORIES = {
   'Camera Issue':              ['RTSP URL not working','Incorrect configuration','Time Sync Issue','Camera login Issue','Camera not working','Feed Fluctuations'],
   'NAS/DVR/NVR Related Issue': ['NAS/DVR/NVR Login Issue','Incorrect configuration','Time sync issue','Not Working'],
@@ -15,17 +14,22 @@ const ISSUE_CATEGORIES = {
   'SOE Related Issues':        ['Zscalar login issue','SOE OS installation issue','User admin Rights issue','SOE Credential not available'],
 };
 
+// CSV template columns matching the real Excel template
+const CSV_COLUMNS = ['Zone','State','City','TC Type','TC Code','TC Name','Assigned To','Candidate Count','Shift'];
+
 let records = [];
-let editingCode = null;
+let editingKey = null;
 let pendingUpload = [];
-let issueTcKey = null; // composite key: tcCode|examDate|client|post|shift
+let issueTcKey = null;
+
+// drill state per tab: { examDate, client, post, shift }
+const drill = { d: {}, s: {} };
 
 // ── Init ───────────────────────────────────────────────────
 function init() {
   const saved = localStorage.getItem(STORAGE_KEY);
   records = saved ? JSON.parse(saved) : [];
   populateIssueCategories();
-  populateAllHierarchies();
   renderAll();
   startClock();
 }
@@ -38,53 +42,8 @@ function startClock() {
   tick(); setInterval(tick, 1000);
 }
 
-// ── Unique key for a TC record ─────────────────────────────
 function tcKey(r) { return `${r.tcCode}|${r.examDate}|${r.client}|${r.post}|${r.shift}`; }
-
-// ── Hierarchy helpers ──────────────────────────────────────
-function uniqueVals(field) {
-  return [...new Set(records.map(r => r[field]).filter(Boolean))].sort();
-}
-
-function populateSelect(id, values, placeholder) {
-  const el = document.getElementById(id);
-  const cur = el.value;
-  el.innerHTML = `<option value="">${placeholder}</option>` +
-    values.map(v => `<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
-}
-
-function populateAllHierarchies() {
-  ['d','s','r'].forEach(p => {
-    populateSelect(`${p}-exam`,   uniqueVals('examDate'), 'All Exam Dates');
-    populateSelect(`${p}-client`, uniqueVals('client'),   'All Clients');
-    populateSelect(`${p}-post`,   uniqueVals('post'),     'All Posts');
-    populateSelect(`${p}-shift`,  uniqueVals('shift'),    'All Shifts');
-  });
-}
-
-function getHierFilter(prefix) {
-  return {
-    examDate: document.getElementById(`${prefix}-exam`).value,
-    client:   document.getElementById(`${prefix}-client`).value,
-    post:     document.getElementById(`${prefix}-post`).value,
-    shift:    document.getElementById(`${prefix}-shift`).value,
-  };
-}
-
-function applyHier(list, f) {
-  return list.filter(r =>
-    (!f.examDate || r.examDate === f.examDate) &&
-    (!f.client   || r.client   === f.client)   &&
-    (!f.post     || r.post     === f.post)     &&
-    (!f.shift    || r.shift    === f.shift)
-  );
-}
-
-function onHierChange(prefix) {
-  if (prefix === 'd') renderDashboard();
-  if (prefix === 's') renderStatus();
-  if (prefix === 'r') renderRecords();
-}
+function labelOf(s) { return s === 'partial' ? 'Partial Live' : s.charAt(0).toUpperCase() + s.slice(1); }
 
 // ── Tab switching ──────────────────────────────────────────
 function switchTab(name, btn) {
@@ -95,86 +54,228 @@ function switchTab(name, btn) {
   renderAll();
 }
 
-function filterStatusTab(status) {
-  document.querySelectorAll('.tab')[1].click();
-  document.getElementById('s-filter').value = status;
-  renderStatus();
-}
-
 function renderAll() {
-  populateAllHierarchies();
-  renderDashboard();
-  renderStatus();
+  renderDrill('d');
+  renderDrill('s');
   renderRecords();
 }
 
-// ── Dashboard ──────────────────────────────────────────────
-function renderDashboard() {
-  const filtered = applyHier(records, getHierFilter('d'));
-  ['live','partial','offline'].forEach(s =>
-    document.getElementById('count-'+s).textContent = filtered.filter(r => r.status===s).length
-  );
-  document.getElementById('count-total').textContent = filtered.length;
-
-  const zones = {};
-  filtered.forEach(r => {
-    if (!zones[r.zone]) zones[r.zone] = {live:0,partial:0,offline:0};
-    zones[r.zone][r.status]++;
-  });
-  document.getElementById('zone-tbody').innerHTML = Object.entries(zones).map(([z,c]) =>
-    `<tr><td>${z}</td><td><span class="badge live">${c.live}</span></td><td><span class="badge partial">${c.partial}</span></td><td><span class="badge offline">${c.offline}</span></td><td>${c.live+c.partial+c.offline}</td></tr>`
-  ).join('') || '<tr><td colspan="5" class="no-data">No data.</td></tr>';
+// ── Drill-down engine (shared for Dashboard 'd' and Status 's') ──
+function drillInto(prefix, level, value) {
+  // level: 'examDate' | 'client' | 'post' | 'shift'
+  drill[prefix][level] = value;
+  // clear deeper levels
+  const order = ['examDate','client','post','shift'];
+  const idx = order.indexOf(level);
+  order.slice(idx + 1).forEach(l => delete drill[prefix][l]);
+  renderDrill(prefix);
 }
 
-// ── Status tab ─────────────────────────────────────────────
-function renderStatus() {
-  const q = (document.getElementById('s-search').value||'').toLowerCase();
-  const f = document.getElementById('s-filter').value;
-  let list = applyHier(records, getHierFilter('s'));
-  list = list.filter(r =>
-    (f==='all' || r.status===f) &&
+function drillBack(prefix, toLevel) {
+  // toLevel: which level to go back to (clear from that level onwards)
+  const order = ['examDate','client','post','shift'];
+  const idx = toLevel === 'root' ? 0 : order.indexOf(toLevel) + 1;
+  order.slice(idx).forEach(l => delete drill[prefix][l]);
+  if (toLevel === 'root') drill[prefix] = {};
+  renderDrill(prefix);
+}
+
+function filteredByDrill(prefix) {
+  const d = drill[prefix];
+  return records.filter(r =>
+    (!d.examDate || r.examDate === d.examDate) &&
+    (!d.client   || r.client   === d.client)   &&
+    (!d.post     || r.post     === d.post)     &&
+    (!d.shift    || r.shift    === d.shift)
+  );
+}
+
+function renderDrill(prefix) {
+  const d = drill[prefix];
+  const bcEl   = document.getElementById(`${prefix}-breadcrumb`);
+  const drillEl = document.getElementById(`${prefix}-drill`);
+  const isStatus = prefix === 's';
+
+  // ── Breadcrumb ──
+  const crumbs = [{ label: '📅 All Dates', level: 'root' }];
+  if (d.examDate) crumbs.push({ label: d.examDate,  level: 'examDate' });
+  if (d.client)   crumbs.push({ label: d.client,    level: 'client' });
+  if (d.post)     crumbs.push({ label: d.post,      level: 'post' });
+  if (d.shift)    crumbs.push({ label: d.shift,     level: 'shift' });
+
+  bcEl.innerHTML = crumbs.map((c, i) => {
+    const isLast = i === crumbs.length - 1;
+    return isLast
+      ? `<span class="bc-item bc-active">${c.label}</span>`
+      : `<span class="bc-item bc-link" onclick="drillBack('${prefix}','${c.level}')">${c.label}</span><span class="bc-sep">›</span>`;
+  }).join('');
+
+  // ── Determine what level to show next ──
+  const base = filteredByDrill(prefix);
+
+  if (!d.examDate) {
+    // Show exam dates
+    const dates = [...new Set(records.map(r => r.examDate).filter(Boolean))].sort();
+    if (!dates.length) { drillEl.innerHTML = '<p class="no-data">No data uploaded yet.</p>'; return; }
+    drillEl.innerHTML = buildSummaryCards(prefix, 'examDate', dates, base, 'examDate');
+    return;
+  }
+  if (!d.client) {
+    const vals = [...new Set(base.map(r => r.client).filter(Boolean))].sort();
+    drillEl.innerHTML = buildSummaryCards(prefix, 'client', vals, base, 'client');
+    return;
+  }
+  if (!d.post) {
+    const vals = [...new Set(base.map(r => r.post).filter(Boolean))].sort();
+    drillEl.innerHTML = buildSummaryCards(prefix, 'post', vals, base, 'post');
+    return;
+  }
+  if (!d.shift) {
+    const vals = [...new Set(base.map(r => r.shift).filter(Boolean))].sort();
+    drillEl.innerHTML = buildSummaryCards(prefix, 'shift', vals, base, 'shift');
+    return;
+  }
+
+  // ── Shift level: show TC table ──
+  if (isStatus) {
+    drillEl.innerHTML = buildStatusTable(base);
+  } else {
+    drillEl.innerHTML = buildDashboardView(base);
+  }
+}
+
+function buildSummaryCards(prefix, level, vals, allBase, field) {
+  const levelLabels = { examDate: 'Exam Date', client: 'Client', post: 'Post', shift: 'Shift' };
+  let html = `<div class="section-title">${levelLabels[level]}</div><div class="drill-grid">`;
+  vals.forEach(v => {
+    const subset = allBase.filter(r => r[field] === v);
+    const live    = subset.filter(r => r.status === 'live').length;
+    const partial = subset.filter(r => r.status === 'partial').length;
+    const offline = subset.filter(r => r.status === 'offline').length;
+    html += `
+      <div class="drill-card" onclick="drillInto('${prefix}','${level}','${v.replace(/'/g,"\\'")}')">
+        <div class="drill-card-title">${v}</div>
+        <div class="drill-card-stats">
+          <span class="ds live">🟢 ${live}</span>
+          <span class="ds partial">🟡 ${partial}</span>
+          <span class="ds offline">🔴 ${offline}</span>
+        </div>
+        <div class="drill-card-total">${subset.length} TCs</div>
+      </div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+function buildDashboardView(list) {
+  const live    = list.filter(r => r.status === 'live').length;
+  const partial = list.filter(r => r.status === 'partial').length;
+  const offline = list.filter(r => r.status === 'offline').length;
+
+  // summary cards
+  let html = `<div class="summary">
+    <div class="card live"><span>${live}</span><p>Live</p></div>
+    <div class="card partial"><span>${partial}</span><p>Partial Live</p></div>
+    <div class="card offline"><span>${offline}</span><p>Offline</p></div>
+    <div class="card total"><span>${list.length}</span><p>Total TCs</p></div>
+  </div>`;
+
+  // zone table
+  const zones = {};
+  list.forEach(r => {
+    if (!zones[r.zone]) zones[r.zone] = { live:0, partial:0, offline:0 };
+    zones[r.zone][r.status]++;
+  });
+  html += `<div class="section-title">Zone-wise Summary</div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Zone</th><th>Live</th><th>Partial Live</th><th>Offline</th><th>Total</th></tr></thead>
+    <tbody>`;
+  Object.entries(zones).forEach(([z, c]) => {
+    html += `<tr><td>${z}</td>
+      <td><span class="badge live">${c.live}</span></td>
+      <td><span class="badge partial">${c.partial}</span></td>
+      <td><span class="badge offline">${c.offline}</span></td>
+      <td>${c.live + c.partial + c.offline}</td></tr>`;
+  });
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function buildStatusTable(list) {
+  // search + filter toolbar (inline, not persistent)
+  let html = `<div class="toolbar" style="margin-bottom:12px">
+    <input id="st-search" type="text" placeholder="Search TC Code, Name, City…" oninput="filterStatusTable()" />
+    <select id="st-filter" onchange="filterStatusTable()">
+      <option value="all">All Status</option>
+      <option value="live">Live</option>
+      <option value="partial">Partial Live</option>
+      <option value="offline">Offline</option>
+    </select>
+  </div>
+  <div class="table-wrap" id="st-table-wrap">`;
+  html += renderStatusRows(list);
+  html += '</div>';
+  // store current list for filter
+  window._statusList = list;
+  return html;
+}
+
+function filterStatusTable() {
+  const q = (document.getElementById('st-search')?.value || '').toLowerCase();
+  const f = document.getElementById('st-filter')?.value || 'all';
+  const list = (window._statusList || []).filter(r =>
+    (f === 'all' || r.status === f) &&
     (!q || Object.values(r).some(v => String(v).toLowerCase().includes(q)))
   );
+  const wrap = document.getElementById('st-table-wrap');
+  if (wrap) wrap.innerHTML = renderStatusRows(list);
+}
 
-  document.getElementById('status-tbody').innerHTML = list.length
-    ? list.map(r => {
-        const key = tcKey(r);
-        const issueHtml = r.issue
-          ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub||''}">${r.issue.category}</span>`
-          : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
-        return `<tr>
-          <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
-          <td>${r.city}</td><td>${r.state}</td><td>${r.tcType||''}</td>
-          <td>${r.assignedTo||''}</td><td>${r.candidateCount||''}</td><td>${r.shift||''}</td>
-          <td><span class="badge ${r.status}">${labelOf(r.status)}</span></td>
-          <td><select class="status-select" onchange="updateStatus('${key}',this.value)">
-            <option value="live"    ${r.status==='live'    ?'selected':''}>Live</option>
-            <option value="partial" ${r.status==='partial' ?'selected':''}>Partial Live</option>
-            <option value="offline" ${r.status==='offline' ?'selected':''}>Offline</option>
-          </select></td>
-          <td>${issueHtml}</td>
-        </tr>`;
-      }).join('')
-    : '<tr><td colspan="12" class="no-data">No records found.</td></tr>';
+function renderStatusRows(list) {
+  if (!list.length) return '<p class="no-data">No records found.</p>';
+  let html = `<table><thead><tr>
+    <th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th>
+    <th>TC Type</th><th>Assigned To</th><th>Candidates</th>
+    <th>Status</th><th>Change Status</th><th>Issue</th>
+  </tr></thead><tbody>`;
+  list.forEach(r => {
+    const key = tcKey(r);
+    const issueHtml = r.issue
+      ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub || ''}">${r.issue.category}</span>`
+      : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
+    html += `<tr>
+      <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
+      <td>${r.city}</td><td>${r.state}</td><td>${r.tcType || ''}</td>
+      <td>${r.assignedTo || ''}</td><td>${r.candidateCount || ''}</td>
+      <td><span class="badge ${r.status}">${labelOf(r.status)}</span></td>
+      <td><select class="status-select" onchange="updateStatus('${key}',this.value)">
+        <option value="live"    ${r.status==='live'    ?'selected':''}>Live</option>
+        <option value="partial" ${r.status==='partial' ?'selected':''}>Partial Live</option>
+        <option value="offline" ${r.status==='offline' ?'selected':''}>Offline</option>
+      </select></td>
+      <td>${issueHtml}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  return html;
 }
 
 function updateStatus(key, val) {
-  const r = records.find(x => tcKey(x)===key);
+  const r = records.find(x => tcKey(x) === key);
   if (r) { r.status = val; save(); renderAll(); }
 }
 
 // ── Records tab ────────────────────────────────────────────
 function renderRecords() {
-  const q = (document.getElementById('r-search').value||'').toLowerCase();
-  let list = applyHier(records, getHierFilter('r'));
-  if (q) list = list.filter(r => Object.values(r).some(v => String(v).toLowerCase().includes(q)));
+  const q = (document.getElementById('r-search')?.value || '').toLowerCase();
+  let list = q ? records.filter(r => Object.values(r).some(v => String(v).toLowerCase().includes(q))) : [...records];
 
   document.getElementById('rec-tbody').innerHTML = list.length
     ? list.map(r => `<tr>
         <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
-        <td>${r.city}</td><td>${r.state}</td><td>${r.tcType||''}</td>
-        <td>${r.assignedTo||''}</td><td>${r.candidateCount||''}</td>
-        <td>${r.shift||''}</td><td>${r.client||''}</td><td>${r.post||''}</td><td>${r.examDate||''}</td>
+        <td>${r.city}</td><td>${r.state}</td><td>${r.tcType || ''}</td>
+        <td>${r.assignedTo || ''}</td><td>${r.candidateCount || ''}</td>
+        <td>${r.shift || ''}</td><td>${r.client || ''}</td><td>${r.post || ''}</td><td>${r.examDate || ''}</td>
         <td><span class="badge ${r.status}">${labelOf(r.status)}</span></td>
         <td>
           <button class="btn-primary btn-sm" onclick="openEdit('${tcKey(r)}')">Edit</button>
@@ -184,13 +285,9 @@ function renderRecords() {
     : '<tr><td colspan="14" class="no-data">No records found.</td></tr>';
 }
 
-function labelOf(s) {
-  return s==='partial' ? 'Partial Live' : s.charAt(0).toUpperCase()+s.slice(1);
-}
-
 // ── Add/Edit Modal ─────────────────────────────────────────
 function openAdd() {
-  editingCode = null;
+  editingKey = null;
   document.getElementById('modal-title').textContent = 'Add TC';
   document.getElementById('tc-form').reset();
   document.getElementById('tcCode').disabled = false;
@@ -198,11 +295,11 @@ function openAdd() {
 }
 
 function openEdit(key) {
-  editingCode = key;
-  const r = records.find(x => tcKey(x)===key);
+  editingKey = key;
+  const r = records.find(x => tcKey(x) === key);
   document.getElementById('modal-title').textContent = 'Edit TC';
   ['tcCode','tcName','zone','state','city','tcType','assignedTo','candidateCount','examDate','client','post','shift','status']
-    .forEach(f => { const el = document.getElementById(f); if(el) el.value = r[f]||''; });
+    .forEach(f => { const el = document.getElementById(f); if (el) el.value = r[f] || ''; });
   document.getElementById('tcCode').disabled = true;
   document.getElementById('modal').classList.add('open');
 }
@@ -226,11 +323,11 @@ document.getElementById('tc-form').addEventListener('submit', e => {
     shift:          document.getElementById('shift').value,
     status:         document.getElementById('status').value,
   };
-  if (!editingCode) {
-    if (records.find(r => tcKey(r)===tcKey(data))) { alert('TC already exists for this Exam/Client/Post/Shift!'); return; }
+  if (!editingKey) {
+    if (records.find(r => tcKey(r) === tcKey(data))) { alert('TC already exists for this Exam/Client/Post/Shift!'); return; }
     records.push(data);
   } else {
-    const idx = records.findIndex(r => tcKey(r)===editingCode);
+    const idx = records.findIndex(r => tcKey(r) === editingKey);
     records[idx] = { ...records[idx], ...data };
   }
   save(); closeModal(); renderAll();
@@ -238,45 +335,39 @@ document.getElementById('tc-form').addEventListener('submit', e => {
 
 function deleteRecord(key) {
   if (!confirm('Delete this TC record?')) return;
-  records = records.filter(r => tcKey(r)!==key);
+  records = records.filter(r => tcKey(r) !== key);
   save(); renderAll();
 }
 
 // ── Issue Modal ────────────────────────────────────────────
 function populateIssueCategories() {
-  const sel = document.getElementById('issue-cat');
-  sel.innerHTML = '<option value="">Select Category</option>' +
+  document.getElementById('issue-cat').innerHTML =
+    '<option value="">Select Category</option>' +
     Object.keys(ISSUE_CATEGORIES).map(c => `<option value="${c}">${c}</option>`).join('');
 }
 
 function renderSubIssues() {
   const cat = document.getElementById('issue-cat').value;
-  const subs = ISSUE_CATEGORIES[cat] || [];
   document.getElementById('issue-sub').innerHTML =
     '<option value="">Select Sub Issue</option>' +
-    subs.map(s => `<option value="${s}">${s}</option>`).join('');
+    (ISSUE_CATEGORIES[cat] || []).map(s => `<option value="${s}">${s}</option>`).join('');
 }
 
 function openIssue(key) {
   issueTcKey = key;
-  const r = records.find(x => tcKey(x)===key);
+  const r = records.find(x => tcKey(x) === key);
   document.getElementById('issue-tc-label').textContent = `${r.tcCode} — ${r.tcName}`;
-  document.getElementById('issue-cat').value = '';
-  document.getElementById('issue-sub').innerHTML = '<option value="">Select Sub Issue</option>';
-  document.getElementById('issue-remarks').value = '';
-  if (r.issue) {
-    document.getElementById('issue-cat').value = r.issue.category||'';
-    renderSubIssues();
-    document.getElementById('issue-sub').value = r.issue.sub||'';
-    document.getElementById('issue-remarks').value = r.issue.remarks||'';
-  }
+  document.getElementById('issue-cat').value = r.issue?.category || '';
+  renderSubIssues();
+  document.getElementById('issue-sub').value = r.issue?.sub || '';
+  document.getElementById('issue-remarks').value = r.issue?.remarks || '';
   document.getElementById('issue-modal').classList.add('open');
 }
 
 function closeIssueModal() { document.getElementById('issue-modal').classList.remove('open'); }
 
 function saveIssue() {
-  const r = records.find(x => tcKey(x)===issueTcKey);
+  const r = records.find(x => tcKey(x) === issueTcKey);
   if (!r) return;
   r.issue = {
     category: document.getElementById('issue-cat').value,
@@ -287,7 +378,7 @@ function saveIssue() {
   save(); closeIssueModal(); renderAll();
 }
 
-// ── Upload tab ─────────────────────────────────────────────
+// ── Upload ─────────────────────────────────────────────────
 const fileInput = document.getElementById('file-input');
 const dropZone  = document.getElementById('drop-zone');
 
@@ -304,52 +395,38 @@ function handleFile(file) {
   if (!examDate || !client || !post) { alert('Please fill Exam Date, Client and Post before uploading.'); return; }
 
   const reader = new FileReader();
-  if (file.name.endsWith('.xlsx')) {
-    reader.onload = e => parseXlsx(e.target.result, examDate, client, post);
-    reader.readAsArrayBuffer(file);
-  } else {
-    reader.onload = e => {
-      try {
-        const rows = file.name.endsWith('.csv') ? parseCSV(e.target.result) : JSON.parse(e.target.result);
-        pendingUpload = rows.map(r => enrichRow(r, examDate, client, post, r.shift||'Shift 1'));
-        showPreview(file.name);
-      } catch { alert('Invalid file format.'); }
-    };
-    reader.readAsText(file);
-  }
-}
-
-// Parse xlsx using zip + XML (no external lib needed)
-function parseXlsx(buffer, examDate, client, post) {
-  try {
-    // Use JSZip-free approach: convert to base64 and use a simple zip reader
-    // Since we can't use JSZip in static site, we'll guide user to use CSV/JSON
-    alert('For Excel upload, please export the sheet as CSV first, or use the JSON template. Direct .xlsx parsing requires a library not loaded here.');
-  } catch(e) { alert('Could not parse xlsx: ' + e.message); }
+  reader.onload = e => {
+    try {
+      const rows = file.name.endsWith('.csv') ? parseCSV(e.target.result) : JSON.parse(e.target.result);
+      pendingUpload = rows.map(r => enrichRow(r, examDate, client, post));
+      showPreview(file.name);
+    } catch { alert('Invalid file format. Please use CSV or JSON.'); }
+  };
+  reader.readAsText(file);
 }
 
 function parseCSV(text) {
-  const [header, ...rows] = text.trim().split('\n');
-  const keys = header.split(',').map(k => k.trim());
-  return rows.filter(r=>r.trim()).map(row => {
-    const vals = row.split(',').map(v => v.trim());
-    return Object.fromEntries(keys.map((k,i) => [k, vals[i]||'']));
+  const lines = text.trim().split('\n');
+  const keys  = lines[0].split(',').map(k => k.trim());
+  return lines.slice(1).filter(l => l.trim()).map(line => {
+    const vals = line.split(',').map(v => v.trim());
+    return Object.fromEntries(keys.map((k, i) => [k, vals[i] || '']));
   });
 }
 
-function enrichRow(r, examDate, client, post, shift) {
+function enrichRow(r, examDate, client, post) {
   return {
-    tcCode:         String(r.tcCode||r['TC Code']||r.TC_Code||'').trim(),
-    tcName:         String(r.tcName||r['TC Name']||r.TC_Name||'').trim(),
-    zone:           String(r.zone||r.Zone||'').trim(),
-    state:          String(r.state||r.State||'').trim(),
-    city:           String(r.city||r.City||'').trim(),
-    tcType:         String(r.tcType||r['TC Type']||r.TC_Type||'').trim(),
-    assignedTo:     String(r.assignedTo||r['Assigned To']||'').trim(),
-    candidateCount: String(r.candidateCount||r['Candidate Count']||'').trim(),
+    tcCode:         String(r['TC Code']         || r.tcCode         || '').trim(),
+    tcName:         String(r['TC Name']          || r.tcName         || '').trim(),
+    zone:           String(r['Zone']             || r.zone           || '').trim(),
+    state:          String(r['State']            || r.state          || '').trim(),
+    city:           String(r['City']             || r.city           || '').trim(),
+    tcType:         String(r['TC Type']          || r.tcType         || '').trim(),
+    assignedTo:     String(r['Assigned To']      || r.assignedTo     || '').trim(),
+    candidateCount: String(r['Candidate Count']  || r.candidateCount || '').trim(),
+    shift:          String(r['Shift']            || r.shift          || 'Shift 1').trim(),
     examDate, client, post,
-    shift:          String(r.shift||shift).trim(),
-    status:         r.status||'offline',
+    status: r.status || 'offline',
   };
 }
 
@@ -362,12 +439,12 @@ function showPreview(name) {
 }
 
 function confirmUpload() {
-  let added=0, updated=0;
+  let added = 0, updated = 0;
   pendingUpload.forEach(r => {
     if (!r.tcCode) return;
     const key = tcKey(r);
-    const idx = records.findIndex(x => tcKey(x)===key);
-    if (idx>=0) { records[idx]={...records[idx],...r}; updated++; }
+    const idx = records.findIndex(x => tcKey(x) === key);
+    if (idx >= 0) { records[idx] = { ...records[idx], ...r }; updated++; }
     else { records.push(r); added++; }
   });
   save(); cancelUpload(); renderAll();
@@ -375,30 +452,31 @@ function confirmUpload() {
 }
 
 function cancelUpload() {
-  pendingUpload=[];
+  pendingUpload = [];
   document.getElementById('upload-preview').classList.add('hidden');
-  document.getElementById('upload-info').textContent='';
-  document.getElementById('preview-tbody').innerHTML='';
-  fileInput.value='';
+  document.getElementById('upload-info').textContent = '';
+  document.getElementById('preview-tbody').innerHTML = '';
+  fileInput.value = '';
 }
 
+// ── Download template — exact columns from Excel template ──
 function downloadTemplate(type) {
-  const sample = [{
-    tcCode:'9286', tcName:'iON Digital Zone iDZ Bhagalpur', zone:'East 1',
-    state:'Bihar', city:'Bhagalpur', tcType:'iDZ', assignedTo:'Md. Haqique',
-    candidateCount:'465', shift:'Shift 1', status:'offline'
-  }];
+  const sample = [
+    { Zone:'East 1', State:'Bihar', City:'Bhagalpur', 'TC Type':'iDZ', 'TC Code':'9286', 'TC Name':'iON Digital Zone iDZ Bhagalpur', 'Assigned To':'Md. Haqique', 'Candidate Count':'465', Shift:'Shift 1' },
+    { Zone:'East 1', State:'Bihar', City:'Gaya',      'TC Type':'LISP','TC Code':'33901','TC Name':'Shree Ganesh Innovative',          'Assigned To':'Md. Haqique', 'Candidate Count':'260', Shift:'Shift 1' },
+    { Zone:'East 1', State:'Bihar', City:'Patna',     'TC Type':'iDZ', 'TC Code':'9000', 'TC Name':'iON Digital Zone iDZ Sandalpur',   'Assigned To':'Md. Haqique', 'Candidate Count':'470', Shift:'Shift 2' },
+  ];
   let content, mime, ext;
-  if (type==='json') {
-    content=JSON.stringify(sample,null,2); mime='application/json'; ext='json';
+  if (type === 'json') {
+    content = JSON.stringify(sample, null, 2); mime = 'application/json'; ext = 'json';
   } else {
-    const keys=Object.keys(sample[0]);
-    content=keys.join(',')+'\n'+sample.map(r=>keys.map(k=>r[k]).join(',')).join('\n');
-    mime='text/csv'; ext='csv';
+    content = CSV_COLUMNS.join(',') + '\n' +
+      sample.map(r => CSV_COLUMNS.map(k => `"${(r[k]||'').toString().replace(/"/g,'""')}"`).join(',')).join('\n');
+    mime = 'text/csv'; ext = 'csv';
   }
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([content],{type:mime}));
-  a.download=`tc_template.${ext}`; a.click();
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([content], { type: mime }));
+  a.download = `tc_template.${ext}`; a.click();
 }
 
 init();

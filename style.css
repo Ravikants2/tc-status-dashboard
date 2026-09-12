@@ -96,3 +96,22 @@ tbody tr:hover { background:#e8f0fe; }
 
 .no-data { text-align:center; padding:30px; color:#999; }
 .issue-tag { font-size:.75rem; color:#7b1fa2; background:#f3e5f5; padding:2px 7px; border-radius:10px; display:inline-block; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:middle; }
+
+/* Breadcrumb */
+.breadcrumb { display:flex; align-items:center; flex-wrap:wrap; gap:4px; margin-bottom:16px; font-size:.88rem; }
+.bc-link { color:#1a73e8; cursor:pointer; padding:4px 8px; border-radius:4px; }
+.bc-link:hover { background:#e8f0fe; }
+.bc-active { color:#333; font-weight:600; padding:4px 8px; }
+.bc-sep { color:#aaa; }
+
+/* Drill-down cards */
+.drill-grid { display:flex; flex-wrap:wrap; gap:14px; margin-top:8px; }
+.drill-card { background:#fff; border-radius:10px; padding:16px 20px; min-width:180px; flex:1; max-width:240px; cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,.1); transition:transform .15s, box-shadow .15s; border-left:4px solid #1a73e8; }
+.drill-card:hover { transform:translateY(-3px); box-shadow:0 4px 12px rgba(0,0,0,.15); }
+.drill-card-title { font-weight:600; font-size:.95rem; margin-bottom:10px; color:#1a1a1a; }
+.drill-card-stats { display:flex; gap:10px; margin-bottom:8px; }
+.ds { font-size:.82rem; font-weight:600; }
+.ds.live    { color:#2e7d32; }
+.ds.partial { color:#f57c00; }
+.ds.offline { color:#c62828; }
+.drill-card-total { font-size:.78rem; color:#888; }
