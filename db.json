@@ -70,8 +70,13 @@
     "examDate": "2026-09-12",
     "client": "RRB",
     "post": "JE",
-    "status": "partial",
+    "status": "offline",
     "log": [
+      {
+        "type": "status",
+        "detail": "Status changed: Partial Live → Offline",
+        "time": "12 Sept 2026, 11:40:02 am"
+      },
       {
         "type": "status",
         "detail": "Status changed: Live → Partial Live",
