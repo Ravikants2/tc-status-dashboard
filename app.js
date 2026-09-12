@@ -62,18 +62,15 @@ function renderAll() {
 
 // ── Drill-down engine (shared for Dashboard 'd' and Status 's') ──
 function drillInto(prefix, level, value) {
-  // level: 'examDate' | 'client' | 'post' | 'shift'
   drill[prefix][level] = value;
-  // clear deeper levels
-  const order = ['examDate','client','post','shift'];
+  const order = ['examDate','client','post','shift','assignedTo'];
   const idx = order.indexOf(level);
   order.slice(idx + 1).forEach(l => delete drill[prefix][l]);
   renderDrill(prefix);
 }
 
 function drillBack(prefix, toLevel) {
-  // toLevel: which level to go back to (clear from that level onwards)
-  const order = ['examDate','client','post','shift'];
+  const order = ['examDate','client','post','shift','assignedTo'];
   const idx = toLevel === 'root' ? 0 : order.indexOf(toLevel) + 1;
   order.slice(idx).forEach(l => delete drill[prefix][l]);
   if (toLevel === 'root') drill[prefix] = {};
@@ -83,10 +80,11 @@ function drillBack(prefix, toLevel) {
 function filteredByDrill(prefix) {
   const d = drill[prefix];
   return records.filter(r =>
-    (!d.examDate || r.examDate === d.examDate) &&
-    (!d.client   || r.client   === d.client)   &&
-    (!d.post     || r.post     === d.post)     &&
-    (!d.shift    || r.shift    === d.shift)
+    (!d.examDate   || r.examDate   === d.examDate) &&
+    (!d.client     || r.client     === d.client)   &&
+    (!d.post       || r.post       === d.post)     &&
+    (!d.shift      || r.shift      === d.shift)    &&
+    (!d.assignedTo || d.assignedTo === '__ALL__' || r.assignedTo === d.assignedTo)
   );
 }
 
@@ -98,10 +96,11 @@ function renderDrill(prefix) {
 
   // ── Breadcrumb ──
   const crumbs = [{ label: '📅 All Dates', level: 'root' }];
-  if (d.examDate) crumbs.push({ label: d.examDate,  level: 'examDate' });
-  if (d.client)   crumbs.push({ label: d.client,    level: 'client' });
-  if (d.post)     crumbs.push({ label: d.post,      level: 'post' });
-  if (d.shift)    crumbs.push({ label: d.shift,     level: 'shift' });
+  if (d.examDate)   crumbs.push({ label: d.examDate,  level: 'examDate' });
+  if (d.client)     crumbs.push({ label: d.client,    level: 'client' });
+  if (d.post)       crumbs.push({ label: d.post,      level: 'post' });
+  if (d.shift)      crumbs.push({ label: d.shift,     level: 'shift' });
+  if (d.assignedTo) crumbs.push({ label: d.assignedTo === '__ALL__' ? '👑 Admin View' : '👤 ' + d.assignedTo, level: 'assignedTo' });
 
   bcEl.innerHTML = crumbs.map((c, i) => {
     const isLast = i === crumbs.length - 1;
@@ -136,12 +135,57 @@ function renderDrill(prefix) {
     return;
   }
 
-  // ── Shift level: show TC table ──
-  if (isStatus) {
-    drillEl.innerHTML = buildStatusTable(base);
-  } else {
-    drillEl.innerHTML = buildDashboardView(base);
+  // ── Shift level: show Assigned To cards ──
+  if (!d.assignedTo) {
+    drillEl.innerHTML = buildAssignedToCards(prefix, base);
+    return;
   }
+
+  // ── Assigned To level: show TC table ──
+  const finalList = d.assignedTo === '__ALL__' ? base : base.filter(r => r.assignedTo === d.assignedTo);
+  if (isStatus) {
+    drillEl.innerHTML = buildStatusTable(finalList);
+  } else {
+    drillEl.innerHTML = buildDashboardView(finalList);
+  }
+}
+
+function buildAssignedToCards(prefix, base) {
+  const people = [...new Set(base.map(r => r.assignedTo).filter(Boolean))].sort();
+  let html = `<div class="section-title">Assigned To</div><div class="drill-grid">`;
+
+  // Admin consolidated card
+  const live = base.filter(r => r.status==='live').length;
+  const partial = base.filter(r => r.status==='partial').length;
+  const offline = base.filter(r => r.status==='offline').length;
+  html += `<div class="drill-card admin-card" onclick="drillInto('${prefix}','assignedTo','__ALL__')">
+    <div class="drill-card-title">👑 Admin View <span class="admin-badge">All</span></div>
+    <div class="drill-card-stats">
+      <span class="ds live">🟢 ${live}</span>
+      <span class="ds partial">🟡 ${partial}</span>
+      <span class="ds offline">🔴 ${offline}</span>
+    </div>
+    <div class="drill-card-total">${base.length} TCs — Consolidated</div>
+  </div>`;
+
+  people.forEach(p => {
+    const sub = base.filter(r => r.assignedTo === p);
+    const l = sub.filter(r => r.status==='live').length;
+    const pl = sub.filter(r => r.status==='partial').length;
+    const of = sub.filter(r => r.status==='offline').length;
+    const safe = p.replace(/'/g,"\\'");
+    html += `<div class="drill-card" onclick="drillInto('${prefix}','assignedTo','${safe}')">
+      <div class="drill-card-title">👤 ${p}</div>
+      <div class="drill-card-stats">
+        <span class="ds live">🟢 ${l}</span>
+        <span class="ds partial">🟡 ${pl}</span>
+        <span class="ds offline">🔴 ${of}</span>
+      </div>
+      <div class="drill-card-total">${sub.length} TCs</div>
+    </div>`;
+  });
+  html += '</div>';
+  return html;
 }
 
 function buildSummaryCards(prefix, level, vals, allBase, field) {
@@ -236,13 +280,14 @@ function renderStatusRows(list) {
   let html = `<table><thead><tr>
     <th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th>
     <th>TC Type</th><th>Assigned To</th><th>Candidates</th>
-    <th>Status</th><th>Change Status</th><th>Issue</th>
+    <th>Status</th><th>Change Status</th><th>Remarks</th><th>Issue</th>
   </tr></thead><tbody>`;
   list.forEach(r => {
     const key = tcKey(r);
     const issueHtml = r.issue
-      ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub || ''}">${r.issue.category}</span>`
+      ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub || ''}" onclick="openIssue('${key}')" style="cursor:pointer">${r.issue.category}</span>`
       : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
+    const safeRemarks = (r.remarks || '').replace(/"/g, '&quot;').replace(/</g,'&lt;');
     html += `<tr>
       <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
       <td>${r.city}</td><td>${r.state}</td><td>${r.tcType || ''}</td>
@@ -253,6 +298,8 @@ function renderStatusRows(list) {
         <option value="partial" ${r.status==='partial' ?'selected':''}>Partial Live</option>
         <option value="offline" ${r.status==='offline' ?'selected':''}>Offline</option>
       </select></td>
+      <td><input class="remarks-input" value="${safeRemarks}" placeholder="Add remarks…"
+           onblur="saveRemarks('${key}',this.value)" /></td>
       <td>${issueHtml}</td>
     </tr>`;
   });
@@ -260,9 +307,23 @@ function renderStatusRows(list) {
   return html;
 }
 
+function saveRemarks(key, val) {
+  const r = records.find(x => tcKey(x) === key);
+  if (r) { r.remarks = val.trim(); save(); }
+}
+
 function updateStatus(key, val) {
   const r = records.find(x => tcKey(x) === key);
-  if (r) { r.status = val; save(); renderAll(); }
+  if (!r) return;
+  r.status = val;
+  save();
+  // re-render only the table wrap to preserve remarks input focus
+  const wrap = document.getElementById('st-table-wrap');
+  if (wrap) {
+    wrap.innerHTML = renderStatusRows(window._statusList || []);
+  } else {
+    renderAll();
+  }
 }
 
 // ── Records tab ────────────────────────────────────────────

@@ -115,3 +115,11 @@ tbody tr:hover { background:#e8f0fe; }
 .ds.partial { color:#f57c00; }
 .ds.offline { color:#c62828; }
 .drill-card-total { font-size:.78rem; color:#888; }
+
+/* Admin consolidated card */
+.admin-card { border-left-color:#f57c00; background:linear-gradient(135deg,#fff8f0,#fff); }
+.admin-badge { background:#f57c00; color:#fff; font-size:.68rem; padding:1px 6px; border-radius:8px; margin-left:6px; vertical-align:middle; }
+
+/* Remarks inline input */
+.remarks-input { width:140px; padding:4px 7px; border:1px solid #ddd; border-radius:5px; font-size:.8rem; background:#fffde7; }
+.remarks-input:focus { outline:none; border-color:#f9a825; background:#fff; }
