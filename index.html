@@ -3,59 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TC Status Dashboard</title>
+  <title>iON Surveillance</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <h1>📡 TC Status Dashboard</h1>
+  <div class="brand">
+    <span class="brand-icon">👁</span>
+    <div>
+      <h1>iON Surveillance</h1>
+      <small>TC Monitoring System</small>
+    </div>
+  </div>
+  <div id="live-clock"></div>
 </header>
 
-<!-- Summary Cards -->
-<div class="summary">
-  <div class="card live">
-    <span id="count-live">0</span>
-    <p>Live</p>
+<!-- Tabs -->
+<nav class="tabs">
+  <button class="tab active" onclick="switchTab('dashboard', this)">📊 Dashboard</button>
+  <button class="tab" onclick="switchTab('status', this)">📡 Status</button>
+  <button class="tab" onclick="switchTab('upload', this)">⬆ Upload</button>
+  <button class="tab" onclick="switchTab('records', this)">🗂 Records</button>
+</nav>
+
+<!-- ── TAB: Dashboard ── -->
+<div id="tab-dashboard" class="tab-content active">
+  <div class="summary">
+    <div class="card live" onclick="switchTabByStatus('live')">
+      <span id="count-live">0</span>
+      <p>Live</p>
+    </div>
+    <div class="card partial" onclick="switchTabByStatus('partial')">
+      <span id="count-partial">0</span>
+      <p>Partial Live</p>
+    </div>
+    <div class="card offline" onclick="switchTabByStatus('offline')">
+      <span id="count-offline">0</span>
+      <p>Offline</p>
+    </div>
+    <div class="card total">
+      <span id="count-total">0</span>
+      <p>Total TCs</p>
+    </div>
   </div>
-  <div class="card partial">
-    <span id="count-partial">0</span>
-    <p>Partial Live</p>
-  </div>
-  <div class="card offline">
-    <span id="count-offline">0</span>
-    <p>Offline</p>
+
+  <div class="section-title">Zone-wise Summary</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Zone</th><th>Live</th><th>Partial Live</th><th>Offline</th><th>Total</th></tr></thead>
+      <tbody id="zone-tbody"></tbody>
+    </table>
   </div>
 </div>
 
-<!-- Toolbar -->
-<div class="toolbar">
-  <input id="search" type="text" placeholder="Search by TC Code, Name, City…" />
-  <select id="filter">
-    <option value="all">All Status</option>
-    <option value="live">Live</option>
-    <option value="partial">Partial Live</option>
-    <option value="offline">Offline</option>
-  </select>
-  <button class="btn-primary" onclick="openAdd()">+ Add TC</button>
+<!-- ── TAB: Status ── -->
+<div id="tab-status" class="tab-content">
+  <div class="toolbar">
+    <input id="search" type="text" placeholder="Search TC Code, Name, City…" />
+    <select id="filter">
+      <option value="all">All Status</option>
+      <option value="live">Live</option>
+      <option value="partial">Partial Live</option>
+      <option value="offline">Offline</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th><th>Change Status</th></tr>
+      </thead>
+      <tbody id="status-tbody"></tbody>
+    </table>
+  </div>
 </div>
 
-<!-- Table -->
-<div class="table-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th>TC Code</th>
-        <th>TC Name</th>
-        <th>Zone</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Status</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
+<!-- ── TAB: Upload ── -->
+<div id="tab-upload" class="tab-content">
+  <div class="upload-box">
+    <h2>Bulk Upload TC Data</h2>
+    <p>Upload a <strong>JSON</strong> or <strong>CSV</strong> file to import TC records.</p>
+
+    <div class="drop-zone" id="drop-zone">
+      <span>📂 Drag & drop file here or</span>
+      <label class="btn-primary" style="margin-top:10px;display:inline-block;cursor:pointer;">
+        Browse File <input type="file" id="file-input" accept=".json,.csv" hidden />
+      </label>
+    </div>
+
+    <div id="upload-preview" class="upload-preview hidden">
+      <div class="upload-info" id="upload-info"></div>
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead><tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th></tr></thead>
+          <tbody id="preview-tbody"></tbody>
+        </table>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:10px">
+        <button class="btn-primary" onclick="confirmUpload()">✅ Import All</button>
+        <button onclick="cancelUpload()">Cancel</button>
+      </div>
+    </div>
+
+    <div class="upload-template">
+      <p>Download sample templates:</p>
+      <button onclick="downloadTemplate('json')">⬇ JSON Template</button>
+      <button onclick="downloadTemplate('csv')">⬇ CSV Template</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── TAB: Records ── -->
+<div id="tab-records" class="tab-content">
+  <div class="toolbar">
+    <input id="rec-search" type="text" placeholder="Search records…" />
+    <button class="btn-primary" onclick="openAdd()">+ Add TC</button>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="rec-tbody"></tbody>
+    </table>
+  </div>
 </div>
 
 <!-- Add / Edit Modal -->
