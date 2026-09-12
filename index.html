@@ -16,7 +16,11 @@
       <small>TC Monitoring System</small>
     </div>
   </div>
-  <div id="live-clock"></div>
+  <div style="display:flex;align-items:center;gap:14px">
+    <div id="live-clock"></div>
+    <div id="sync-status" class="sync-status"></div>
+    <button class="btn-settings" onclick="openSettings()" title="GitHub Settings">⚙️</button>
+  </div>
 </header>
 
 <nav class="tabs">
@@ -196,6 +200,24 @@
   </div>
 </div>
 
+<!-- Settings Modal -->
+<div id="settings-modal" class="modal-overlay" onclick="if(event.target===this)closeSettings()">
+  <div class="modal" style="width:460px">
+    <h2>⚙️ GitHub Sync Settings</h2>
+    <p style="font-size:.85rem;color:#555;margin-bottom:14px">Data is saved to <strong>db.json</strong> in your repo. Enter a GitHub Personal Access Token with <code>repo</code> scope to enable persistent storage across all devices.</p>
+    <div class="form-group">
+      <label>GitHub Token (repo scope)</label>
+      <input type="password" id="gh-token-input" placeholder="ghp_xxxxxxxxxxxx" />
+    </div>
+    <div id="settings-msg" style="font-size:.82rem;margin-bottom:8px"></div>
+    <div class="modal-actions">
+      <button onclick="closeSettings()">Cancel</button>
+      <button onclick="testAndSaveToken()" class="btn-primary">Save &amp; Test</button>
+    </div>
+  </div>
+</div>
+
+<script src="github-storage.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

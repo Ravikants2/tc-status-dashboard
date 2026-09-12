@@ -1,6 +1,82 @@
 const STORAGE_KEY = 'ion_tc_data';
+// ── Init ───────────────────────────────────────────
+async function init() {
+  setSyncStatus('loading', '⏳ Loading data…');
+  let loaded = null;
+  if (ghToken()) {
+    loaded = await ghLoad();
+  }
+  if (Array.isArray(loaded) && loaded.length > 0) {
+    records = loaded;
+    // mirror to localStorage as backup
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); } catch(e) {}
+    setSyncStatus('ok', '✅ Synced with GitHub');
+  } else if (loaded === null) {
+    // network/auth error — fall back to localStorage
+    setSyncStatus('warn', '⚠️ Offline — using local data');
+    loadFromLocal();
+  } else {
+    // empty repo file or no token — try localStorage
+    loadFromLocal();
+    if (!ghToken()) setSyncStatus('warn', '⚠️ No token — data saved locally only');
+    else setSyncStatus('ok', '✅ GitHub connected (no data yet)');
+  }
+  populateIssueCategories();
+  renderAll();
+  startClock();
+}
 
-const ISSUE_CATEGORIES = {
+function loadFromLocal() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    records = saved ? JSON.parse(saved) : [];
+    if (!Array.isArray(records)) records = [];
+  } catch(e) { records = []; localStorage.removeItem(STORAGE_KEY); }
+}
+
+let _saveTimer = null;
+function save() {
+  // always write localStorage immediately
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); } catch(e) {}
+  // debounce GitHub save by 1.5s to avoid hammering API on rapid changes
+  clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(async () => {
+    if (!ghToken()) return;
+    setSyncStatus('loading', '⏳ Saving…');
+    const ok = await ghSave(records);
+    setSyncStatus(ok ? 'ok' : 'warn', ok ? '✅ Saved to GitHub' : '⚠️ GitHub save failed — data in localStorage');
+  }, 1500);
+}
+
+function setSyncStatus(type, msg) {
+  const el = document.getElementById('sync-status');
+  if (!el) return;
+  el.textContent = msg;
+  el.className = 'sync-status sync-' + type;
+}
+
+// ── Settings modal ──────────────────────────────────────
+function openSettings() {
+  document.getElementById('gh-token-input').value = ghToken();
+  document.getElementById('settings-msg').textContent = '';
+  document.getElementById('settings-modal').classList.add('open');
+}
+function closeSettings() { document.getElementById('settings-modal').classList.remove('open'); }
+async function testAndSaveToken() {
+  const t = document.getElementById('gh-token-input').value.trim();
+  const msg = document.getElementById('settings-msg');
+  if (!t) { msg.textContent = '❌ Token cannot be empty.'; msg.style.color='#c62828'; return; }
+  msg.textContent = '⏳ Testing token…'; msg.style.color='#555';
+  setGhToken(t);
+  const data = await ghLoad();
+  if (data === null) {
+    msg.textContent = '❌ Connection failed. Check token and network.'; msg.style.color='#c62828';
+  } else {
+    msg.textContent = '✅ Connected! Reloading data…'; msg.style.color='#2e7d32';
+    if (data.length > 0) { records = data; try { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); } catch(e){} }
+    setTimeout(() => { closeSettings(); renderAll(); setSyncStatus('ok', '✅ Synced with GitHub'); }, 800);
+  }
+}
   'Camera Issue':              ['RTSP URL not working','Incorrect configuration','Time Sync Issue','Camera login Issue','Camera not working','Feed Fluctuations'],
   'NAS/DVR/NVR Related Issue': ['NAS/DVR/NVR Login Issue','Incorrect configuration','Time sync issue','Not Working'],
   'Internet Issue':            ['TCSiON URL not accessible','Slow internet speed','Internet Down from ISP','Connectivity Issue'],
@@ -24,30 +100,6 @@ let issueTcKey = null;
 
 // drill state per tab: { examDate, client, post, shift }
 const drill = { d: {}, s: {} };
-
-// ── Init ───────────────────────────────────────────────────
-function init() {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    records = saved ? JSON.parse(saved) : [];
-    if (!Array.isArray(records)) records = [];
-  } catch(e) {
-    console.warn('localStorage parse error, resetting:', e);
-    records = [];
-    localStorage.removeItem(STORAGE_KEY);
-  }
-  populateIssueCategories();
-  renderAll();
-  startClock();
-}
-
-function save() {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
-  } catch(e) {
-    console.warn('localStorage save error:', e);
-  }
-}
 
 function startClock() {
   const el = document.getElementById('live-clock');

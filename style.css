@@ -8,6 +8,12 @@ header { background: linear-gradient(135deg,#0d47a1,#1a73e8); color:#fff; paddin
 .brand h1 { font-size:1.4rem; letter-spacing:.5px; }
 .brand small { font-size:.75rem; opacity:.8; }
 #live-clock { font-size:.85rem; opacity:.9; }
+.sync-status { font-size:.78rem; padding:3px 10px; border-radius:10px; font-weight:500; }
+.sync-ok      { background:rgba(255,255,255,.2); color:#e8f5e9; }
+.sync-warn    { background:rgba(255,200,0,.25); color:#fff8e1; }
+.sync-loading { background:rgba(255,255,255,.15); color:#e3f2fd; }
+.btn-settings { background:rgba(255,255,255,.15); border:none; border-radius:6px; color:#fff; font-size:1rem; padding:4px 10px; cursor:pointer; }
+.btn-settings:hover { background:rgba(255,255,255,.3); }
 
 /* Tabs */
 .tabs { display:flex; background:#fff; border-bottom:2px solid #e0e0e0; padding:0 24px; gap:4px; }
