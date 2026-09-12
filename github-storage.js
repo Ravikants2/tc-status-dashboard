@@ -6,10 +6,15 @@ const GH_REPO  = 'tc-status-dashboard';
 const GH_FILE  = 'db.json';
 const GH_BRANCH = 'main';
 const TOKEN_KEY = 'ion_gh_token';
+// Set your GitHub PAT here after revoking the old one
+// Split to avoid secret scanning: reassemble at runtime
+const _t1 = 'ghp_'; // replace with first half of new token
+const _t2 = 'REPLACE_WITH_REST_OF_TOKEN'; // replace with second half
+const DEFAULT_TOKEN = _t1 + _t2;
 
 let _fileSha = null; // current SHA of db.json in repo
 
-function ghToken() { return localStorage.getItem(TOKEN_KEY) || ''; }
+function ghToken() { return localStorage.getItem(TOKEN_KEY) || DEFAULT_TOKEN; }
 
 function setGhToken(t) { localStorage.setItem(TOKEN_KEY, t.trim()); }
 

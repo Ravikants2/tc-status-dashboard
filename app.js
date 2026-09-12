@@ -51,7 +51,6 @@ function save() {
   saveLocal();
   clearTimeout(_saveTimer);
   _saveTimer = setTimeout(async () => {
-    if (!ghToken()) return;
     setSyncStatus('loading', '⏳ Saving…');
     const ok = await ghSave(records);
     setSyncStatus(ok ? 'ok' : 'warn', ok ? '✅ Saved to GitHub' : '⚠️ GitHub save failed — using local');
@@ -60,14 +59,13 @@ function save() {
 
 async function init() {
   setSyncStatus('loading', '⏳ Loading…');
-  let loaded = null;
-  if (ghToken()) loaded = await ghLoad();
+  let loaded = await ghLoad();
   if (Array.isArray(loaded) && loaded.length > 0) {
     records = loaded; saveLocal(); setSyncStatus('ok', '✅ Synced with GitHub');
   } else if (loaded === null) {
     loadFromLocal(); setSyncStatus('warn', '⚠️ Offline — using local data');
   } else {
-    loadFromLocal(); setSyncStatus(ghToken() ? 'ok' : 'warn', ghToken() ? '✅ GitHub connected' : '⚠️ No token — local only');
+    loadFromLocal(); setSyncStatus('ok', '✅ GitHub connected');
   }
   populateIssueCategories();
   renderAll();
