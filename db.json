@@ -238,6 +238,11 @@
     "status": "partial",
     "log": [
       {
+        "type": "issue",
+        "detail": "Issue: NAS/DVR/NVR Related Issue > Time sync issue",
+        "time": "12 Sept 2026, 12:28:15 pm"
+      },
+      {
         "type": "remarks",
         "detail": "Remarks: \"Camera 2 offline\"",
         "time": "12 Sept 2026, 12:27:55 pm"
@@ -248,7 +253,23 @@
         "time": "12 Sept 2026, 12:27:40 pm"
       }
     ],
-    "remarks": "Camera 2 offline"
+    "remarks": "Camera 2 offline",
+    "issues": [
+      {
+        "category": "NAS/DVR/NVR Related Issue",
+        "subs": [
+          "Time sync issue"
+        ],
+        "remarks": "",
+        "time": "12 Sept 2026, 12:28:15 pm"
+      }
+    ],
+    "issue": {
+      "category": "NAS/DVR/NVR Related Issue",
+      "sub": "Time sync issue",
+      "remarks": "",
+      "time": "12 Sept 2026, 12:28:15 pm"
+    }
   },
   {
     "tcCode": "9338",
