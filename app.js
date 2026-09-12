@@ -25,8 +25,8 @@ const drill = { d: {}, s: {} };
 function tcKey(r) { return `${r.tcCode}|${r.examDate}|${r.client}|${r.post}|${r.shift}`; }
 function labelOf(s) { return s === 'partial' ? 'Partial Live' : s.charAt(0).toUpperCase() + s.slice(1); }
 function now() { return new Date().toLocaleString('en-IN', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true }); }
-function addLog(r, type, detail) { if (!r.log) r.log = []; r.log.unshift({ type, detail, time: now() }); }
 function todayISO() { return new Date().toISOString().slice(0,10); }
+function addLog(r, type, detail) { if (!r.log) r.log = []; r.log.unshift({ type, detail, time: now() }); }
 
 function setSyncStatus(type, msg) {
   const el = document.getElementById('sync-status');
@@ -52,18 +52,16 @@ function save() {
   saveLocal();
   clearTimeout(_saveTimer);
   _saveTimer = setTimeout(async () => {
-    setSyncStatus('loading', '⏳ Saving…');
+    setSyncStatus('loading', '⏳ Saving...');
     const ok = await ghSave(records);
     setSyncStatus(ok ? 'ok' : 'warn', ok ? '✅ Saved to GitHub' : '⚠️ GitHub save failed — using local');
   }, 1500);
 }
 
 async function init() {
-  setSyncStatus('loading', '⏳ Loading…');
-  // Set today's date on all date inputs
-  const today = todayISO();
-  document.getElementById('up-exam').value = today;
-  document.getElementById('examDate').value = today;
+  setSyncStatus('loading', '⏳ Loading...');
+  document.getElementById('up-exam').value = todayISO();
+  document.getElementById('examDate').value = todayISO();
   let loaded = await ghLoad();
   if (Array.isArray(loaded) && loaded.length > 0) {
     records = loaded; saveLocal(); setSyncStatus('ok', '✅ Synced with GitHub');
@@ -87,7 +85,7 @@ async function testAndSaveToken() {
   const t = document.getElementById('gh-token-input').value.trim();
   const msg = document.getElementById('settings-msg');
   if (!t) { msg.textContent = '❌ Token cannot be empty.'; msg.style.color = '#c62828'; return; }
-  msg.textContent = '⏳ Testing…'; msg.style.color = '#555';
+  msg.textContent = '⏳ Testing...'; msg.style.color = '#555';
   setGhToken(t);
   const data = await ghLoad();
   if (data === null) {
@@ -168,9 +166,9 @@ function renderDrill(prefix) {
       : '<p class="no-data">No data yet. Go to Upload tab.</p>';
     return;
   }
-  if (!d.client) { drillEl.innerHTML = buildCards(prefix, 'client', [...new Set(base.map(r=>r.client).filter(Boolean))].sort(), base, 'client'); return; }
-  if (!d.post)   { drillEl.innerHTML = buildCards(prefix, 'post',   [...new Set(base.map(r=>r.post).filter(Boolean))].sort(),   base, 'post');   return; }
-  if (!d.shift)  { drillEl.innerHTML = buildCards(prefix, 'shift',  [...new Set(base.map(r=>r.shift).filter(Boolean))].sort(),  base, 'shift');  return; }
+  if (!d.client)     { drillEl.innerHTML = buildCards(prefix, 'client', [...new Set(base.map(r=>r.client).filter(Boolean))].sort(), base, 'client'); return; }
+  if (!d.post)       { drillEl.innerHTML = buildCards(prefix, 'post',   [...new Set(base.map(r=>r.post).filter(Boolean))].sort(),   base, 'post');   return; }
+  if (!d.shift)      { drillEl.innerHTML = buildCards(prefix, 'shift',  [...new Set(base.map(r=>r.shift).filter(Boolean))].sort(),  base, 'shift');  return; }
   if (!d.assignedTo) { drillEl.innerHTML = buildAssignedCards(prefix, base); return; }
 
   const finalList = d.assignedTo === '__ALL__' ? base : base.filter(r => r.assignedTo === d.assignedTo);
@@ -237,7 +235,7 @@ function buildDashboardView(list) {
 function buildStatusTable(list) {
   window._statusList = list;
   return `<div class="toolbar" style="margin-bottom:12px">
-    <input id="st-search" type="text" placeholder="Search TC Code, Name, City…" oninput="filterStatusTable()" />
+    <input id="st-search" type="text" placeholder="Search TC Code, Name, City..." oninput="filterStatusTable()" />
     <select id="st-filter" onchange="filterStatusTable()">
       <option value="all">All Status</option>
       <option value="live">Live</option>
@@ -272,7 +270,7 @@ function renderStatusRows(list) {
       ? `<button class="btn-issue btn-sm issue-logged" onclick="openIssue('${key}')">${issueCount} Issue${issueCount>1?'s':''}</button>`
       : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
     const safeR = (r.remarks||'').replace(/"/g,'&quot;').replace(/</g,'&lt;');
-    const cnt   = (r.log||[]).length;
+    const cnt = (r.log||[]).length;
     html += `<tr>
       <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
       <td>${r.city}</td><td>${r.state}</td><td>${r.tcType||''}</td>
@@ -283,7 +281,7 @@ function renderStatusRows(list) {
         <option value="partial" ${r.status==='partial' ?'selected':''}>Partial Live</option>
         <option value="offline" ${r.status==='offline' ?'selected':''}>Offline</option>
       </select></td>
-      <td><input class="remarks-input" value="${safeR}" placeholder="Add remarks…" onblur="saveRemarks('${key}',this.value)" /></td>
+      <td><input class="remarks-input" value="${safeR}" placeholder="Add remarks..." onblur="saveRemarks('${key}',this.value)" /></td>
       <td>${issueHtml}</td>
       <td><button class="btn-tl btn-sm" onclick="openTimeline('${key}')" title="Timeline">🕐${cnt?`<span class="tl-count">${cnt}</span>`:''}</button></td>
     </tr>`;
@@ -319,14 +317,14 @@ function openTimeline(key) {
     ? log.map((e,i) => {
         const icon = e.type==='status'?'🔄':e.type==='issue'?'⚠️':'📝';
         const cls  = e.type==='status'?'tl-status':e.type==='issue'?'tl-issue':'tl-remarks';
-        const safeDetail = e.detail
-          .replace(/&(?!#?\w+;)/g,'&amp;')
-          .replace(/→/g,'&#8594;')
-          .replace(/›/g,'&#8250;')
-          .replace(/—/g,'&#8212;');
+        // fix any raw unicode arrows stored in old entries
+        const detail = e.detail
+          .replace(/→/g, '->')
+          .replace(/›/g, '>')
+          .replace(/—/g, '-');
         return `<div class="tl-item ${i===0?'tl-latest':''}">
           <div class="tl-dot ${cls}"></div>
-          <div class="tl-content"><div class="tl-detail">${icon} ${safeDetail}</div><div class="tl-time">${e.time}</div></div>
+          <div class="tl-content"><div class="tl-detail">${icon} ${detail}</div><div class="tl-time">${e.time}</div></div>
         </div>`;
       }).join('')
     : '<p class="no-data" style="padding:20px">No activity yet.</p>';
@@ -374,12 +372,18 @@ function closeModal() { document.getElementById('modal').classList.remove('open'
 document.getElementById('tc-form').addEventListener('submit', e => {
   e.preventDefault();
   const data = {
-    tcCode:document.getElementById('tcCode').value.trim(), tcName:document.getElementById('tcName').value.trim(),
-    zone:document.getElementById('zone').value.trim(), state:document.getElementById('state').value.trim(),
-    city:document.getElementById('city').value.trim(), tcType:document.getElementById('tcType').value.trim(),
-    assignedTo:document.getElementById('assignedTo').value.trim(), candidateCount:document.getElementById('candidateCount').value.trim(),
-    examDate:document.getElementById('examDate').value, client:document.getElementById('client').value.trim(),
-    post:document.getElementById('post').value.trim(), shift:document.getElementById('shift').value,
+    tcCode:document.getElementById('tcCode').value.trim(),
+    tcName:document.getElementById('tcName').value.trim(),
+    zone:document.getElementById('zone').value.trim(),
+    state:document.getElementById('state').value.trim(),
+    city:document.getElementById('city').value.trim(),
+    tcType:document.getElementById('tcType').value.trim(),
+    assignedTo:document.getElementById('assignedTo').value.trim(),
+    candidateCount:document.getElementById('candidateCount').value.trim(),
+    examDate:document.getElementById('examDate').value,
+    client:document.getElementById('client').value.trim(),
+    post:document.getElementById('post').value.trim(),
+    shift:document.getElementById('shift').value,
     status:document.getElementById('status').value,
   };
   if (!editingKey) {
@@ -413,7 +417,8 @@ function openIssue(key) {
   issueTcKey = key;
   const r = records.find(x=>tcKey(x)===key);
   document.getElementById('issue-tc-label').textContent = `${r.tcCode} — ${r.tcName}`;
-  document.getElementById('issue-cat').value = ''; renderSubIssues();
+  document.getElementById('issue-cat').value = '';
+  renderSubIssues();
   document.getElementById('issue-remarks').value = '';
   document.getElementById('issue-modal').classList.add('open');
 }
@@ -426,8 +431,7 @@ function saveIssue() {
   const rem  = document.getElementById('issue-remarks').value.trim();
   if (!r.issues) r.issues = [];
   r.issues.push({ category:cat, subs, remarks:rem, time:now() });
-  // keep r.issue for backward compat display
-  r.issue = { category:cat, sub: subs.join(', '), remarks:rem, time:now() };
+  r.issue = { category:cat, sub:subs.join(', '), remarks:rem, time:now() };
   const subStr = subs.length ? ' > ' + subs.join(', ') : '';
   addLog(r, 'issue', `Issue: ${cat}${subStr}${rem?' - '+rem:''}`);
   save(); closeIssueModal(); renderAll();
@@ -475,11 +479,16 @@ function splitCSVLine(line) {
 }
 function enrichRow(r, examDate, client, post) {
   return {
-    tcCode:String(r['TC Code']||r.tcCode||'').trim(), tcName:String(r['TC Name']||r.tcName||'').trim(),
-    zone:String(r['Zone']||r.zone||'').trim(), state:String(r['State']||r.state||'').trim(),
-    city:String(r['City']||r.city||'').trim(), tcType:String(r['TC Type']||r.tcType||'').trim(),
-    assignedTo:String(r['Assigned To']||r.assignedTo||'').trim(), candidateCount:String(r['Candidate Count']||r.candidateCount||'').trim(),
-    shift:String(r['Shift']||r.shift||'Shift 1').trim(), examDate, client, post, status:r.status||'offline',
+    tcCode:String(r['TC Code']||r.tcCode||'').trim(),
+    tcName:String(r['TC Name']||r.tcName||'').trim(),
+    zone:String(r['Zone']||r.zone||'').trim(),
+    state:String(r['State']||r.state||'').trim(),
+    city:String(r['City']||r.city||'').trim(),
+    tcType:String(r['TC Type']||r.tcType||'').trim(),
+    assignedTo:String(r['Assigned To']||r.assignedTo||'').trim(),
+    candidateCount:String(r['Candidate Count']||r.candidateCount||'').trim(),
+    shift:String(r['Shift']||r.shift||'Shift 1').trim(),
+    examDate, client, post, status:r.status||'offline',
   };
 }
 function showPreview(name) {
@@ -515,7 +524,7 @@ function downloadTemplate(type) {
   let content, mime, ext;
   if (type==='json') { content=JSON.stringify(sample,null,2); mime='application/json'; ext='json'; }
   else {
-    content=CSV_COLUMNS.join(',')+'\\n'+sample.map(r=>CSV_COLUMNS.map(k=>`"${(r[k]||'').toString().replace(/"/g,'""')}"`).join(',')).join('\\n');
+    content=CSV_COLUMNS.join(',')+'\n'+sample.map(r=>CSV_COLUMNS.map(k=>`"${(r[k]||'').toString().replace(/"/g,'""')}"`).join(',')).join('\n');
     mime='text/csv'; ext='csv';
   }
   const a=document.createElement('a');

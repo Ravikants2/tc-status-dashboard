@@ -1,0 +1,1703 @@
+=== ZIP CONTENTS ===
+[Content_Types].xml
+_rels/.rels
+xl/workbook.xml
+xl/_rels/workbook.xml.rels
+xl/worksheets/sheet1.xml
+xl/worksheets/sheet2.xml
+xl/worksheets/sheet3.xml
+xl/worksheets/sheet4.xml
+xl/worksheets/sheet5.xml
+xl/theme/theme1.xml
+xl/styles.xml
+xl/sharedStrings.xml
+xl/worksheets/_rels/sheet1.xml.rels
+xl/worksheets/_rels/sheet3.xml.rels
+xl/worksheets/_rels/sheet4.xml.rels
+xl/printerSettings/printerSettings1.bin
+xl/printerSettings/printerSettings2.bin
+xl/tables/table1.xml
+docMetadata/LabelInfo.xml
+docProps/core.xml
+docProps/app.xml
+
+=== SHARED STRINGS (488) ===
+  [0] Zone
+  [1] State
+  [2] City
+  [3] TC Type
+  [4] TC Code
+  [5] TC Name
+  [6] Assigned To
+  [7] Candidate Count
+  [8] Issue Category
+  [9] East 1
+  [10] Bihar
+  [11] Bhagalpur
+  [12] iDZ
+  [13] iON Digital Zone iDZ Bhagalpur
+  [14] Md. Haqique
+  [15] Gaya
+  [16] LISP
+  [17] Shree Ganesh Innovative
+  [18] Muzaffarpur
+  [19] iON Digital Zone iDZ Kanti
+  [20] Azad Infotech
+  [21] iON Digital Zone iDZ Bhikhanpur - Muzaffarpur
+  [22] Patna
+  [23] iON Digital Zone iDZ Sandalpur
+  [24] iCamera_Application_Issue
+  [25] Service Restarted
+  [26] iON Digital Zone iDZ Phulwarisharif
+  [27] Unique IT Point Private Limited
+  [28] Bapu Pariksha Parisar Zone - 1
+  [29] Bapu Pariksha Parisar Zone - 2
+  [30] Purnea
+  [31] iON Digital Zone  iDZ Purnea
+  [32] Jharkhand
+  [33] Bokaro Steel City
+  [34] Alpha ICT Centre
+  [35] Daltonganj
+  [36] Oxford Public School Daltonganj
+  [37] Dhanbad
+  [38] iON DIGITAL ZONE, iDZ Amagraha
+  [39] Jamshedpur
+  [40] Govind Vidyalaya
+  [41] Creative Computer
+  [42] Ranchi
+  [43] Ram Tahal Choudhary Institute Of Technology
+  [44] Oxford Public School Ranchi
+  [45] iON Digital Zone iDZ Tupudana
+  [46] Arunuma Technical Services Private Limited
+  [47] Odisha
+  [48] Balasore
+  [49] iON Digital Zone iDZ Harida
+  [50] Berhampur-Ganjam
+  [51] SMIT Degree Engineering College
+  [52] iON Digital Zone iDZ Khallikote College Area
+  [53] Bhubaneswar
+  [54] GITA Autonomous College
+  [55] iON Digital Zone iDZ1 Patia
+  [56] Innovinc Tech Lab
+  [57] Eglobetech India Private Limited
+  [58] Utkal Institute Of Engineering And Technology
+  [59] Radha Raman Assessment Services Private Limited
+  [60] Buddham Technology
+  [61] SBG Digital Center
+  [62] Ganesh Institute Of Management Studies
+  [63] Cuttack
+  [64] Jagannath Institute Of Engineering And Technology
+  [65] Kshetrabasi Industrial Training Institute
+  [66] Shree Siddhivinayak SSR
+  [67] Dash Advanced Engineering
+  [68] Dhabaleswar Institute of Polytechnic
+  [69] Dhenkanal
+  [70] iON Digital Zone iDZ Banamaliprasad
+  [71] Orissa Institute Of Engineering And Technology
+  [72] DMS Institute
+  [73] Jay Lund
+  [74] Rourkela
+  [75] iON Digital Zone iDZ Sector 4
+  [76] Sai Institute Of Technology
+  [77] Proxy_System_Issue
+  [78] MAC ID Changed
+  [79] East 2
+  [80] Tripura
+  [81] Agartala
+  [82] Tripura Info.Com
+  [83] Tripura Institute Of Technology
+  [84] West Bengal
+  [85] Asansol
+  [86] iON Digital Zone iDZ  Asansol
+  [87] Burdwan
+  [88] Dr. Kalam Academy
+  [89] Durgapur
+  [90] Aryabhatta Institute of Engineering and Management
+  [91] Sanaka Educational Trust Group of Institutions
+  [92] ABS Academy of Competitive Exams
+  [93] Kalyani
+  [94] iON Digital Zone iDZ  Kalyani
+  [95] Kolkata
+  [96] Webel Human Resource Development Center
+  [97] iON Digital Zone iDZ  Madhyamgram
+  [98] iON Digital Zone iDZ  Baruipur
+  [99] TCS Gito Bitan
+  [100] Restarted Proxy System
+  [101] Siliguri
+  [102] Surendra Institute of Engineering and Management
+  [103] Umang Infotech
+  [104] iON Digital Zone iDZ  Siliguri
+  [105] Bhawani Infotech
+  [106] North 1
+  [107] Delhi
+  [108] New Delhi
+  [109] Online Infra
+  [110] Indraprastha Public School
+  [111] SANGWAN ACADEMY
+  [112] Webinfotron Technologies Pvt. Ltd.
+  [113] Network_Related_Issue
+  [114] Ping Issue
+  [115] SUNSHINE CONVENT SCHOOL ONLINE EXAM CENTER
+  [116] Royal international school online exam center
+  [117] Ksk online examination centre
+  [118] Haryana
+  [119] Faridabad
+  [120] iON Dizital Zone  Faridabad
+  [121] Uttar Pradesh
+  [122] Ghaziabad
+  [123] BBDIT A Block Duhai
+  [124] iON Digital Zone iDZ 2 Duhai
+  [125] Diamond Public School
+  [126] Greater Noida
+  [127] Pt.Salagram Inter College
+  [128] Meerut
+  [129] Bharat Institute of Technology
+  [130] Noida
+  [131] iON Digital Zone iDZ 2  Sector 62
+  [132] iON Digital Zone iDZ 1 Sector 62
+  [133] North 2
+  [134] Agra
+  [135] iON Digital Zone iDZ  Kuberpur
+  [136] Smt. Bhudevi P.G College Agra
+  [137] Sant Ram Krishna Mahavidhyalya
+  [138] G.B Infotech
+  [139] iON Digital Zone ITAURA
+  [140] GSS Infosystems
+  [141] Sakshi Raut
+  [142] Innovative Sikandra
+  [143] Aligarh
+  [144] iON Digital Zone iDZ  Karsua
+  [145] Ayodhya
+  [146] Narayana Infotech
+  [147] SRS Digital Institute
+  [148] Bareilly
+  [149] Shri Siddhi Vinayak Institute Of Technology
+  [150] iON Digital Zone iDZ  Dohna
+  [151] Ghazipur
+  [152] Data World Computer Services
+  [153] Institute of Computer Education
+  [154] Gorakhpur
+  [155] Buddha Institute Of Technology
+  [156] Suryoday Online
+  [157] Neta Jee Subhash Chandra Bose Online Examination Center
+  [158] Parvati Digital Zone
+  [159] Cavalier Animation - Education Foundation
+  [160] Oxford Public School
+  [161] i Tech Zone
+  [162] Kanpur
+  [163] iON Digital Zone iDZ 1  Hathipur
+  [164] UNZIP TECHNOLOGY LLP.
+  [165] Shri S N Technologies
+  [166] iON Digital Zone iDZ Bhailamau
+  [167] Lucknow
+  [168] Thirumala Education Academy
+  [169] iON Digital Zone iDZ  Azad Puram
+  [170] SOE_Related_Issues
+  [171] Zscalar login issue
+  [172] SINCO LEARNING CENTER
+  [173] City Law College
+  [174] Tech Testing Solution 
+  [175] A.P. Computer
+  [176] BR Online Services
+  [177] Sun Testing Center
+  [178] Metro Network Solutions
+  [179] Om Infotech Solutions
+  [180] Basudev Digital Center
+  [181] Sultan Foundation
+  [182] SS Compuage LLP
+  [183] Moradabad
+  [184] iON Digital Zone iDZ  Ram Ganga Vihar Phase 2
+  [185] Muzaffarnagar
+  [186] iON Digital Zone iDZ - 1  Mandi Samiti Road 
+  [187] Prayagraj
+  [188] iON Digital Zone iDZ Sallahapur
+  [189] Shambhunath Institute Of Engineering And Technology - Mac
+  [190] Madhu Vachaspati Inter College
+  [191] i-Tech Zone
+  [192] S.P. Education Institute of IT & Management
+  [193] Shakti Kumar
+  [194] Gyanoday Technical Institute
+  [195] Campus 2 AIIT Management College
+  [196] iON Digital Zone iDZ Sarai Inayat
+  [197] Internet_Issue
+  [198] Internet Down from ISP
+  [199] Varanasi
+  [200] JeevanDeep Institute of Management & Technology
+  [201] ARYA MAHILA PG COLLEGE
+  [202] iON Digital Zone iDZ Harahuwa Chauraha
+  [203] Dr. Ghanshyam Singh College Of Education
+  [204] Institute of Hardware Networking And Communication Center Sarnath
+  [205] Dewa Mahila Mahavidyalaya
+  [206] Gyanada Institute Of Computer Training
+  [207] Purnodaya Mahila Mahavidyalaya
+  [208] IHNC Mahaveer Bazar
+  [209] Digitrack IT Services
+  [210] Sheetala Institute of Technology
+  [211] DROTCA - Dhannu Ram Online Test & Computer Application Pvt. Ltd
+  [212] iON Digital Zone iDZ Ayar Bazar 2
+  [213] iCamera application corrupt Issue
+  [214] iON Digital Zone iDZ Chaubeypur
+  [215] Uttarakhand
+  [216] Dehradun
+  [217] iCreate Solutions - LISP
+  [218] Haldwani
+  [219] iON Digital Zone iDZ  Teenpani
+  [220] Queens Public School
+  [221] Queens Public School Damuadhunga
+  [222] Swami Vivekanand College of Management and Technology
+  [223] iON Digital Zone, Halduchaur
+  [224] Roorkee
+  [225] City Degree College Of Management & Technology
+  [226] BRD College Roorkee
+  [227] North 3
+  [228] Rajasthan
+  [229] Ajmer
+  [230] iON Digital Zone  iDZ Gegal Industrial Area
+  [231] Bikaner
+  [232] iON Digital Zone iDZ Naino Ka Bas
+  [233] Hanumangarh
+  [234] Times Public School
+  [235] Jaipur
+  [236] Shankara Institute of Technology
+  [237] Yagyavalkya Institute of Technology
+  [238] Arya Institute of Engineering and Technology
+  [239] Jaipur Engineering College
+  [240] Alankar Mahila P.G. Mahavidyalaya
+  [241] Sri Balaji College Of Engineering And Technology
+  [242] Shankara Group Of Institutions
+  [243] Aurobindo International School Jaipur
+  [244] iON Digital Zone iDZ Sitapura 1
+  [245] iON Digital Zone iDZ Sitapura 2
+  [246] Jodhpur
+  [247] iON Digital Zone iDZ Laxman Nagar
+  [248] Saurabh Kumar
+  [249] Kota
+  [250] Shiv Jyoti International School
+  [251] Viable Solutions
+  [252] Bits N Bytes Infocom
+  [253] Digital Desk
+  [254] PARIKALAK
+  [255] Sikar
+  [256] Bhartiya Institute of Engineering and Technology
+  [257] Khwaja Gharib Nawaz College of Nursing
+  [258] Akhil Bharati Vidyapeeth College Of Nursing
+  [259] North 4
+  [260] Ambala
+  [261] iON Digital Zone iDZ  Shahpur
+  [262] Punjab
+  [263] Bathinda
+  [264] iON Digital Zone iDZ  Bhucho kalan
+  [265] Mohali
+  [266] Tejas Online Examination Center
+  [267] iON Digital Zone iDZ Rhombus
+  [268] Patiala
+  [269] iON Digital Zone iDZ Bahadurgarh   Patiala
+  [270] South 1
+  [271] Andhra Pradesh
+  [272] Anantapur
+  [273] LTL
+  [274] National Council for the Church Social Action India
+  [275] Guntur
+  [276] iON Digital Zone iDZ  Perecherla
+  [277] Kakinada
+  [278] iON Digital Zone iDZ  Atchutapuram
+  [279] Kurnool
+  [280] iON Digital Zone iDZ Kurnool
+  [281] Nellore
+  [282] iON Digital Zone iDZ Pottepalem Village
+  [283] Ongole
+  [284] National council for the church social action india
+  [285] Rajahmundry
+  [286] iON Digital Zone iDZ  Luthergiri
+  [287] Srikakulam
+  [288] CORE TECHNOLOGIES
+  [289] Tirupathi
+  [290] iON Digital Zone iDZ  Zoo Park Tirupathi
+  [291] Visakhapatnam
+  [292] iON Digital Zone iDZ  Sheela Nagar 
+  [293] iON Digital Zone iDZ 2 Chinamushidiwada
+  [294] iON Digital Zone iDZ 1 Chinamushidiwada
+  [295] Vizianagaram
+  [296] iON Digital Zone iDZ  Gajularega
+  [297] Karnataka
+  [298] Belagavi(Belgaum)
+  [299] iON Digital Zone iDZ Airport Road
+  [300] Bengaluru
+  [301] iON Digital Zone iDZ  Rajarajeswari Medical College and Hospital
+  [302] Digimetrics
+  [303] Kalaburagi(Gulbarga)
+  [304] Sharanabasaweshwar Vidya Vardhak Sangha
+  [305] Shivamogga(Shimoga)
+  [306] iON Digital Zone iDZ  Machenahalli 
+  [307] Udupi
+  [308] iON Digital Zone iDZ  Milk Diary Road
+  [309] Telangana
+  [310] Hyderabad
+  [311] iON Digital Zone iDZ Ibrahimpatnam
+  [312] Karimnagar
+  [313] iON Digital Zone iDZ  Ramakrishna Colony
+  [314] 100% CPU/RAM utilization issue
+  [315] Khammam
+  [316] iON Digital Zone iDZ Khammam
+  [317] South 2
+  [318] Kerala
+  [319] Kozhikode
+  [320] iON Digital Zone iDZ  Kozhikode
+  [321] Tamil Nadu
+  [322] Madurai
+  [323] iON Digital Zone  iDZ Madurai IV
+  [324] Salem
+  [325] iON Digital Zone iDZ  Sivathapuram
+  [326] Tiruchirappalli
+  [327] iON Digital Zone  IDZ Trichy II
+  [328] SARANYA Mudliar
+  [329] West 1
+  [330] Gujarat
+  [331] Bhavnagar
+  [332] JPM Infotech
+  [333] Gandhinagar
+  [334] Kaavyaratna Info Services
+  [335] Mehsana
+  [336] iON Digital Zone iDZ Manav Ashram
+  [337] Rajkot
+  [338] iON Digital Zone iDZ 1  Metoda
+  [339] iON Digital Zone iDZ 2  Metoda
+  [340] iON Digital Zone iDZ 3  Metoda
+  [341] Maharashtra
+  [342] Akola
+  [343] College Of Engineering And Technology  Akola
+  [344] Ambajogai
+  [345] Professional Career Orientation Center Ambajogai
+  [346] Amravati
+  [347] Sipna College of Engineering and Technology
+  [348] iON DIGITAL Zone iDZ  University Camp Area
+  [349] iON DIGITAL ZONE iDZ  Cityland
+  [350] Dhule
+  [351] Bharti Multipurpose Trust
+  [352] Jalgaon
+  [353] Online Examination Center Kavyatri Bahinabai Chaudhari North Maharashtra University Jalgaon
+  [354] Kolhapur
+  [355] iON Digital Zone  iDZ Shiye
+  [356] Nagpur
+  [357] iON DIGITAL ZONE  iDZ 2   WADI MIDC
+  [358] iON Digital Zone iDZ 3 Wadi MIDC Techgressor Soft Solutions Pvt. Ltd. Nagpur
+  [359] Jindal Edutech Pvt Ltd Gondkhairi Nagpur
+  [360] MKH Sancheti Public School Besa Nagpur
+  [361] Nanded
+  [362] iON DIGITAL Zone iDZ  Vishnupuri
+  [363] Shri Sambhaji College Of Management And Technology Nanded
+  [364] Sangli
+  [365] Vasantdada Patil Institute Management Studies And Research
+  [366] SOLAPUR
+  [367] Solapur Digital Hub
+  [368] West 2
+  [369] Chhattisgarh
+  [370] Bhilai Nagar
+  [371] Mansa College
+  [372] Encode_Related_Issue
+  [373] Camera Encode Changed
+  [374] Parthivi College Digital Zone
+  [375] Bilaspur
+  [376] Prajna Mandapam
+  [377] Raipur
+  [378] ION Digital Zone iDZ  SARONA
+  [379] Madhya Pradesh
+  [380] Bhopal
+  [381] Radharaman Group of Institution
+  [382] SAM COLLEGE OF ENGINEERING AND TECHNOLOGY
+  [383] iON Digital Zone iDZ, Prestige 1 - Shree Jairam Education Society
+  [384] iON Digital Zone iDZ, Prestige 2 - Shree Jairam Education Society
+  [385] iON Digital Zone iDZ RGPM Sankhedi
+  [386] iON Digital Zone iDZ Radharaman
+  [387] Indore
+  [388] iON Digital Zone iDZ Sri Aurobindo
+  [389] Jabalpur
+  [390] iON Digital Zone iDZ  Gram Raigawan  Near Patan Bypass
+  [391] Sagar
+  [392] Adina Institute of Science and Technology
+  [393] SSHC Jain Institute of Management and Research
+  [394] Satna
+  [395] iON Digital Zone iDZ Karhi Road Amoudha
+  [396] Ujjain
+  [397] iON Digital Zone iDZ Gram Gangedi Near Mahaveer Tapobhumi
+  [398] Connectivity Issue
+  [399] Khan Saadat Shamim
+  [400] Camera_Issue
+  [401] RTSP URL not working
+  [402] Pankaj Zingade
+  [403] Adinath Chaugule
+  [404] iCamera service not starting Issue
+  [405] Kaveri Suryavanshi
+  [406] Pranay Valanj
+  [407] Column1
+  [408] Ex
+  [409] Camera Issue
+  [410] Problems related to the physical camera device or its functionality.
+  [411] Examples:
+1) Camera not powering on
+2) No video feed / black screen
+3) Blurry, distorted, or frozen images
+  [412] NAS/DVR/NVR Related Issue
+  [413] Issues involving video recording, storage, or playback devices used with cameras.
+  [414] Examples:
+1) Recording not happening
+2) HDD/SSD failure or not detected
+3) Playback failure or corrupted recordings
+4) Device not booting or frequently restarting
+5) NVR/DVR offline or inaccessible
+  [415] Internet Issue
+  [416] Problems related to ISP connectivity affecting live streaming services.
+  [417] Examples:
+1) No internet connectivity
+2) Frequent internet disconnection
+ISP outage
+3) Unable to access cameras live streaming
+  [418] IP Related Issue
+  [419] Issues caused due to incorrect or conflicting IP network configuration.
+  [420] Examples:
+
+1) IP address conflict
+2) Incorrect subnet or gateway
+3) Camera/NVR not reachable within LAN
+4) Wrong static IP configuration
+  [421] Proxy System Issue
+  [422] Problems caused by proxy servers affecting application or network communication.
+  [423] Examples:
+1) Camera/NVR unable to connect to due to proxy
+2) Proxy authentication failure(SOE)
+3) Proxy not booting(HDD issue, Power issue)
+
+  [424] Port Related Issue
+  [425] not required now
+  [426] Power Issue
+  [427] Issues caused by inadequate, unstable, or disrupted power supply.
+  [428] Examples:
+
+1) Power outage at venue
+2) Faulty power adapter or PoE Switch
+3) Camera/NVR rebooting frequently
+  [429] Router/Switch Issue
+  [430] Operational Issue
+  [431] Issues caused by incorrect usage, process gaps, or human error.
+  [432] Examples:
+
+1) Camera accidentally unplugged
+2) Incorrect device configuration
+3) Password mismanagement
+  [433] iCamera Application Issue
+  [434] Network Related Issue
+  [435] SOE Related Issues
+  [436] NAS_DVR_NVR_Related_Issue
+  [437] IP_Related_Issue
+  [438] Power_Issue
+  [439] Router_Switch_Issue
+  [440] Operational_Issue
+  [441]  
+  [442] NAS/DVR/NVR Login Issue
+  [443] TCSiON URL not accessible
+  [444] Camera IP change issue
+  [445] HDD crash issue
+  [446] Camera Encode Not Supported
+  [447] UPS Power Issue
+  [448] Port Issue
+  [449] CCTV spoc not available for trouble shooting
+  [450] Connection Issue
+  [451] Incorrect configuration
+  [452] Slow internet speed
+  [453] NVR/DVR IP change issue
+  [454] MBD issue
+  [455] NVR/ DVR Encode Not Supported
+  [456] Raw Power Issue
+  [457] No response from the Test Center
+  [458] SOE OS installation issue
+  [459] Time Sync Issue
+  [460] Time sync issue
+  [461] Proxy System IP Change
+  [462] DG Power Issue
+  [463] CMDB data not received
+  [464] iCamera Proxy Up feeds not visible
+  [465] LAN Cable issue
+  [466] User admin Rights issue(elevation required)
+  [467] Camera login Issue
+  [468] Not Working
+  [469] NVR/ DVR Encode Changed
+  [470] Camera Power Supply Issue
+  [471] Incorrect CMDB
+  [472] POE Switch Port Issue
+  [473] SOE Credential not available
+  [474] Camera not working
+  [475] Encode Changed in Camera & NVR/DVR
+  [476] Network Switch Power Supply Issue
+  [477] Camera Not Added
+  [478] Feed Fluctuations
+  [479] OS crash issue
+  [480] Proxy System Power Supply Issue
+  [481] Proxy System Not Started
+  [482] Delay in Going Live (Unidentified Issue)
+  [483] Blind Spot
+  [484] Firewall Enabled
+  [485] Knowledge Gap
+  [486] Lanscape not done
+  [487] System Hanged
+
+=== SHEETS ===
+  Shift 1 (rid=rId1)
+  Shift 2 (rid=rId2)
+  Shift 3 (rid=rId3)
+  Issue Category_Defination (rid=rId4)
+  Dropdown (rid=rId5)
+
+=== SHEET: Shift 1 ===
+  Row 1: A1='Zone', B1='State', C1='City', D1='TC Type', E1='TC Code', F1='TC Name', G1='Assigned To', H1='Candidate Count'
+  Row 2: A2='East 1', B2='Bihar', C2='Bhagalpur', D2='iDZ', E2='9286', F2='iON Digital Zone iDZ Bhagalpur', G2='Md. Haqique', H2='465'
+  Row 3: A3='East 1', B3='Bihar', C3='Gaya', D3='LISP', E3='33901', F3='Shree Ganesh Innovative', G3='Md. Haqique', H3='260'
+  Row 4: A4='East 1', B4='Bihar', C4='Muzaffarpur', D4='iDZ', E4='9287', F4='iON Digital Zone iDZ Kanti', G4='Md. Haqique', H4='470'
+  Row 5: A5='East 1', B5='Bihar', C5='Muzaffarpur', D5='LISP', E5='15028', F5='Azad Infotech', G5='Md. Haqique', H5='340'
+  Row 6: A6='East 1', B6='Bihar', C6='Muzaffarpur', D6='iDZ', E6='41826', F6='iON Digital Zone iDZ Bhikhanpur - Muzaffarpur', G6='Md. Haqique', H6='225'
+  Row 7: A7='East 1', B7='Bihar', C7='Patna', D7='iDZ', E7='9000', F7='iON Digital Zone iDZ Sandalpur', G7='Md. Haqique', H7='470'
+  Row 8: A8='East 1', B8='Bihar', C8='Patna', D8='iDZ', E8='9564', F8='iON Digital Zone iDZ Phulwarisharif', G8='Md. Haqique', H8='230'
+  Row 9: A9='East 1', B9='Bihar', C9='Patna', D9='LISP', E9='38247', F9='Unique IT Point Private Limited', G9='Md. Haqique', H9='245'
+  Row 10: A10='East 1', B10='Bihar', C10='Patna', D10='LISP', E10='41553', F10='Bapu Pariksha Parisar Zone - 1', G10='Md. Haqique', H10='970'
+  Row 11: A11='East 1', B11='Bihar', C11='Patna', D11='LISP', E11='41554', F11='Bapu Pariksha Parisar Zone - 2', G11='Md. Haqique', H11='1700'
+  Row 12: A12='East 1', B12='Bihar', C12='Purnea', D12='iDZ', E12='11365', F12='iON Digital Zone  iDZ Purnea', G12='Md. Haqique', H12='470'
+  Row 13: A13='East 1', B13='Jharkhand', C13='Bokaro Steel City', D13='LISP', E13='22988', F13='Alpha ICT Centre', G13='Md. Haqique', H13='234'
+  Row 14: A14='East 1', B14='Jharkhand', C14='Daltonganj', D14='LISP', E14='15869', F14='Oxford Public School Daltonganj', G14='Md. Haqique', H14='220'
+  Row 15: A15='East 1', B15='Jharkhand', C15='Dhanbad', D15='iDZ', E15='41479', F15='iON DIGITAL ZONE, iDZ Amagraha', G15='Md. Haqique', H15='935'
+  Row 16: A16='East 1', B16='Jharkhand', C16='Jamshedpur', D16='LISP', E16='37332', F16='Govind Vidyalaya', G16='Md. Haqique', H16='230'
+  Row 17: A17='East 1', B17='Jharkhand', C17='Jamshedpur', D17='LISP', E17='40082', F17='Creative Computer', G17='Md. Haqique', H17='315'
+  Row 18: A18='East 1', B18='Jharkhand', C18='Ranchi', D18='LISP', E18='2790', F18='Ram Tahal Choudhary Institute Of Technology', G18='Md. Haqique', H18='230'
+  Row 19: A19='East 1', B19='Jharkhand', C19='Ranchi', D19='LISP', E19='3493', F19='Oxford Public School Ranchi', G19='Md. Haqique', H19='410'
+  Row 20: A20='East 1', B20='Jharkhand', C20='Ranchi', D20='iDZ', E20='8320', F20='iON Digital Zone iDZ Tupudana', G20='Md. Haqique', H20='1640'
+  Row 21: A21='East 1', B21='Jharkhand', C21='Ranchi', D21='LISP', E21='16665', F21='Arunuma Technical Services Private Limited', G21='Md. Haqique', H21='470'
+  Row 22: A22='East 1', B22='Odisha', C22='Balasore', D22='iDZ', E22='7906', F22='iON Digital Zone iDZ Harida', G22='Md. Haqique', H22='230'
+  Row 23: A23='East 1', B23='Odisha', C23='Berhampur-Ganjam', D23='LISP', E23='1295', F23='SMIT Degree Engineering College', G23='Md. Haqique', H23='233'
+  Row 24: A24='East 1', B24='Odisha', C24='Berhampur-Ganjam', D24='iDZ', E24='4869', F24='iON Digital Zone iDZ Khallikote College Area', G24='Md. Haqique', H24='230'
+  Row 25: A25='East 1', B25='Odisha', C25='Bhubaneswar', D25='LISP', E25='583', F25='GITA Autonomous College', G25='Md. Haqique', H25='450'
+  Row 26: A26='East 1', B26='Odisha', C26='Bhubaneswar', D26='iDZ', E26='7908', F26='iON Digital Zone iDZ1 Patia', G26='Md. Haqique', H26='459'
+  Row 27: A27='East 1', B27='Odisha', C27='Bhubaneswar', D27='LISP', E27='15284', F27='Innovinc Tech Lab', G27='Md. Haqique', H27='180'
+  Row 28: A28='East 1', B28='Odisha', C28='Bhubaneswar', D28='LISP', E28='16698', F28='Eglobetech India Private Limited', G28='Md. Haqique', H28='170'
+  Row 29: A29='East 1', B29='Odisha', C29='Bhubaneswar', D29='LISP', E29='16699', F29='Utkal Institute Of Engineering And Technology', G29='Md. Haqique', H29='180'
+  Row 30: A30='East 1', B30='Odisha', C30='Bhubaneswar', D30='LISP', E30='16700', F30='Radha Raman Assessment Services Private Limited', G30='Md. Haqique', H30='305'
+  Row 31: A31='East 1', B31='Odisha', C31='Bhubaneswar', D31='LISP', E31='37362', F31='Buddham Technology', G31='Md. Haqique', H31='162'
+  Row 32: A32='East 1', B32='Odisha', C32='Bhubaneswar', D32='LISP', E32='37364', F32='SBG Digital Center', G32='Md. Haqique', H32='186'
+  Row 33: A33='East 1', B33='Odisha', C33='Bhubaneswar', D33='LISP', E33='37365', F33='Ganesh Institute Of Management Studies', G33='Md. Haqique', H33='126'
+  Row 34: A34='East 1', B34='Odisha', C34='Cuttack', D34='LISP', E34='15902', F34='Jagannath Institute Of Engineering And Technology', G34='Md. Haqique', H34='234'
+  Row 35: A35='East 1', B35='Odisha', C35='Cuttack', D35='LISP', E35='34022', F35='Kshetrabasi Industrial Training Institute', G35='Md. Haqique', H35='198'
+  Row 36: A36='East 1', B36='Odisha', C36='Cuttack', D36='LISP', E36='40670', F36='Shree Siddhivinayak SSR', G36='Md. Haqique', H36='360'
+  Row 37: A37='East 1', B37='Odisha', C37='Cuttack', D37='LISP', E37='41547', F37='Dash Advanced Engineering', G37='Md. Haqique', H37='432'
+  Row 38: A38='East 1', B38='Odisha', C38='Cuttack', D38='LISP', E38='42141', F38='Dhabaleswar Institute of Polytechnic', G38='Md. Haqique', H38='180'
+  Row 39: A39='East 1', B39='Odisha', C39='Dhenkanal', D39='iDZ', E39='7995', F39='iON Digital Zone iDZ Banamaliprasad', G39='Md. Haqique', H39='230'
+  Row 40: A40='East 1', B40='Odisha', C40='Dhenkanal', D40='LISP', E40='23515', F40='Orissa Institute Of Engineering And Technology', G40='Md. Haqique', H40='172'
+  Row 41: A41='East 1', B41='Odisha', C41='Dhenkanal', D41='LISP', E41='41881', F41='DMS Institute', G41='Jay Lund', H41='173'
+  Row 42: A42='East 1', B42='Odisha', C42='Rourkela', D42='iDZ', E42='7984', F42='iON Digital Zone iDZ Sector 4', G42='Jay Lund', H42='460'
+  Row 43: A43='East 1', B43='Odisha', C43='Rourkela', D43='LISP', E43='34045', F43='Sai Institute Of Technology', G43='Jay Lund', H43='180'
+  Row 44: A44='East 2', B44='Tripura', C44='Agartala', D44='LISP', E44='15134', F44='Tripura Info.Com', G44='Jay Lund', H44='170'
+  Row 45: A45='East 2', B45='Tripura', C45='Agartala', D45='LISP', E45='34031', F45='Tripura Institute Of Technology', G45='Jay Lund', H45='100'
+  Row 46: A46='East 2', B46='West Bengal', C46='Asansol', D46='iDZ', E46='7932', F46='iON Digital Zone iDZ  Asansol', G46='Jay Lund', H46='475'
+  Row 47: A47='East 2', B47='West Bengal', C47='Burdwan', D47='LISP', E47='15135', F47='Dr. Kalam Academy', G47='Jay Lund', H47='250'
+  Row 48: A48='East 2', B48='West Bengal', C48='Durgapur', D48='LISP', E48='1262', F48='Aryabhatta Institute of Engineering and Management', G48='Jay Lund', H48='330'
+  Row 49: A49='East 2', B49='West Bengal', C49='Durgapur', D49='LISP', E49='1897', F49='Sanaka Educational Trust Group of Institutions', G49='Jay Lund', H49='470'
+  Row 50: A50='East 2', B50='West Bengal', C50='Durgapur', D50='LISP', E50='16678', F50='ABS Academy of Competitive Exams', G50='Jay Lund', H50='430'
+  Row 51: A51='East 2', B51='West Bengal', C51='Kalyani', D51='iDZ', E51='8777', F51='iON Digital Zone iDZ  Kalyani', G51='Jay Lund', H51='475'
+  Row 52: A52='East 2', B52='West Bengal', C52='Kolkata', D52='LISP', E52='609', F52='Webel Human Resource Development Center', G52='Jay Lund', H52='165'
+  Row 53: A53='East 2', B53='West Bengal', C53='Kolkata', D53='iDZ', E53='7931', F53='iON Digital Zone iDZ  Madhyamgram', G53='Jay Lund', H53='235'
+  Row 54: A54='East 2', B54='West Bengal', C54='Kolkata', D54='iDZ', E54='7933', F54='iON Digital Zone iDZ  Baruipur', G54='Jay Lund', H54='235'
+  Row 55: A55='East 2', B55='West Bengal', C55='Kolkata', D55='iDZ', E55='8116', F55='TCS Gito Bitan', G55='Jay Lund', H55='3230'
+  Row 56: A56='East 2', B56='West Bengal', C56='Siliguri', D56='LISP', E56='643', F56='Surendra Institute of Engineering and Management', G56='Jay Lund', H56='540'
+  Row 57: A57='East 2', B57='West Bengal', C57='Siliguri', D57='LISP', E57='7797', F57='Umang Infotech', G57='Jay Lund', H57='195'
+  Row 58: A58='East 2', B58='West Bengal', C58='Siliguri', D58='iDZ', E58='8800', F58='iON Digital Zone iDZ  Siliguri', G58='Jay Lund', H58='710'
+  Row 59: A59='East 2', B59='West Bengal', C59='Siliguri', D59='LISP', E59='13299', F59='Bhawani Infotech', G59='Jay Lund', H59='120'
+  Row 60: A60='North 1', B60='Delhi', C60='New Delhi', D60='LISP', E60='4202', F60='Online Infra', G60='Jay Lund', H60='240'
+  Row 61: A61='North 1', B61='Delhi', C61='New Delhi', D61='LISP', E61='14403', F61='Indraprastha Public School', G61='Jay Lund', H61='696'
+  Row 62: A62='North 1', B62='Delhi', C62='New Delhi', D62='LISP', E62='14411', F62='SANGWAN ACADEMY', G62='Jay Lund', H62='520'
+  Row 63: A63='North 1', B63='Delhi', C63='New Delhi', D63='LISP', E63='30677', F63='Webinfotron Technologies Pvt. Ltd.', G63='Jay Lund', H63='820'
+  Row 64: A64='North 1', B64='Delhi', C64='New Delhi', D64='LISP', E64='40713', F64='SUNSHINE CONVENT SCHOOL ONLINE EXAM CENTER', G64='Jay Lund', H64='190'
+  Row 65: A65='North 1', B65='Delhi', C65='New Delhi', D65='LISP', E65='42080', F65='Royal international school online exam center', G65='Jay Lund', H65='180'
+  Row 66: A66='North 1', B66='Delhi', C66='New Delhi', D66='LISP', E66='42224', F66='Ksk online examination centre', G66='Jay Lund', H66='450'
+  Row 67: A67='North 1', B67='Haryana', C67='Faridabad', D67='iDZ', E67='9245', F67='iON Dizital Zone  Faridabad', G67='Jay Lund', H67='460'
+  Row 68: A68='North 1', B68='Uttar Pradesh', C68='Ghaziabad', D68='LISP', E68='8548', F68='BBDIT A Block Duhai', G68='Jay Lund', H68='400'
+  Row 69: A69='North 1', B69='Uttar Pradesh', C69='Ghaziabad', D69='iDZ', E69='8992', F69='iON Digital Zone iDZ 2 Duhai', G69='Jay Lund', H69='450'
+  Row 70: A70='North 1', B70='Uttar Pradesh', C70='Ghaziabad', D70='LISP', E70='38816', F70='Diamond Public School', G70='Jay Lund', H70='380'
+  Row 71: A71='North 1', B71='Uttar Pradesh', C71='Greater Noida', D71='LISP', E71='37301', F71='Pt.Salagram Inter College', G71='Jay Lund', H71='435'
+  Row 72: A72='North 1', B72='Uttar Pradesh', C72='Meerut', D72='LISP', E72='26487', F72='Bharat Institute of Technology', G72='Jay Lund', H72='410'
+  Row 73: A73='North 1', B73='Uttar Pradesh', C73='Noida', D73='iDZ', E73='8043', F73='iON Digital Zone iDZ 2  Sector 62', G73='Jay Lund', H73='1650'
+  Row 74: A74='North 1', B74='Uttar Pradesh', C74='Noida', D74='iDZ', E74='8044', F74='iON Digital Zone iDZ 1 Sector 62', G74='Jay Lund', H74='1470'
+  Row 75: A75='North 2', B75='Uttar Pradesh', C75='Agra', D75='iDZ', E75='7946', F75='iON Digital Zone iDZ  Kuberpur', G75='Jay Lund', H75='675'
+  Row 76: A76='North 2', B76='Uttar Pradesh', C76='Agra', D76='LISP', E76='9695', F76='Smt. Bhudevi P.G College Agra', G76='Jay Lund', H76='215'
+  Row 77: A77='North 2', B77='Uttar Pradesh', C77='Agra', D77='LISP', E77='11395', F77='Sant Ram Krishna Mahavidhyalya', G77='Jay Lund', H77='290'
+  Row 78: A78='North 2', B78='Uttar Pradesh', C78='Agra', D78='LISP', E78='15024', F78='G.B Infotech', G78='Jay Lund', H78='430'
+  Row 79: A79='North 2', B79='Uttar Pradesh', C79='Agra', D79='iDZ', E79='41723', F79='iON Digital Zone ITAURA', G79='Jay Lund', H79='460'
+  Row 80: A80='North 2', B80='Uttar Pradesh', C80='Agra', D80='LISP', E80='42462', F80='GSS Infosystems', G80='Sakshi Raut', H80='180'
+  Row 81: A81='North 2', B81='Uttar Pradesh', C81='Agra', D81='LISP', E81='42463', F81='Innovative Sikandra', G81='Sakshi Raut', H81='180'
+  Row 82: A82='North 2', B82='Uttar Pradesh', C82='Aligarh', D82='iDZ', E82='7976', F82='iON Digital Zone iDZ  Karsua', G82='Sakshi Raut', H82='450'
+  Row 83: A83='North 2', B83='Uttar Pradesh', C83='Ayodhya', D83='LISP', E83='38758', F83='Narayana Infotech', G83='Sakshi Raut', H83='180'
+  Row 84: A84='North 2', B84='Uttar Pradesh', C84='Ayodhya', D84='LISP', E84='38960', F84='SRS Digital Institute', G84='Sakshi Raut', H84='100'
+  Row 85: A85='North 2', B85='Uttar Pradesh', C85='Bareilly', D85='LISP', E85='926', F85='Shri Siddhi Vinayak Institute Of Technology', G85='Sakshi Raut', H85='700'
+  Row 86: A86='North 2', B86='Uttar Pradesh', C86='Bareilly', D86='iDZ', E86='8017', F86='iON Digital Zone iDZ  Dohna', G86='Sakshi Raut', H86='950'
+  Row 87: A87='North 2', B87='Uttar Pradesh', C87='Ghazipur', D87='LISP', E87='26433', F87='Data World Computer Services', G87='Sakshi Raut', H87='145'
+  Row 88: A88='North 2', B88='Uttar Pradesh', C88='Ghazipur', D88='LISP', E88='28910', F88='Institute of Computer Education', G88='Sakshi Raut', H88='220'
+  Row 89: A89='North 2', B89='Uttar Pradesh', C89='Gorakhpur', D89='LISP', E89='857', F89='Buddha Institute Of Technology', G89='Sakshi Raut', H89='190'
+  Row 90: A90='North 2', B90='Uttar Pradesh', C90='Gorakhpur', D90='LISP', E90='11378', F90='Suryoday Online', G90='Sakshi Raut', H90='280'
+  Row 91: A91='North 2', B91='Uttar Pradesh', C91='Gorakhpur', D91='LISP', E91='24832', F91='Neta Jee Subhash Chandra Bose Online Examination Center', G91='Sakshi Raut', H91='220'
+  Row 92: A92='North 2', B92='Uttar Pradesh', C92='Gorakhpur', D92='LISP', E92='24868', F92='Parvati Digital Zone', G92='Sakshi Raut', H92='220'
+  Row 93: A93='North 2', B93='Uttar Pradesh', C93='Gorakhpur', D93='LISP', E93='33404', F93='Cavalier Animation - Education Foundation', G93='Sakshi Raut', H93='290'
+  Row 94: A94='North 2', B94='Uttar Pradesh', C94='Gorakhpur', D94='LISP', E94='40666', F94='Oxford Public School', G94='Sakshi Raut', H94='430'
+  Row 95: A95='North 2', B95='Uttar Pradesh', C95='Gorakhpur', D95='LISP', E95='40915', F95='i Tech Zone', G95='Sakshi Raut', H95='230'
+  Row 96: A96='North 2', B96='Uttar Pradesh', C96='Kanpur', D96='iDZ', E96='8765', F96='iON Digital Zone iDZ 1  Hathipur', G96='Sakshi Raut', H96='450'
+  Row 97: A97='North 2', B97='Uttar Pradesh', C97='Kanpur', D97='LISP', E97='9120', F97='UNZIP TECHNOLOGY LLP.', G97='Sakshi Raut', H97='400'
+  Row 98: A98='North 2', B98='Uttar Pradesh', C98='Kanpur', D98='LISP', E98='27849', F98='Shri S N Technologies', G98='Sakshi Raut', H98='210'
+  Row 99: A99='North 2', B99='Uttar Pradesh', C99='Kanpur', D99='LISP', E99='41615', F99='iON Digital Zone iDZ Bhailamau', G99='Sakshi Raut', H99='950'
+  Row 100: A100='North 2', B100='Uttar Pradesh', C100='Lucknow', D100='LISP', E100='4404', F100='Thirumala Education Academy', G100='Sakshi Raut', H100='160'
+  Row 101: A101='North 2', B101='Uttar Pradesh', C101='Lucknow', D101='iDZ', E101='7973', F101='iON Digital Zone iDZ  Azad Puram', G101='Sakshi Raut', H101='450'
+  Row 102: A102='North 2', B102='Uttar Pradesh', C102='Lucknow', D102='LISP', E102='9669', F102='SINCO LEARNING CENTER', G102='Sakshi Raut', H102='265'
+  Row 103: A103='North 2', B103='Uttar Pradesh', C103='Lucknow', D103='LISP', E103='14089', F103='City Law College', G103='Sakshi Raut', H103='460'
+  Row 104: A104='North 2', B104='Uttar Pradesh', C104='Lucknow', D104='LISP', E104='15806', F104='Tech Testing Solution ', G104='Sakshi Raut', H104='350'
+  Row 105: A105='North 2', B105='Uttar Pradesh', C105='Lucknow', D105='LISP', E105='23441', F105='A.P. Computer', G105='Sakshi Raut', H105='253'
+  Row 106: A106='North 2', B106='Uttar Pradesh', C106='Lucknow', D106='LISP', E106='23443', F106='BR Online Services', G106='Sakshi Raut', H106='330'
+  Row 107: A107='North 2', B107='Uttar Pradesh', C107='Lucknow', D107='LISP', E107='23445', F107='Sun Testing Center', G107='Sakshi Raut', H107='585'
+  Row 108: A108='North 2', B108='Uttar Pradesh', C108='Lucknow', D108='LISP', E108='28847', F108='Metro Network Solutions', G108='Sakshi Raut', H108='250'
+  Row 109: A109='North 2', B109='Uttar Pradesh', C109='Lucknow', D109='LISP', E109='29042', F109='Om Infotech Solutions', G109='Sakshi Raut', H109='380'
+  Row 110: A110='North 2', B110='Uttar Pradesh', C110='Lucknow', D110='LISP', E110='33399', F110='Basudev Digital Center', G110='Sakshi Raut', H110='353'
+  Row 111: A111='North 2', B111='Uttar Pradesh', C111='Lucknow', D111='LISP', E111='33400', F111='Sultan Foundation', G111='Sakshi Raut', H111='350'
+  Row 112: A112='North 2', B112='Uttar Pradesh', C112='Lucknow', D112='LISP', E112='40671', F112='SS Compuage LLP', G112='Sakshi Raut', H112='350'
+  Row 113: A113='North 2', B113='Uttar Pradesh', C113='Moradabad', D113='iDZ', E113='7949', F113='iON Digital Zone iDZ  Ram Ganga Vihar Phase 2', G113='Sakshi Raut', H113='480'
+  Row 114: A114='North 2', B114='Uttar Pradesh', C114='Muzaffarnagar', D114='iDZ', E114='7952', F114='iON Digital Zone iDZ - 1  Mandi Samiti Road ', G114='Sakshi Raut', H114='360'
+  Row 115: A115='North 2', B115='Uttar Pradesh', C115='Prayagraj', D115='iDZ', E115='7955', F115='iON Digital Zone iDZ Sallahapur', G115='Sakshi Raut', H115='230'
+  Row 116: A116='North 2', B116='Uttar Pradesh', C116='Prayagraj', D116='LISP', E116='9499', F116='Shambhunath Institute Of Engineering And Technology - Mac', G116='Sakshi Raut', H116='200'
+  Row 117: A117='North 2', B117='Uttar Pradesh', C117='Prayagraj', D117='LISP', E117='9500', F117='Madhu Vachaspati Inter College', G117='Sakshi Raut', H117='318'
+  Row 118: A118='North 2', B118='Uttar Pradesh', C118='Prayagraj', D118='LISP', E118='14439', F118='i-Tech Zone', G118='Sakshi Raut', H118='500'
+  Row 119: A119='North 2', B119='Uttar Pradesh', C119='Prayagraj', D119='LISP', E119='14995', F119='S.P. Education Institute of IT & Management', G119='Shakti Kumar', H119='180'
+  Row 120: A120='North 2', B120='Uttar Pradesh', C120='Prayagraj', D120='LISP', E120='23466', F120='Gyanoday Technical Institute', G120='Shakti Kumar', H120='240'
+  Row 121: A121='North 2', B121='Uttar Pradesh', C121='Prayagraj', D121='LISP', E121='33952', F121='Campus 2 AIIT Management College', G121='Shakti Kumar', H121='180'
+  Row 122: A122='North 2', B122='Uttar Pradesh', C122='Prayagraj', D122='LISP', E122='41908', F122='iON Digital Zone iDZ Sarai Inayat', G122='Shakti Kumar', H122='440'
+  Row 123: A123='North 2', B123='Uttar Pradesh', C123='Varanasi', D123='LISP', E123='2220', F123='JeevanDeep Institute of Management & Technology', G123='Shakti Kumar', H123='142'
+  Row 124: A124='North 2', B124='Uttar Pradesh', C124='Varanasi', D124='LISP', E124='7806', F124='ARYA MAHILA PG COLLEGE', G124='Shakti Kumar', H124='236'
+  Row 125: A125='North 2', B125='Uttar Pradesh', C125='Varanasi', D125='iDZ', E125='7945', F125='iON Digital Zone iDZ Harahuwa Chauraha', G125='Shakti Kumar', H125='220'
+  Row 126: A126='North 2', B126='Uttar Pradesh', C126='Varanasi', D126='LISP', E126='9519', F126='Dr. Ghanshyam Singh College Of Education', G126='Shakti Kumar', H126='610'
+  Row 127: A127='North 2', B127='Uttar Pradesh', C127='Varanasi', D127='LISP', E127='9633', F127='Institute of Hardware Networking And Communication Center Sarnath', G127='Shakti Kumar', H127='220'
+  Row 128: A128='North 2', B128='Uttar Pradesh', C128='Varanasi', D128='LISP', E128='13302', F128='Dewa Mahila Mahavidyalaya', G128='Shakti Kumar', H128='500'
+  Row 129: A129='North 2', B129='Uttar Pradesh', C129='Varanasi', D129='LISP', E129='14112', F129='Gyanada Institute Of Computer Training', G129='Shakti Kumar', H129='200'
+  Row 130: A130='North 2', B130='Uttar Pradesh', C130='Varanasi', D130='LISP', E130='15792', F130='Purnodaya Mahila Mahavidyalaya', G130='Shakti Kumar', H130='400'
+  Row 131: A131='North 2', B131='Uttar Pradesh', C131='Varanasi', D131='LISP', E131='23401', F131='IHNC Mahaveer Bazar', G131='Shakti Kumar', H131='140'
+  Row 132: A132='North 2', B132='Uttar Pradesh', C132='Varanasi', D132='LISP', E132='23883', F132='Digitrack IT Services', G132='Shakti Kumar', H132='290'
+  Row 133: A133='North 2', B133='Uttar Pradesh', C133='Varanasi', D133='LISP', E133='34017', F133='Sheetala Institute of Technology', G133='Shakti Kumar', H133='225'
+  Row 134: A134='North 2', B134='Uttar Pradesh', C134='Varanasi', D134='LISP', E134='41079', F134='DROTCA - Dhannu Ram Online Test & Computer Application Pvt. Ltd', G134='Shakti Kumar', H134='260'
+  Row 135: A135='North 2', B135='Uttar Pradesh', C135='Varanasi', D135='iDZ', E135='41668', F135='iON Digital Zone iDZ Ayar Bazar 2', G135='Shakti Kumar', H135='225'
+  Row 136: A136='North 2', B136='Uttar Pradesh', C136='Varanasi', D136='LISP', E136='42226', F136='iON Digital Zone iDZ Chaubeypur', G136='Shakti Kumar', H136='440'
+  Row 137: A137='North 2', B137='Uttarakhand', C137='Dehradun', D137='LISP', E137='30632', F137='iCreate Solutions - LISP', G137='Shakti Kumar', H137='673'
+  Row 138: A138='North 2', B138='Uttarakhand', C138='Haldwani', D138='iDZ', E138='9338', F138='iON Digital Zone iDZ  Teenpani', G138='Shakti Kumar', H138='235'
+  Row 139: A139='North 2', B139='Uttarakhand', C139='Haldwani', D139='LISP', E139='9729', F139='Queens Public School', G139='Shakti Kumar', H139='227'
+  Row 140: A140='North 2', B140='Uttarakhand', C140='Haldwani', D140='LISP', E140='14451', F140='Queens Public School Damuadhunga', G140='Shakti Kumar', H140='250'
+  Row 141: A141='North 2', B141='Uttarakhand', C141='Haldwani', D141='LISP', E141='25807', F141='Swami Vivekanand College of Management and Technology', G141='Shakti Kumar', H141='276'
+  Row 142: A142='North 2', B142='Uttarakhand', C142='Haldwani', D142='iDZ', E142='41711', F142='iON Digital Zone, Halduchaur', G142='Shakti Kumar', H142='235'
+  Row 143: A143='North 2', B143='Uttarakhand', C143='Roorkee', D143='LISP', E143='14947', F143='City Degree College Of Management & Technology', G143='Shakti Kumar', H143='200'
+  Row 144: A144='North 2', B144='Uttarakhand', C144='Roorkee', D144='LISP', E144='37507', F144='BRD College Roorkee', G144='Shakti Kumar', H144='250'
+  Row 145: A145='North 3', B145='Rajasthan', C145='Ajmer', D145='iDZ', E145='8451', F145='iON Digital Zone  iDZ Gegal Industrial Area', G145='Shakti Kumar', H145='470'
+  Row 146: A146='North 3', B146='Rajasthan', C146='Bikaner', D146='iDZ', E146='8665', F146='iON Digital Zone iDZ Naino Ka Bas', G146='Shakti Kumar', H146='479'
+  Row 147: A147='North 3', B147='Rajasthan', C147='Hanumangarh', D147='LISP', E147='16066', F147='Times Public School', G147='Shakti Kumar', H147='235'
+  Row 148: A148='North 3', B148='Rajasthan', C148='Jaipur', D148='LISP', E148='63', F148='Shankara Institute of Technology', G148='Shakti Kumar', H148='300'
+  Row 149: A149='North 3', B149='Rajasthan', C149='Jaipur', D149='LISP', E149='141', F149='Yagyavalkya Institute of Technology', G149='Shakti Kumar', H149='410'
+  Row 150: A150='North 3', B150='Rajasthan', C150='Jaipur', D150='LISP', E150='781', F150='Arya Institute of Engineering and Technology', G150='Shakti Kumar', H150='800'
+  Row 151: A151='North 3', B151='Rajasthan', C151='Jaipur', D151='LISP', E151='1118', F151='Jaipur Engineering College', G151='Shakti Kumar', H151='700'
+  Row 152: A152='North 3', B152='Rajasthan', C152='Jaipur', D152='LISP', E152='7745', F152='Alankar Mahila P.G. Mahavidyalaya', G152='Shakti Kumar', H152='380'
+  Row 153: A153='North 3', B153='Rajasthan', C153='Jaipur', D153='LISP', E153='8571', F153='Sri Balaji College Of Engineering And Technology', G153='Shakti Kumar', H153='932'
+  Row 154: A154='North 3', B154='Rajasthan', C154='Jaipur', D154='LISP', E154='10626', F154='Shankara Group Of Institutions', G154='Shakti Kumar', H154='190'
+  Row 155: A155='North 3', B155='Rajasthan', C155='Jaipur', D155='LISP', E155='15008', F155='Aurobindo International School Jaipur', G155='Shakti Kumar', H155='360'
+  Row 156: A156='North 3', B156='Rajasthan', C156='Jaipur', D156='iDZ', E156='41682', F156='iON Digital Zone iDZ Sitapura 1', G156='Shakti Kumar', H156='670'
+  Row 157: A157='North 3', B157='Rajasthan', C157='Jaipur', D157='iDZ', E157='41683', F157='iON Digital Zone iDZ Sitapura 2', G157='Shakti Kumar', H157='1850'
+  Row 158: A158='North 3', B158='Rajasthan', C158='Jodhpur', D158='iDZ', E158='8450', F158='iON Digital Zone iDZ Laxman Nagar', G158='Saurabh Kumar', H158='690'
+  Row 159: A159='North 3', B159='Rajasthan', C159='Kota', D159='LISP', E159='10624', F159='Shiv Jyoti International School', G159='Saurabh Kumar', H159='720'
+  Row 160: A160='North 3', B160='Rajasthan', C160='Kota', D160='LISP', E160='14449', F160='Viable Solutions', G160='Saurabh Kumar', H160='420'
+  Row 161: A161='North 3', B161='Rajasthan', C161='Kota', D161='LISP', E161='15822', F161='Bits N Bytes Infocom', G161='Saurabh Kumar', H161='330'
+  Row 162: A162='North 3', B162='Rajasthan', C162='Kota', D162='LISP', E162='33035', F162='Digital Desk', G162='Saurabh Kumar', H162='410'
+  Row 163: A163='North 3', B163='Rajasthan', C163='Kota', D163='LISP', E163='40893', F163='PARIKALAK', G163='Saurabh Kumar', H163='400'
+  Row 164: A164='North 3', B164='Rajasthan', C164='Sikar', D164='LISP', E164='1275', F164='Bhartiya Institute of Engineering and Technology', G164='Saurabh Kumar', H164='405'
+  Row 165: A165='North 3', B165='Rajasthan', C165='Sikar', D165='LISP', E165='24271', F165='Khwaja Gharib Nawaz College of Nursing', G165='Saurabh Kumar', H165='250'
+  Row 166: A166='North 3', B166='Rajasthan', C166='Sikar', D166='LISP', E166='38814', F166='Akhil Bharati Vidyapeeth College Of Nursing', G166='Saurabh Kumar', H166='240'
+  Row 167: A167='North 4', B167='Haryana', C167='Ambala', D167='iDZ', E167='8683', F167='iON Digital Zone iDZ  Shahpur', G167='Saurabh Kumar', H167='470'
+  Row 168: A168='North 4', B168='Punjab', C168='Bathinda', D168='iDZ', E168='8763', F168='iON Digital Zone iDZ  Bhucho kalan', G168='Saurabh Kumar', H168='1350'
+  Row 169: A169='North 4', B169='Punjab', C169='Mohali', D169='LISP', E169='38190', F169='Tejas Online Examination Center', G169='Saurabh Kumar', H169='500'
+  Row 170: A170='North 4', B170='Punjab', C170='Mohali', D170='LISP', E170='41822', F170='iON Digital Zone iDZ Rhombus', G170='Saurabh Kumar', H170='230'
+  Row 171: A171='North 4', B171='Punjab', C171='Patiala', D171='iDZ', E171='8756', F171='iON Digital Zone iDZ Bahadurgarh   Patiala', G171='Saurabh Kumar', H171='680'
+  Row 172: A172='South 1', B172='Andhra Pradesh', C172='Anantapur', D172='LTL', E172='37512', F172='National Council for the Church Social Action India', G172='Saurabh Kumar', H172='455'
+  Row 173: A173='South 1', B173='Andhra Pradesh', C173='Guntur', D173='iDZ', E173='7996', F173='iON Digital Zone iDZ  Perecherla', G173='Saurabh Kumar', H173='230'
+  Row 174: A174='South 1', B174='Andhra Pradesh', C174='Kakinada', D174='iDZ', E174='8027', F174='iON Digital Zone iDZ  Atchutapuram', G174='Saurabh Kumar', H174='500'
+  Row 175: A175='South 1', B175='Andhra Pradesh', C175='Kurnool', D175='iDZ', E175='41590', F175='iON Digital Zone iDZ Kurnool', G175='Saurabh Kumar', H175='955'
+  Row 176: A176='South 1', B176='Andhra Pradesh', C176='Nellore', D176='iDZ', E176='35626', F176='iON Digital Zone iDZ Pottepalem Village', G176='Saurabh Kumar', H176='475'
+  Row 177: A177='South 1', B177='Andhra Pradesh', C177='Ongole', D177='LTL', E177='33430', F177='National council for the church social action india', G177='Saurabh Kumar', H177='220'
+  Row 178: A178='South 1', B178='Andhra Pradesh', C178='Rajahmundry', D178='iDZ', E178='7954', F178='iON Digital Zone iDZ  Luthergiri', G178='Saurabh Kumar', H178='940'
+  Row 179: A179='South 1', B179='Andhra Pradesh', C179='Srikakulam', D179='LISP', E179='38141', F179='CORE TECHNOLOGIES', G179='Saurabh Kumar', H179='320'
+  Row 180: A180='South 1', B180='Andhra Pradesh', C180='Tirupathi', D180='iDZ', E180='9105', F180='iON Digital Zone iDZ  Zoo Park Tirupathi', G180='Saurabh Kumar', H180='940'
+  Row 181: A181='South 1', B181='Andhra Pradesh', C181='Visakhapatnam', D181='iDZ', E181='8827', F181='iON Digital Zone iDZ  Sheela Nagar ', G181='Saurabh Kumar', H181='560'
+  Row 182: A182='South 1', B182='Andhra Pradesh', C182='Visakhapatnam', D182='iDZ', E182='9208', F182='iON Digital Zone iDZ 2 Chinamushidiwada', G182='Saurabh Kumar', H182='955'
+  Row 183: A183='South 1', B183='Andhra Pradesh', C183='Visakhapatnam', D183='iDZ', E183='9417', F183='iON Digital Zone iDZ 1 Chinamushidiwada', G183='Saurabh Kumar', H183='475'
+  Row 184: A184='South 1', B184='Andhra Pradesh', C184='Vizianagaram', D184='iDZ', E184='8754', F184='iON Digital Zone iDZ  Gajularega', G184='Saurabh Kumar', H184='490'
+  Row 185: A185='South 1', B185='Karnataka', C185='Belagavi(Belgaum)', D185='iDZ', E185='11398', F185='iON Digital Zone iDZ Airport Road', G185='Saurabh Kumar', H185='480'
+  Row 186: A186='South 1', B186='Karnataka', C186='Bengaluru', D186='iDZ', E186='7974', F186='iON Digital Zone iDZ  Rajarajeswari Medical College and Hospital', G186='Saurabh Kumar', H186='240'
+  Row 187: A187='South 1', B187='Karnataka', C187='Bengaluru', D187='LISP', E187='40168', F187='Digimetrics', G187='Saurabh Kumar', H187='350'
+  Row 188: A188='South 1', B188='Karnataka', C188='Kalaburagi(Gulbarga)', D188='LISP', E188='40041', F188='Sharanabasaweshwar Vidya Vardhak Sangha', G188='Saurabh Kumar', H188='460'
+  Row 189: A189='South 1', B189='Karnataka', C189='Shivamogga(Shimoga)', D189='iDZ', E189='8560', F189='iON Digital Zone iDZ  Machenahalli ', G189='Saurabh Kumar', H189='380'
+  Row 190: A190='South 1', B190='Karnataka', C190='Udupi', D190='iDZ', E190='7975', F190='iON Digital Zone iDZ  Milk Diary Road', G190='Saurabh Kumar', H190='216'
+  Row 191: A191='South 1', B191='Telangana', C191='Hyderabad', D191='iDZ', E191='41585', F191='iON Digital Zone iDZ Ibrahimpatnam', G191='Saurabh Kumar', H191='955'
+  Row 192: A192='South 1', B192='Telangana', C192='Karimnagar', D192='iDZ', E192='8682', F192='iON Digital Zone iDZ  Ramakrishna Colony', G192='Saurabh Kumar', H192='718'
+  Row 193: A193='South 1', B193='Telangana', C193='Khammam', D193='LISP', E193='41864', F193='iON Digital Zone iDZ Khammam', G193='Saurabh Kumar', H193='450'
+  Row 194: A194='South 2', B194='Kerala', C194='Kozhikode', D194='iDZ', E194='7953', F194='iON Digital Zone iDZ  Kozhikode', G194='Saurabh Kumar', H194='99'
+  Row 195: A195='South 2', B195='Tamil Nadu', C195='Madurai', D195='iDZ', E195='8773', F195='iON Digital Zone  iDZ Madurai IV', G195='Saurabh Kumar', H195='220'
+  Row 196: A196='South 2', B196='Tamil Nadu', C196='Salem', D196='iDZ', E196='7959', F196='iON Digital Zone iDZ  Sivathapuram', G196='Saurabh Kumar', H196='217'
+  Row 197: A197='South 2', B197='Tamil Nadu', C197='Tiruchirappalli', D197='iDZ', E197='8774', F197='iON Digital Zone  IDZ Trichy II', G197='SARANYA Mudliar', H197='455'
+  Row 198: A198='West 1', B198='Gujarat', C198='Bhavnagar', D198='LISP', E198='39062', F198='JPM Infotech', G198='SARANYA Mudliar', H198='85'
+  Row 199: A199='West 1', B199='Gujarat', C199='Gandhinagar', D199='LISP', E199='37550', F199='Kaavyaratna Info Services', G199='SARANYA Mudliar', H199='400'
+  Row 200: A200='West 1', B200='Gujarat', C200='Mehsana', D200='iDZ', E200='8133', F200='iON Digital Zone iDZ Manav Ashram', G200='SARANYA Mudliar', H200='210'
+  Row 201: A201='West 1', B201='Gujarat', C201='Rajkot', D201='iDZ', E201='7873', F201='iON Digital Zone iDZ 1  Metoda', G201='SARANYA Mudliar', H201='200'
+  Row 202: A202='West 1', B202='Gujarat', C202='Rajkot', D202='iDZ', E202='8039', F202='iON Digital Zone iDZ 2  Metoda', G202='SARANYA Mudliar', H202='200'
+  Row 203: A203='West 1', B203='Gujarat', C203='Rajkot', D203='iDZ', E203='8208', F203='iON Digital Zone iDZ 3  Metoda', G203='SARANYA Mudliar', H203='200'
+  Row 204: A204='West 1', B204='Maharashtra', C204='Akola', D204='LISP', E204='2764', F204='College Of Engineering And Technology  Akola', G204='SARANYA Mudliar', H204='145'
+  Row 205: A205='West 1', B205='Maharashtra', C205='Ambajogai', D205='LISP', E205='26801', F205='Professional Career Orientation Center Ambajogai', G205='SARANYA Mudliar', H205='130'
+  Row 206: A206='West 1', B206='Maharashtra', C206='Amravati', D206='LISP', E206='85', F206='Sipna College of Engineering and Technology', G206='SARANYA Mudliar', H206='110'
+  Row 207: A207='West 1', B207='Maharashtra', C207='Amravati', D207='iDZ', E207='7993', F207='iON DIGITAL Zone iDZ  University Camp Area', G207='SARANYA Mudliar', H207='230'
+  Row 208: A208='West 1', B208='Maharashtra', C208='Amravati', D208='iDZ', E208='8553', F208='iON DIGITAL ZONE iDZ  Cityland', G208='SARANYA Mudliar', H208='470'
+  Row 209: A209='West 1', B209='Maharashtra', C209='Dhule', D209='LISP', E209='4595', F209='Bharti Multipurpose Trust', G209='SARANYA Mudliar', H209='250'
+  Row 210: A210='West 1', B210='Maharashtra', C210='Jalgaon', D210='LISP', E210='33971', F210='Online Examination Center Kavyatri Bahinabai Chaudhari North Maharashtra University Jalgaon', G210='SARANYA Mudliar', H210='200'
+  Row 211: A211='West 1', B211='Maharashtra', C211='Kolhapur', D211='iDZ', E211='8564', F211='iON Digital Zone  iDZ Shiye', G211='SARANYA Mudliar', H211='470'
+  Row 212: A212='West 1', B212='Maharashtra', C212='Nagpur', D212='iDZ', E212='8554', F212='iON DIGITAL ZONE  iDZ 2   WADI MIDC', G212='SARANYA Mudliar', H212='660'
+  Row 213: A213='West 1', B213='Maharashtra', C213='Nagpur', D213='iDZ', E213='9451', F213='iON Digital Zone iDZ 3 Wadi MIDC Techgressor Soft Solutions Pvt. Ltd. Nagpur', G213='SARANYA Mudliar', H213='470'
+  Row 214: A214='West 1', B214='Maharashtra', C214='Nagpur', D214='LISP', E214='25019', F214='Jindal Edutech Pvt Ltd Gondkhairi Nagpur', G214='SARANYA Mudliar', H214='410'
+  Row 215: A215='West 1', B215='Maharashtra', C215='Nagpur', D215='LISP', E215='30630', F215='MKH Sancheti Public School Besa Nagpur', G215='SARANYA Mudliar', H215='330'
+  Row 216: A216='West 1', B216='Maharashtra', C216='Nanded', D216='iDZ', E216='7998', F216='iON DIGITAL Zone iDZ  Vishnupuri', G216='SARANYA Mudliar', H216='470'
+  Row 217: A217='West 1', B217='Maharashtra', C217='Nanded', D217='LISP', E217='35649', F217='Shri Sambhaji College Of Management And Technology Nanded', G217='SARANYA Mudliar', H217='100'
+  Row 218: A218='West 1', B218='Maharashtra', C218='Sangli', D218='LISP', E218='4347', F218='Vasantdada Patil Institute Management Studies And Research', G218='SARANYA Mudliar', H218='250'
+  Row 219: A219='West 1', B219='Maharashtra', C219='SOLAPUR', D219='LISP', E219='30727', F219='Solapur Digital Hub', G219='SARANYA Mudliar', H219='180'
+  Row 220: A220='West 2', B220='Chhattisgarh', C220='Bhilai Nagar', D220='LISP', E220='24189', F220='Mansa College', G220='SARANYA Mudliar', H220='250'
+  Row 221: A221='West 2', B221='Chhattisgarh', C221='Bhilai Nagar', D221='LISP', E221='42360', F221='Parthivi College Digital Zone', G221='SARANYA Mudliar', H221='400'
+  Row 222: A222='West 2', B222='Chhattisgarh', C222='Bilaspur', D222='LISP', E222='42395', F222='Prajna Mandapam', G222='SARANYA Mudliar', H222='900'
+  Row 223: A223='West 2', B223='Chhattisgarh', C223='Raipur', D223='iDZ', E223='8747', F223='ION Digital Zone iDZ  SARONA', G223='SARANYA Mudliar', H223='958'
+  Row 224: A224='West 2', B224='Madhya Pradesh', C224='Bhopal', D224='LISP', E224='544', F224='Radharaman Group of Institution', G224='SARANYA Mudliar', H224='200'
+  Row 225: A225='West 2', B225='Madhya Pradesh', C225='Bhopal', D225='LISP', E225='4170', F225='SAM COLLEGE OF ENGINEERING AND TECHNOLOGY', G225='SARANYA Mudliar', H225='200'
+  Row 226: A226='West 2', B226='Madhya Pradesh', C226='Bhopal', D226='iDZ', E226='40196', F226='iON Digital Zone iDZ, Prestige 1 - Shree Jairam Education Society', G226='SARANYA Mudliar', H226='400'
+  Row 227: A227='West 2', B227='Madhya Pradesh', C227='Bhopal', D227='iDZ', E227='40197', F227='iON Digital Zone iDZ, Prestige 2 - Shree Jairam Education Society', G227='SARANYA Mudliar', H227='838'
+  Row 228: A228='West 2', B228='Madhya Pradesh', C228='Bhopal', D228='iDZ', E228='40660', F228='iON Digital Zone iDZ RGPM Sankhedi', G228='SARANYA Mudliar', H228='790'
+  Row 229: A229='West 2', B229='Madhya Pradesh', C229='Bhopal', D229='LTL', E229='40938', F229='iON Digital Zone iDZ Radharaman', G229='SARANYA Mudliar', H229='215'
+  Row 230: A230='West 2', B230='Madhya Pradesh', C230='Indore', D230='LTL', E230='40223', F230='iON Digital Zone iDZ Sri Aurobindo', G230='SARANYA Mudliar', H230='477'
+  Row 231: A231='West 2', B231='Madhya Pradesh', C231='Jabalpur', D231='iDZ', E231='8481', F231='iON Digital Zone iDZ  Gram Raigawan  Near Patan Bypass', G231='SARANYA Mudliar', H231='1201'
+  Row 232: A232='West 2', B232='Madhya Pradesh', C232='Sagar', D232='LISP', E232='718', F232='Adina Institute of Science and Technology', G232='SARANYA Mudliar', H232='230'
+  Row 233: A233='West 2', B233='Madhya Pradesh', C233='Sagar', D233='LISP', E233='8419', F233='SSHC Jain Institute of Management and Research', G233='SARANYA Mudliar', H233='170'
+  Row 234: A234='West 2', B234='Madhya Pradesh', C234='Satna', D234='iDZ', E234='8366', F234='iON Digital Zone iDZ Karhi Road Amoudha', G234='SARANYA Mudliar', H234='477'
+  Row 235: A235='West 2', B235='Madhya Pradesh', C235='Ujjain', D235='iDZ', E235='7966', F235='iON Digital Zone iDZ Gram Gangedi Near Mahaveer Tapobhumi', G235='SARANYA Mudliar', H235='461'
+  Row 236: A236='', B236='', C236='', D236='', E236='', F236='', G236='', H236=''
+  Row 237: A237='', B237='', C237='', D237='', E237='', F237='', G237='', H237=''
+  Row 238: A238='', B238='', C238='', D238='', E238='', F238='', G238='', H238=''
+  Row 239: A239='', B239='', C239='', D239='', E239='', F239='', G239='', H239=''
+  Row 240: A240='', B240='', C240='', D240='', E240='', F240='', G240='', H240=''
+  Row 241: A241='', B241='', C241='', D241='', E241='', F241='', G241='', H241=''
+  Row 242: A242='', B242='', C242='', D242='', E242='', F242='', G242='', H242=''
+  Row 243: A243='', B243='', C243='', D243='', E243='', F243='', G243='', H243=''
+  Row 244: A244='', B244='', C244='', D244='', E244='', F244='', G244='', H244=''
+  Row 245: A245='', B245='', C245='', D245='', E245='', F245='', G245='', H245=''
+  Row 246: A246='', B246='', C246='', D246='', E246='', F246='', G246='', H246=''
+  Row 247: A247='', B247='', C247='', D247='', E247='', F247='', G247='', H247=''
+  Row 248: A248='', B248='', C248='', D248='', E248='', F248='', G248='', H248=''
+  Row 249: A249='', B249='', C249='', D249='', E249='', F249='', G249='', H249=''
+  Row 250: A250='', B250='', C250='', D250='', E250='', F250='', G250='', H250=''
+  Row 251: A251='', B251='', C251='', D251='', E251='', F251='', G251='', H251=''
+  Row 252: A252='', B252='', C252='', D252='', E252='', F252='', G252='', H252=''
+  Row 253: A253='', B253='', C253='', D253='', E253='', F253='', G253='', H253=''
+  Row 254: A254='', B254='', C254='', D254='', E254='', F254='', G254='', H254=''
+  Row 255: A255='', B255='', C255='', D255='', E255='', F255='', G255='', H255=''
+  Row 256: A256='', B256='', C256='', D256='', E256='', F256='', G256='', H256=''
+  Row 257: A257='', B257='', C257='', D257='', E257='', F257='', G257='', H257=''
+  Row 258: A258='', B258='', C258='', D258='', E258='', F258='', G258='', H258=''
+  Row 259: A259='', B259='', C259='', D259='', E259='', F259='', G259='', H259=''
+  Row 260: A260='', B260='', C260='', D260='', E260='', F260='', G260='', H260=''
+  Row 261: A261='', B261='', C261='', D261='', E261='', F261='', G261='', H261=''
+  Row 262: A262='', B262='', C262='', D262='', E262='', F262='', G262='', H262=''
+  Row 263: A263='', B263='', C263='', D263='', E263='', F263='', G263='', H263=''
+  Row 264: A264='', B264='', C264='', D264='', E264='', F264='', G264='', H264=''
+  Row 265: A265='', B265='', C265='', D265='', E265='', F265='', G265='', H265=''
+  Row 266: A266='', B266='', C266='', D266='', E266='', F266='', G266='', H266=''
+  Row 267: A267='', B267='', C267='', D267='', E267='', F267='', G267='', H267=''
+  Row 268: A268='', B268='', C268='', D268='', E268='', F268='', G268='', H268=''
+  Row 269: A269='', B269='', C269='', D269='', E269='', F269='', G269='', H269=''
+  Row 270: A270='', B270='', C270='', D270='', E270='', F270='', G270='', H270=''
+  Row 271: A271='', B271='', C271='', D271='', E271='', F271='', G271='', H271=''
+  Row 272: A272='', B272='', C272='', D272='', E272='', F272='', G272='', H272=''
+  Row 273: A273='', B273='', C273='', D273='', E273='', F273='', G273='', H273=''
+  Row 274: A274='', B274='', C274='', D274='', E274='', F274='', G274='', H274=''
+  Row 275: A275='', B275='', C275='', D275='', E275='', F275='', G275='', H275=''
+  Row 276: A276='', B276='', C276='', D276='', E276='', F276='', G276='', H276=''
+  Row 277: A277='', B277='', C277='', D277='', E277='', F277='', G277='', H277=''
+  Row 278: A278='', B278='', C278='', D278='', E278='', F278='', G278='', H278=''
+  Row 279: A279='', B279='', C279='', D279='', E279='', F279='', G279='', H279=''
+  Row 280: A280='', B280='', C280='', D280='', E280='', F280='', G280='', H280=''
+  Row 281: A281='', B281='', C281='', D281='', E281='', F281='', G281='', H281=''
+  Row 282: A282='', B282='', C282='', D282='', E282='', F282='', G282='', H282=''
+  Row 283: A283='', B283='', C283='', D283='', E283='', F283='', G283='', H283=''
+  Row 284: A284='', B284='', C284='', D284='', E284='', F284='', G284='', H284=''
+  Row 285: A285='', B285='', C285='', D285='', E285='', F285='', G285='', H285=''
+  Row 286: A286='', B286='', C286='', D286='', E286='', F286='', G286='', H286=''
+  Row 287: A287='', B287='', C287='', D287='', E287='', F287='', G287='', H287=''
+  Row 288: A288='', B288='', C288='', D288='', E288='', F288='', G288='', H288=''
+  Row 289: A289='', B289='', C289='', D289='', E289='', F289='', G289='', H289=''
+  Row 290: A290='', B290='', C290='', D290='', E290='', F290='', G290='', H290=''
+  Row 291: A291='', B291='', C291='', D291='', E291='', F291='', G291='', H291=''
+  Row 292: A292='', B292='', C292='', D292='', E292='', F292='', G292='', H292=''
+  Row 293: A293='', B293='', C293='', D293='', E293='', F293='', G293='', H293=''
+  Row 294: A294='', B294='', C294='', D294='', E294='', F294='', G294='', H294=''
+  Row 295: A295='', B295='', C295='', D295='', E295='', F295='', G295='', H295=''
+  Row 296: A296='', B296='', C296='', D296='', E296='', F296='', G296='', H296=''
+  Row 297: A297='', B297='', C297='', D297='', E297='', F297='', G297='', H297=''
+  Row 298: A298='', B298='', C298='', D298='', E298='', F298='', G298='', H298=''
+  Row 299: A299='', B299='', C299='', D299='', E299='', F299='', G299='', H299=''
+  Row 300: A300='', B300='', C300='', D300='', E300='', F300='', G300='', H300=''
+  Row 301: A301='', B301='', C301='', D301='', E301='', F301='', G301='', H301=''
+  Row 302: A302='', B302='', C302='', D302='', E302='', F302='', G302='', H302=''
+  Row 303: A303='', B303='', C303='', D303='', E303='', F303='', G303='', H303=''
+  Row 304: A304='', B304='', C304='', D304='', E304='', F304='', G304='', H304=''
+  Row 305: A305='', B305='', C305='', D305='', E305='', F305='', G305='', H305=''
+  Row 306: A306='', B306='', C306='', D306='', E306='', F306='', G306='', H306=''
+  Row 307: A307='', B307='', C307='', D307='', E307='', F307='', G307='', H307=''
+  Row 308: A308='', B308='', C308='', D308='', E308='', F308='', G308='', H308=''
+  Row 309: A309='', B309='', C309='', D309='', E309='', F309='', G309='', H309=''
+  Row 310: A310='', B310='', C310='', D310='', E310='', F310='', G310='', H310=''
+  Row 311: A311='', B311='', C311='', D311='', E311='', F311='', G311='', H311=''
+  Row 312: A312='', B312='', C312='', D312='', E312='', F312='', G312='', H312=''
+  Row 313: A313='', B313='', C313='', D313='', E313='', F313='', G313='', H313=''
+  Row 314: A314='', B314='', C314='', D314='', E314='', F314='', G314='', H314=''
+  Row 315: A315='', B315='', C315='', D315='', E315='', F315='', G315='', H315=''
+  Row 316: A316='', B316='', C316='', D316='', E316='', F316='', G316='', H316=''
+  Row 317: A317='', B317='', C317='', D317='', E317='', F317='', G317='', H317=''
+  Row 318: A318='', B318='', C318='', D318='', E318='', F318='', G318='', H318=''
+  Row 319: A319='', B319='', C319='', D319='', E319='', F319='', G319='', H319=''
+  Row 320: A320='', B320='', C320='', D320='', E320='', F320='', G320='', H320=''
+  Row 321: A321='', B321='', C321='', D321='', E321='', F321='', G321='', H321=''
+  Row 322: A322='', B322='', C322='', D322='', E322='', F322='', G322='', H322=''
+  Row 323: A323='', B323='', C323='', D323='', E323='', F323='', G323='', H323=''
+  Row 324: A324='', B324='', C324='', D324='', E324='', F324='', G324='', H324=''
+  Row 325: A325='', B325='', C325='', D325='', E325='', F325='', G325='', H325=''
+  Row 326: A326='', B326='', C326='', D326='', E326='', F326='', G326='', H326=''
+  Row 327: A327='', B327='', C327='', D327='', E327='', F327='', G327='', H327=''
+  Row 328: A328='', B328='', C328='', D328='', E328='', F328='', G328='', H328=''
+  Row 329: A329='', B329='', C329='', D329='', E329='', F329='', G329='', H329=''
+  Row 330: A330='', B330='', C330='', D330='', E330='', F330='', G330='', H330=''
+  Row 331: A331='', B331='', C331='', D331='', E331='', F331='', G331='', H331=''
+  Row 332: A332='', B332='', C332='', D332='', E332='', F332='', G332='', H332=''
+  Row 333: A333='', B333='', C333='', D333='', E333='', F333='', G333='', H333=''
+  Row 334: A334='', B334='', C334='', D334='', E334='', F334='', G334='', H334=''
+  Row 335: A335='', B335='', C335='', D335='', E335='', F335='', G335='', H335=''
+  Row 336: A336='', B336='', C336='', D336='', E336='', F336='', G336='', H336=''
+  Row 337: A337='', B337='', C337='', D337='', E337='', F337='', G337='', H337=''
+  Row 338: A338='', B338='', C338='', D338='', E338='', F338='', G338='', H338=''
+  Row 339: A339='', B339='', C339='', D339='', E339='', F339='', G339='', H339=''
+  Row 340: A340='', B340='', C340='', D340='', E340='', F340='', G340='', H340=''
+  Row 341: A341='', B341='', C341='', D341='', E341='', F341='', G341='', H341=''
+  Row 342: A342='', B342='', C342='', D342='', E342='', F342='', G342='', H342=''
+  Row 343: A343='', B343='', C343='', D343='', E343='', F343='', G343='', H343=''
+  Row 344: A344='', B344='', C344='', D344='', E344='', F344='', G344='', H344=''
+  Row 345: A345='', B345='', C345='', D345='', E345='', F345='', G345='', H345=''
+  Row 346: A346='', B346='', C346='', D346='', E346='', F346='', G346='', H346=''
+  Row 347: A347='', B347='', C347='', D347='', E347='', F347='', G347='', H347=''
+  Row 348: A348='', B348='', C348='', D348='', E348='', F348='', G348='', H348=''
+  Row 349: A349='', B349='', C349='', D349='', E349='', F349='', G349='', H349=''
+  Row 350: A350='', B350='', C350='', D350='', E350='', F350='', G350='', H350=''
+  Row 351: A351='', B351='', C351='', D351='', E351='', F351='', G351='', H351=''
+  Row 352: A352='', B352='', C352='', D352='', E352='', F352='', G352='', H352=''
+  Row 353: A353='', B353='', C353='', D353='', E353='', F353='', G353='', H353=''
+  Row 354: A354='', B354='', C354='', D354='', E354='', F354='', G354='', H354=''
+  Row 355: A355='', B355='', C355='', D355='', E355='', F355='', G355='', H355=''
+  Row 356: A356='', B356='', C356='', D356='', E356='', F356='', G356='', H356=''
+  Row 357: A357='', B357='', C357='', D357='', E357='', F357='', G357='', H357=''
+  Row 358: A358='', B358='', C358='', D358='', E358='', F358='', G358='', H358=''
+  Row 359: A359='', B359='', C359='', D359='', E359='', F359='', G359='', H359=''
+  Row 360: A360='', B360='', C360='', D360='', E360='', F360='', G360='', H360=''
+  Row 361: A361='', B361='', C361='', D361='', E361='', F361='', G361='', H361=''
+  Row 362: A362='', B362='', C362='', D362='', E362='', F362='', G362='', H362=''
+  Row 363: A363='', B363='', C363='', D363='', E363='', F363='', G363='', H363=''
+  Row 364: A364='', B364='', C364='', D364='', E364='', F364='', G364='', H364=''
+  Row 365: A365='', B365='', C365='', D365='', E365='', F365='', G365='', H365=''
+  Row 366: A366='', B366='', C366='', D366='', E366='', F366='', G366='', H366=''
+  Row 367: A367='', B367='', C367='', D367='', E367='', F367='', G367='', H367=''
+  Row 368: A368='', B368='', C368='', D368='', E368='', F368='', G368='', H368=''
+  Row 369: A369='', B369='', C369='', D369='', E369='', F369='', G369='', H369=''
+  Row 370: A370='', B370='', C370='', D370='', E370='', F370='', G370='', H370=''
+  Row 371: A371='', B371='', C371='', D371='', E371='', F371='', G371='', H371=''
+  Row 372: A372='', B372='', C372='', D372='', E372='', F372='', G372='', H372=''
+  Row 373: A373='', B373='', C373='', D373='', E373='', F373='', G373='', H373=''
+  Row 374: A374='', B374='', C374='', D374='', E374='', F374='', G374='', H374=''
+
+=== SHEET: Shift 2 ===
+  Row 1: A1='Zone', B1='State', C1='City', D1='TC Type', E1='TC Code', F1='TC Name', G1='Assigned To', H1='Candidate Count'
+  Row 2: A2='East 1', B2='Bihar', C2='Bhagalpur', D2='iDZ', E2='9286', F2='iON Digital Zone iDZ Bhagalpur', G2='Md. Haqique', H2='465'
+  Row 3: A3='East 1', B3='Bihar', C3='Gaya', D3='LISP', E3='33901', F3='Shree Ganesh Innovative', G3='Md. Haqique', H3='260'
+  Row 4: A4='East 1', B4='Bihar', C4='Muzaffarpur', D4='iDZ', E4='9287', F4='iON Digital Zone iDZ Kanti', G4='Md. Haqique', H4='470'
+  Row 5: A5='East 1', B5='Bihar', C5='Muzaffarpur', D5='LISP', E5='15028', F5='Azad Infotech', G5='Md. Haqique', H5='340'
+  Row 6: A6='East 1', B6='Bihar', C6='Muzaffarpur', D6='iDZ', E6='41826', F6='iON Digital Zone iDZ Bhikhanpur - Muzaffarpur', G6='Md. Haqique', H6='225'
+  Row 7: A7='East 1', B7='Bihar', C7='Patna', D7='iDZ', E7='9000', F7='iON Digital Zone iDZ Sandalpur', G7='Md. Haqique', H7='470'
+  Row 8: A8='East 1', B8='Bihar', C8='Patna', D8='iDZ', E8='9564', F8='iON Digital Zone iDZ Phulwarisharif', G8='Md. Haqique', H8='230'
+  Row 9: A9='East 1', B9='Bihar', C9='Patna', D9='LISP', E9='38247', F9='Unique IT Point Private Limited', G9='Md. Haqique', H9='245'
+  Row 10: A10='East 1', B10='Bihar', C10='Patna', D10='LISP', E10='41553', F10='Bapu Pariksha Parisar Zone - 1', G10='Md. Haqique', H10='970'
+  Row 11: A11='East 1', B11='Bihar', C11='Patna', D11='LISP', E11='41554', F11='Bapu Pariksha Parisar Zone - 2', G11='Md. Haqique', H11='1700'
+  Row 12: A12='East 1', B12='Bihar', C12='Purnea', D12='iDZ', E12='11365', F12='iON Digital Zone  iDZ Purnea', G12='Md. Haqique', H12='470'
+  Row 13: A13='East 1', B13='Jharkhand', C13='Bokaro Steel City', D13='LISP', E13='22988', F13='Alpha ICT Centre', G13='Md. Haqique', H13='234'
+  Row 14: A14='East 1', B14='Jharkhand', C14='Daltonganj', D14='LISP', E14='15869', F14='Oxford Public School Daltonganj', G14='Md. Haqique', H14='220'
+  Row 15: A15='East 1', B15='Jharkhand', C15='Dhanbad', D15='iDZ', E15='41479', F15='iON DIGITAL ZONE, iDZ Amagraha', G15='Md. Haqique', H15='935'
+  Row 16: A16='East 1', B16='Jharkhand', C16='Jamshedpur', D16='LISP', E16='37332', F16='Govind Vidyalaya', G16='Md. Haqique', H16='230'
+  Row 17: A17='East 1', B17='Jharkhand', C17='Jamshedpur', D17='LISP', E17='40082', F17='Creative Computer', G17='Md. Haqique', H17='315'
+  Row 18: A18='East 1', B18='Jharkhand', C18='Ranchi', D18='LISP', E18='2790', F18='Ram Tahal Choudhary Institute Of Technology', G18='Md. Haqique', H18='230'
+  Row 19: A19='East 1', B19='Jharkhand', C19='Ranchi', D19='LISP', E19='3493', F19='Oxford Public School Ranchi', G19='Md. Haqique', H19='410'
+  Row 20: A20='East 1', B20='Jharkhand', C20='Ranchi', D20='iDZ', E20='8320', F20='iON Digital Zone iDZ Tupudana', G20='Md. Haqique', H20='1640'
+  Row 21: A21='East 1', B21='Jharkhand', C21='Ranchi', D21='LISP', E21='16665', F21='Arunuma Technical Services Private Limited', G21='Md. Haqique', H21='470'
+  Row 22: A22='East 1', B22='Odisha', C22='Balasore', D22='iDZ', E22='7906', F22='iON Digital Zone iDZ Harida', G22='Md. Haqique', H22='230'
+  Row 23: A23='East 1', B23='Odisha', C23='Berhampur-Ganjam', D23='LISP', E23='1295', F23='SMIT Degree Engineering College', G23='Jay Lund', H23='233'
+  Row 24: A24='East 1', B24='Odisha', C24='Berhampur-Ganjam', D24='iDZ', E24='4869', F24='iON Digital Zone iDZ Khallikote College Area', G24='Jay Lund', H24='230'
+  Row 25: A25='East 1', B25='Odisha', C25='Bhubaneswar', D25='LISP', E25='583', F25='GITA Autonomous College', G25='Jay Lund', H25='450'
+  Row 26: A26='East 1', B26='Odisha', C26='Bhubaneswar', D26='iDZ', E26='7908', F26='iON Digital Zone iDZ1 Patia', G26='Jay Lund', H26='459'
+  Row 27: A27='East 1', B27='Odisha', C27='Bhubaneswar', D27='LISP', E27='15284', F27='Innovinc Tech Lab', G27='Jay Lund', H27='180'
+  Row 28: A28='East 1', B28='Odisha', C28='Bhubaneswar', D28='LISP', E28='16698', F28='Eglobetech India Private Limited', G28='Jay Lund', H28='170'
+  Row 29: A29='East 1', B29='Odisha', C29='Bhubaneswar', D29='LISP', E29='16699', F29='Utkal Institute Of Engineering And Technology', G29='Jay Lund', H29='180'
+  Row 30: A30='East 1', B30='Odisha', C30='Bhubaneswar', D30='LISP', E30='16700', F30='Radha Raman Assessment Services Private Limited', G30='Jay Lund', H30='305'
+  Row 31: A31='East 1', B31='Odisha', C31='Bhubaneswar', D31='LISP', E31='37362', F31='Buddham Technology', G31='Jay Lund', H31='162'
+  Row 32: A32='East 1', B32='Odisha', C32='Bhubaneswar', D32='LISP', E32='37364', F32='SBG Digital Center', G32='Jay Lund', H32='186'
+  Row 33: A33='East 1', B33='Odisha', C33='Bhubaneswar', D33='LISP', E33='37365', F33='Ganesh Institute Of Management Studies', G33='Jay Lund', H33='126'
+  Row 34: A34='East 1', B34='Odisha', C34='Cuttack', D34='LISP', E34='15902', F34='Jagannath Institute Of Engineering And Technology', G34='Jay Lund', H34='234'
+  Row 35: A35='East 1', B35='Odisha', C35='Cuttack', D35='LISP', E35='34022', F35='Kshetrabasi Industrial Training Institute', G35='Jay Lund', H35='198'
+  Row 36: A36='East 1', B36='Odisha', C36='Cuttack', D36='LISP', E36='40670', F36='Shree Siddhivinayak SSR', G36='Jay Lund', H36='360'
+  Row 37: A37='East 1', B37='Odisha', C37='Cuttack', D37='LISP', E37='41547', F37='Dash Advanced Engineering', G37='Jay Lund', H37='432'
+  Row 38: A38='East 1', B38='Odisha', C38='Cuttack', D38='LISP', E38='42141', F38='Dhabaleswar Institute of Polytechnic', G38='Jay Lund', H38='180'
+  Row 39: A39='East 1', B39='Odisha', C39='Dhenkanal', D39='iDZ', E39='7995', F39='iON Digital Zone iDZ Banamaliprasad', G39='Jay Lund', H39='230'
+  Row 40: A40='East 1', B40='Odisha', C40='Dhenkanal', D40='LISP', E40='23515', F40='Orissa Institute Of Engineering And Technology', G40='Jay Lund', H40='172'
+  Row 41: A41='East 1', B41='Odisha', C41='Dhenkanal', D41='LISP', E41='41881', F41='DMS Institute', G41='Jay Lund', H41='173'
+  Row 42: A42='East 1', B42='Odisha', C42='Rourkela', D42='iDZ', E42='7984', F42='iON Digital Zone iDZ Sector 4', G42='Jay Lund', H42='460'
+  Row 43: A43='East 1', B43='Odisha', C43='Rourkela', D43='LISP', E43='34045', F43='Sai Institute Of Technology', G43='Jay Lund', H43='180'
+  Row 44: A44='East 2', B44='Tripura', C44='Agartala', D44='LISP', E44='15134', F44='Tripura Info.Com', G44='Jay Lund', H44='170'
+  Row 45: A45='East 2', B45='Tripura', C45='Agartala', D45='LISP', E45='34031', F45='Tripura Institute Of Technology', G45='Khan Saadat Shamim', H45='100'
+  Row 46: A46='East 2', B46='West Bengal', C46='Asansol', D46='iDZ', E46='7932', F46='iON Digital Zone iDZ  Asansol', G46='Khan Saadat Shamim', H46='475'
+  Row 47: A47='East 2', B47='West Bengal', C47='Burdwan', D47='LISP', E47='15135', F47='Dr. Kalam Academy', G47='Khan Saadat Shamim', H47='250'
+  Row 48: A48='East 2', B48='West Bengal', C48='Durgapur', D48='LISP', E48='1262', F48='Aryabhatta Institute of Engineering and Management', G48='Khan Saadat Shamim', H48='330'
+  Row 49: A49='East 2', B49='West Bengal', C49='Durgapur', D49='LISP', E49='1897', F49='Sanaka Educational Trust Group of Institutions', G49='Khan Saadat Shamim', H49='470'
+  Row 50: A50='East 2', B50='West Bengal', C50='Durgapur', D50='LISP', E50='16678', F50='ABS Academy of Competitive Exams', G50='Khan Saadat Shamim', H50='430'
+  Row 51: A51='East 2', B51='West Bengal', C51='Kalyani', D51='iDZ', E51='8777', F51='iON Digital Zone iDZ  Kalyani', G51='Khan Saadat Shamim', H51='475'
+  Row 52: A52='East 2', B52='West Bengal', C52='Kolkata', D52='LISP', E52='609', F52='Webel Human Resource Development Center', G52='Khan Saadat Shamim', H52='165'
+  Row 53: A53='East 2', B53='West Bengal', C53='Kolkata', D53='iDZ', E53='7931', F53='iON Digital Zone iDZ  Madhyamgram', G53='Khan Saadat Shamim', H53='235'
+  Row 54: A54='East 2', B54='West Bengal', C54='Kolkata', D54='iDZ', E54='7933', F54='iON Digital Zone iDZ  Baruipur', G54='Khan Saadat Shamim', H54='235'
+  Row 55: A55='East 2', B55='West Bengal', C55='Kolkata', D55='iDZ', E55='8116', F55='TCS Gito Bitan', G55='Khan Saadat Shamim', H55='3230'
+  Row 56: A56='East 2', B56='West Bengal', C56='Siliguri', D56='LISP', E56='643', F56='Surendra Institute of Engineering and Management', G56='Khan Saadat Shamim', H56='540'
+  Row 57: A57='East 2', B57='West Bengal', C57='Siliguri', D57='LISP', E57='7797', F57='Umang Infotech', G57='Khan Saadat Shamim', H57='195'
+  Row 58: A58='East 2', B58='West Bengal', C58='Siliguri', D58='iDZ', E58='8800', F58='iON Digital Zone iDZ  Siliguri', G58='Khan Saadat Shamim', H58='710'
+  Row 59: A59='East 2', B59='West Bengal', C59='Siliguri', D59='LISP', E59='13299', F59='Bhawani Infotech', G59='Khan Saadat Shamim', H59='120'
+  Row 60: A60='North 1', B60='Delhi', C60='New Delhi', D60='LISP', E60='4202', F60='Online Infra', G60='Khan Saadat Shamim', H60='240'
+  Row 61: A61='North 1', B61='Delhi', C61='New Delhi', D61='LISP', E61='14403', F61='Indraprastha Public School', G61='Khan Saadat Shamim', H61='696'
+  Row 62: A62='North 1', B62='Delhi', C62='New Delhi', D62='LISP', E62='14411', F62='SANGWAN ACADEMY', G62='Khan Saadat Shamim', H62='520'
+  Row 63: A63='North 1', B63='Delhi', C63='New Delhi', D63='LISP', E63='30677', F63='Webinfotron Technologies Pvt. Ltd.', G63='Khan Saadat Shamim', H63='820'
+  Row 64: A64='North 1', B64='Delhi', C64='New Delhi', D64='LISP', E64='40713', F64='SUNSHINE CONVENT SCHOOL ONLINE EXAM CENTER', G64='Khan Saadat Shamim', H64='190'
+  Row 65: A65='North 1', B65='Delhi', C65='New Delhi', D65='LISP', E65='42080', F65='Royal international school online exam center', G65='Khan Saadat Shamim', H65='180'
+  Row 66: A66='North 1', B66='Delhi', C66='New Delhi', D66='LISP', E66='42224', F66='Ksk online examination centre', G66='Pankaj Zingade', H66='450'
+  Row 67: A67='North 1', B67='Haryana', C67='Faridabad', D67='iDZ', E67='9245', F67='iON Dizital Zone  Faridabad', G67='Pankaj Zingade', H67='460'
+  Row 68: A68='North 1', B68='Uttar Pradesh', C68='Ghaziabad', D68='LISP', E68='8548', F68='BBDIT A Block Duhai', G68='Pankaj Zingade', H68='400'
+  Row 69: A69='North 1', B69='Uttar Pradesh', C69='Ghaziabad', D69='iDZ', E69='8992', F69='iON Digital Zone iDZ 2 Duhai', G69='Pankaj Zingade', H69='450'
+  Row 70: A70='North 1', B70='Uttar Pradesh', C70='Ghaziabad', D70='LISP', E70='38816', F70='Diamond Public School', G70='Pankaj Zingade', H70='380'
+  Row 71: A71='North 1', B71='Uttar Pradesh', C71='Greater Noida', D71='LISP', E71='37301', F71='Pt.Salagram Inter College', G71='Pankaj Zingade', H71='435'
+  Row 72: A72='North 1', B72='Uttar Pradesh', C72='Meerut', D72='LISP', E72='26487', F72='Bharat Institute of Technology', G72='Pankaj Zingade', H72='410'
+  Row 73: A73='North 1', B73='Uttar Pradesh', C73='Noida', D73='iDZ', E73='8043', F73='iON Digital Zone iDZ 2  Sector 62', G73='Pankaj Zingade', H73='1650'
+  Row 74: A74='North 1', B74='Uttar Pradesh', C74='Noida', D74='iDZ', E74='8044', F74='iON Digital Zone iDZ 1 Sector 62', G74='Pankaj Zingade', H74='1470'
+  Row 75: A75='North 2', B75='Uttar Pradesh', C75='Agra', D75='iDZ', E75='7946', F75='iON Digital Zone iDZ  Kuberpur', G75='Pankaj Zingade', H75='675'
+  Row 76: A76='North 2', B76='Uttar Pradesh', C76='Agra', D76='LISP', E76='9695', F76='Smt. Bhudevi P.G College Agra', G76='Pankaj Zingade', H76='215'
+  Row 77: A77='North 2', B77='Uttar Pradesh', C77='Agra', D77='LISP', E77='11395', F77='Sant Ram Krishna Mahavidhyalya', G77='Pankaj Zingade', H77='290'
+  Row 78: A78='North 2', B78='Uttar Pradesh', C78='Agra', D78='LISP', E78='15024', F78='G.B Infotech', G78='Pankaj Zingade', H78='430'
+  Row 79: A79='North 2', B79='Uttar Pradesh', C79='Agra', D79='iDZ', E79='41723', F79='iON Digital Zone ITAURA', G79='Pankaj Zingade', H79='460'
+  Row 80: A80='North 2', B80='Uttar Pradesh', C80='Agra', D80='LISP', E80='42462', F80='GSS Infosystems', G80='Pankaj Zingade', H80='180'
+  Row 81: A81='North 2', B81='Uttar Pradesh', C81='Agra', D81='LISP', E81='42463', F81='Innovative Sikandra', G81='Pankaj Zingade', H81='180'
+  Row 82: A82='North 2', B82='Uttar Pradesh', C82='Aligarh', D82='iDZ', E82='7976', F82='iON Digital Zone iDZ  Karsua', G82='Pankaj Zingade', H82='450'
+  Row 83: A83='North 2', B83='Uttar Pradesh', C83='Ayodhya', D83='LISP', E83='38758', F83='Narayana Infotech', G83='Pankaj Zingade', H83='180'
+  Row 84: A84='North 2', B84='Uttar Pradesh', C84='Ayodhya', D84='LISP', E84='38960', F84='SRS Digital Institute', G84='Pankaj Zingade', H84='100'
+  Row 85: A85='North 2', B85='Uttar Pradesh', C85='Bareilly', D85='LISP', E85='926', F85='Shri Siddhi Vinayak Institute Of Technology', G85='Pankaj Zingade', H85='700'
+  Row 86: A86='North 2', B86='Uttar Pradesh', C86='Bareilly', D86='iDZ', E86='8017', F86='iON Digital Zone iDZ  Dohna', G86='Pankaj Zingade', H86='950'
+  Row 87: A87='North 2', B87='Uttar Pradesh', C87='Ghazipur', D87='LISP', E87='26433', F87='Data World Computer Services', G87='Adinath Chaugule', H87='145'
+  Row 88: A88='North 2', B88='Uttar Pradesh', C88='Ghazipur', D88='LISP', E88='28910', F88='Institute of Computer Education', G88='Adinath Chaugule', H88='220'
+  Row 89: A89='North 2', B89='Uttar Pradesh', C89='Gorakhpur', D89='LISP', E89='857', F89='Buddha Institute Of Technology', G89='Adinath Chaugule', H89='190'
+  Row 90: A90='North 2', B90='Uttar Pradesh', C90='Gorakhpur', D90='LISP', E90='11378', F90='Suryoday Online', G90='Adinath Chaugule', H90='280'
+  Row 91: A91='North 2', B91='Uttar Pradesh', C91='Gorakhpur', D91='LISP', E91='24832', F91='Neta Jee Subhash Chandra Bose Online Examination Center', G91='Adinath Chaugule', H91='220'
+  Row 92: A92='North 2', B92='Uttar Pradesh', C92='Gorakhpur', D92='LISP', E92='24868', F92='Parvati Digital Zone', G92='Adinath Chaugule', H92='220'
+  Row 93: A93='North 2', B93='Uttar Pradesh', C93='Gorakhpur', D93='LISP', E93='33404', F93='Cavalier Animation - Education Foundation', G93='Adinath Chaugule', H93='290'
+  Row 94: A94='North 2', B94='Uttar Pradesh', C94='Gorakhpur', D94='LISP', E94='40666', F94='Oxford Public School', G94='Adinath Chaugule', H94='430'
+  Row 95: A95='North 2', B95='Uttar Pradesh', C95='Gorakhpur', D95='LISP', E95='40915', F95='i Tech Zone', G95='Adinath Chaugule', H95='230'
+  Row 96: A96='North 2', B96='Uttar Pradesh', C96='Kanpur', D96='iDZ', E96='8765', F96='iON Digital Zone iDZ 1  Hathipur', G96='Adinath Chaugule', H96='450'
+  Row 97: A97='North 2', B97='Uttar Pradesh', C97='Kanpur', D97='LISP', E97='9120', F97='UNZIP TECHNOLOGY LLP.', G97='Adinath Chaugule', H97='400'
+  Row 98: A98='North 2', B98='Uttar Pradesh', C98='Kanpur', D98='LISP', E98='27849', F98='Shri S N Technologies', G98='Adinath Chaugule', H98='210'
+  Row 99: A99='North 2', B99='Uttar Pradesh', C99='Kanpur', D99='LISP', E99='41615', F99='iON Digital Zone iDZ Bhailamau', G99='Adinath Chaugule', H99='950'
+  Row 100: A100='North 2', B100='Uttar Pradesh', C100='Lucknow', D100='LISP', E100='4404', F100='Thirumala Education Academy', G100='Adinath Chaugule', H100='160'
+  Row 101: A101='North 2', B101='Uttar Pradesh', C101='Lucknow', D101='iDZ', E101='7973', F101='iON Digital Zone iDZ  Azad Puram', G101='Adinath Chaugule', H101='450'
+  Row 102: A102='North 2', B102='Uttar Pradesh', C102='Lucknow', D102='LISP', E102='9669', F102='SINCO LEARNING CENTER', G102='Adinath Chaugule', H102='265'
+  Row 103: A103='North 2', B103='Uttar Pradesh', C103='Lucknow', D103='LISP', E103='14089', F103='City Law College', G103='Adinath Chaugule', H103='460'
+  Row 104: A104='North 2', B104='Uttar Pradesh', C104='Lucknow', D104='LISP', E104='15806', F104='Tech Testing Solution ', G104='Adinath Chaugule', H104='350'
+  Row 105: A105='North 2', B105='Uttar Pradesh', C105='Lucknow', D105='LISP', E105='23441', F105='A.P. Computer', G105='Adinath Chaugule', H105='253'
+  Row 106: A106='North 2', B106='Uttar Pradesh', C106='Lucknow', D106='LISP', E106='23443', F106='BR Online Services', G106='Adinath Chaugule', H106='330'
+  Row 107: A107='North 2', B107='Uttar Pradesh', C107='Lucknow', D107='LISP', E107='23445', F107='Sun Testing Center', G107='Adinath Chaugule', H107='585'
+  Row 108: A108='North 2', B108='Uttar Pradesh', C108='Lucknow', D108='LISP', E108='28847', F108='Metro Network Solutions', G108='Shakti Kumar', H108='250'
+  Row 109: A109='North 2', B109='Uttar Pradesh', C109='Lucknow', D109='LISP', E109='29042', F109='Om Infotech Solutions', G109='Shakti Kumar', H109='380'
+  Row 110: A110='North 2', B110='Uttar Pradesh', C110='Lucknow', D110='LISP', E110='33399', F110='Basudev Digital Center', G110='Shakti Kumar', H110='353'
+  Row 111: A111='North 2', B111='Uttar Pradesh', C111='Lucknow', D111='LISP', E111='33400', F111='Sultan Foundation', G111='Shakti Kumar', H111='350'
+  Row 112: A112='North 2', B112='Uttar Pradesh', C112='Lucknow', D112='LISP', E112='40671', F112='SS Compuage LLP', G112='Shakti Kumar', H112='350'
+  Row 113: A113='North 2', B113='Uttar Pradesh', C113='Moradabad', D113='iDZ', E113='7949', F113='iON Digital Zone iDZ  Ram Ganga Vihar Phase 2', G113='Shakti Kumar', H113='480'
+  Row 114: A114='North 2', B114='Uttar Pradesh', C114='Muzaffarnagar', D114='iDZ', E114='7952', F114='iON Digital Zone iDZ - 1  Mandi Samiti Road ', G114='Shakti Kumar', H114='360'
+  Row 115: A115='North 2', B115='Uttar Pradesh', C115='Prayagraj', D115='iDZ', E115='7955', F115='iON Digital Zone iDZ Sallahapur', G115='Shakti Kumar', H115='230'
+  Row 116: A116='North 2', B116='Uttar Pradesh', C116='Prayagraj', D116='LISP', E116='9499', F116='Shambhunath Institute Of Engineering And Technology - Mac', G116='Shakti Kumar', H116='200'
+  Row 117: A117='North 2', B117='Uttar Pradesh', C117='Prayagraj', D117='LISP', E117='9500', F117='Madhu Vachaspati Inter College', G117='Shakti Kumar', H117='318'
+  Row 118: A118='North 2', B118='Uttar Pradesh', C118='Prayagraj', D118='LISP', E118='14439', F118='i-Tech Zone', G118='Shakti Kumar', H118='500'
+  Row 119: A119='North 2', B119='Uttar Pradesh', C119='Prayagraj', D119='LISP', E119='14995', F119='S.P. Education Institute of IT & Management', G119='Shakti Kumar', H119='180'
+  Row 120: A120='North 2', B120='Uttar Pradesh', C120='Prayagraj', D120='LISP', E120='23466', F120='Gyanoday Technical Institute', G120='Shakti Kumar', H120='240'
+  Row 121: A121='North 2', B121='Uttar Pradesh', C121='Prayagraj', D121='LISP', E121='33952', F121='Campus 2 AIIT Management College', G121='Shakti Kumar', H121='180'
+  Row 122: A122='North 2', B122='Uttar Pradesh', C122='Prayagraj', D122='LISP', E122='41908', F122='iON Digital Zone iDZ Sarai Inayat', G122='Shakti Kumar', H122='440'
+  Row 123: A123='North 2', B123='Uttar Pradesh', C123='Varanasi', D123='LISP', E123='2220', F123='JeevanDeep Institute of Management & Technology', G123='Shakti Kumar', H123='142'
+  Row 124: A124='North 2', B124='Uttar Pradesh', C124='Varanasi', D124='LISP', E124='7806', F124='ARYA MAHILA PG COLLEGE', G124='Shakti Kumar', H124='236'
+  Row 125: A125='North 2', B125='Uttar Pradesh', C125='Varanasi', D125='iDZ', E125='7945', F125='iON Digital Zone iDZ Harahuwa Chauraha', G125='Shakti Kumar', H125='220'
+  Row 126: A126='North 2', B126='Uttar Pradesh', C126='Varanasi', D126='LISP', E126='9519', F126='Dr. Ghanshyam Singh College Of Education', G126='Shakti Kumar', H126='610'
+  Row 127: A127='North 2', B127='Uttar Pradesh', C127='Varanasi', D127='LISP', E127='9633', F127='Institute of Hardware Networking And Communication Center Sarnath', G127='Shakti Kumar', H127='220'
+  Row 128: A128='North 2', B128='Uttar Pradesh', C128='Varanasi', D128='LISP', E128='13302', F128='Dewa Mahila Mahavidyalaya', G128='Shakti Kumar', H128='500'
+  Row 129: A129='North 2', B129='Uttar Pradesh', C129='Varanasi', D129='LISP', E129='14112', F129='Gyanada Institute Of Computer Training', G129='Saurabh Kumar', H129='200'
+  Row 130: A130='North 2', B130='Uttar Pradesh', C130='Varanasi', D130='LISP', E130='15792', F130='Purnodaya Mahila Mahavidyalaya', G130='Saurabh Kumar', H130='400'
+  Row 131: A131='North 2', B131='Uttar Pradesh', C131='Varanasi', D131='LISP', E131='23401', F131='IHNC Mahaveer Bazar', G131='Saurabh Kumar', H131='140'
+  Row 132: A132='North 2', B132='Uttar Pradesh', C132='Varanasi', D132='LISP', E132='23883', F132='Digitrack IT Services', G132='Saurabh Kumar', H132='290'
+  Row 133: A133='North 2', B133='Uttar Pradesh', C133='Varanasi', D133='LISP', E133='34017', F133='Sheetala Institute of Technology', G133='Saurabh Kumar', H133='225'
+  Row 134: A134='North 2', B134='Uttar Pradesh', C134='Varanasi', D134='LISP', E134='41079', F134='DROTCA - Dhannu Ram Online Test & Computer Application Pvt. Ltd', G134='Saurabh Kumar', H134='260'
+  Row 135: A135='North 2', B135='Uttar Pradesh', C135='Varanasi', D135='iDZ', E135='41668', F135='iON Digital Zone iDZ Ayar Bazar 2', G135='Saurabh Kumar', H135='225'
+  Row 136: A136='North 2', B136='Uttar Pradesh', C136='Varanasi', D136='LISP', E136='42226', F136='iON Digital Zone iDZ Chaubeypur', G136='Saurabh Kumar', H136='440'
+  Row 137: A137='North 2', B137='Uttarakhand', C137='Dehradun', D137='LISP', E137='30632', F137='iCreate Solutions - LISP', G137='Saurabh Kumar', H137='673'
+  Row 138: A138='North 2', B138='Uttarakhand', C138='Haldwani', D138='iDZ', E138='9338', F138='iON Digital Zone iDZ  Teenpani', G138='Saurabh Kumar', H138='235'
+  Row 139: A139='North 2', B139='Uttarakhand', C139='Haldwani', D139='LISP', E139='9729', F139='Queens Public School', G139='Saurabh Kumar', H139='227'
+  Row 140: A140='North 2', B140='Uttarakhand', C140='Haldwani', D140='LISP', E140='14451', F140='Queens Public School Damuadhunga', G140='Saurabh Kumar', H140='250'
+  Row 141: A141='North 2', B141='Uttarakhand', C141='Haldwani', D141='LISP', E141='25807', F141='Swami Vivekanand College of Management and Technology', G141='Saurabh Kumar', H141='276'
+  Row 142: A142='North 2', B142='Uttarakhand', C142='Haldwani', D142='iDZ', E142='41711', F142='iON Digital Zone, Halduchaur', G142='Saurabh Kumar', H142='235'
+  Row 143: A143='North 2', B143='Uttarakhand', C143='Roorkee', D143='LISP', E143='14947', F143='City Degree College Of Management & Technology', G143='Saurabh Kumar', H143='200'
+  Row 144: A144='North 2', B144='Uttarakhand', C144='Roorkee', D144='LISP', E144='37507', F144='BRD College Roorkee', G144='Saurabh Kumar', H144='250'
+  Row 145: A145='North 3', B145='Rajasthan', C145='Ajmer', D145='iDZ', E145='8451', F145='iON Digital Zone  iDZ Gegal Industrial Area', G145='Saurabh Kumar', H145='342'
+  Row 146: A146='North 3', B146='Rajasthan', C146='Bikaner', D146='iDZ', E146='8665', F146='iON Digital Zone iDZ Naino Ka Bas', G146='Saurabh Kumar', H146='479'
+  Row 147: A147='North 3', B147='Rajasthan', C147='Hanumangarh', D147='LISP', E147='16066', F147='Times Public School', G147='Saurabh Kumar', H147='235'
+  Row 148: A148='North 3', B148='Rajasthan', C148='Jaipur', D148='LISP', E148='63', F148='Shankara Institute of Technology', G148='Saurabh Kumar', H148='300'
+  Row 149: A149='North 3', B149='Rajasthan', C149='Jaipur', D149='LISP', E149='141', F149='Yagyavalkya Institute of Technology', G149='Saurabh Kumar', H149='410'
+  Row 150: A150='North 3', B150='Rajasthan', C150='Jaipur', D150='LISP', E150='781', F150='Arya Institute of Engineering and Technology', G150='Kaveri Suryavanshi', H150='800'
+  Row 151: A151='North 3', B151='Rajasthan', C151='Jaipur', D151='LISP', E151='1118', F151='Jaipur Engineering College', G151='Kaveri Suryavanshi', H151='700'
+  Row 152: A152='North 3', B152='Rajasthan', C152='Jaipur', D152='LISP', E152='7745', F152='Alankar Mahila P.G. Mahavidyalaya', G152='Kaveri Suryavanshi', H152='380'
+  Row 153: A153='North 3', B153='Rajasthan', C153='Jaipur', D153='LISP', E153='8571', F153='Sri Balaji College Of Engineering And Technology', G153='Kaveri Suryavanshi', H153='932'
+  Row 154: A154='North 3', B154='Rajasthan', C154='Jaipur', D154='LISP', E154='10626', F154='Shankara Group Of Institutions', G154='Kaveri Suryavanshi', H154='190'
+  Row 155: A155='North 3', B155='Rajasthan', C155='Jaipur', D155='LISP', E155='15008', F155='Aurobindo International School Jaipur', G155='Kaveri Suryavanshi', H155='360'
+  Row 156: A156='North 3', B156='Rajasthan', C156='Jaipur', D156='iDZ', E156='41682', F156='iON Digital Zone iDZ Sitapura 1', G156='Kaveri Suryavanshi', H156='670'
+  Row 157: A157='North 3', B157='Rajasthan', C157='Jaipur', D157='iDZ', E157='41683', F157='iON Digital Zone iDZ Sitapura 2', G157='Kaveri Suryavanshi', H157='1850'
+  Row 158: A158='North 3', B158='Rajasthan', C158='Jodhpur', D158='iDZ', E158='8450', F158='iON Digital Zone iDZ Laxman Nagar', G158='Kaveri Suryavanshi', H158='690'
+  Row 159: A159='North 3', B159='Rajasthan', C159='Kota', D159='LISP', E159='10624', F159='Shiv Jyoti International School', G159='Kaveri Suryavanshi', H159='720'
+  Row 160: A160='North 3', B160='Rajasthan', C160='Kota', D160='LISP', E160='14449', F160='Viable Solutions', G160='Kaveri Suryavanshi', H160='420'
+  Row 161: A161='North 3', B161='Rajasthan', C161='Kota', D161='LISP', E161='15822', F161='Bits N Bytes Infocom', G161='Kaveri Suryavanshi', H161='330'
+  Row 162: A162='North 3', B162='Rajasthan', C162='Kota', D162='LISP', E162='33035', F162='Digital Desk', G162='Kaveri Suryavanshi', H162='410'
+  Row 163: A163='North 3', B163='Rajasthan', C163='Kota', D163='LISP', E163='40893', F163='PARIKALAK', G163='Kaveri Suryavanshi', H163='400'
+  Row 164: A164='North 3', B164='Rajasthan', C164='Sikar', D164='LISP', E164='1275', F164='Bhartiya Institute of Engineering and Technology', G164='Kaveri Suryavanshi', H164='405'
+  Row 165: A165='North 3', B165='Rajasthan', C165='Sikar', D165='LISP', E165='24271', F165='Khwaja Gharib Nawaz College of Nursing', G165='Kaveri Suryavanshi', H165='250'
+  Row 166: A166='North 3', B166='Rajasthan', C166='Sikar', D166='LISP', E166='38814', F166='Akhil Bharati Vidyapeeth College Of Nursing', G166='Kaveri Suryavanshi', H166='240'
+  Row 167: A167='North 4', B167='Haryana', C167='Ambala', D167='iDZ', E167='8683', F167='iON Digital Zone iDZ  Shahpur', G167='Kaveri Suryavanshi', H167='470'
+  Row 168: A168='North 4', B168='Punjab', C168='Bathinda', D168='iDZ', E168='8763', F168='iON Digital Zone iDZ  Bhucho kalan', G168='Kaveri Suryavanshi', H168='1350'
+  Row 169: A169='North 4', B169='Punjab', C169='Mohali', D169='LISP', E169='38190', F169='Tejas Online Examination Center', G169='Kaveri Suryavanshi', H169='500'
+  Row 170: A170='North 4', B170='Punjab', C170='Mohali', D170='LISP', E170='41822', F170='iON Digital Zone iDZ Rhombus', G170='Kaveri Suryavanshi', H170='230'
+  Row 171: A171='North 4', B171='Punjab', C171='Patiala', D171='iDZ', E171='8756', F171='iON Digital Zone iDZ Bahadurgarh   Patiala', G171='Pranay Valanj', H171='680'
+  Row 172: A172='South 1', B172='Andhra Pradesh', C172='Anantapur', D172='LTL', E172='37512', F172='National Council for the Church Social Action India', G172='Pranay Valanj', H172='455'
+  Row 173: A173='South 1', B173='Andhra Pradesh', C173='Guntur', D173='iDZ', E173='7996', F173='iON Digital Zone iDZ  Perecherla', G173='Pranay Valanj', H173='230'
+  Row 174: A174='South 1', B174='Andhra Pradesh', C174='Kakinada', D174='iDZ', E174='8027', F174='iON Digital Zone iDZ  Atchutapuram', G174='Pranay Valanj', H174='500'
+  Row 175: A175='South 1', B175='Andhra Pradesh', C175='Kurnool', D175='iDZ', E175='41590', F175='iON Digital Zone iDZ Kurnool', G175='Pranay Valanj', H175='955'
+  Row 176: A176='South 1', B176='Andhra Pradesh', C176='Nellore', D176='iDZ', E176='35626', F176='iON Digital Zone iDZ Pottepalem Village', G176='Pranay Valanj', H176='475'
+  Row 177: A177='South 1', B177='Andhra Pradesh', C177='Ongole', D177='LTL', E177='33430', F177='National council for the church social action india', G177='Pranay Valanj', H177='220'
+  Row 178: A178='South 1', B178='Andhra Pradesh', C178='Rajahmundry', D178='iDZ', E178='7954', F178='iON Digital Zone iDZ  Luthergiri', G178='Pranay Valanj', H178='940'
+  Row 179: A179='South 1', B179='Andhra Pradesh', C179='Srikakulam', D179='LISP', E179='38141', F179='CORE TECHNOLOGIES', G179='Pranay Valanj', H179='320'
+  Row 180: A180='South 1', B180='Andhra Pradesh', C180='Tirupathi', D180='iDZ', E180='9105', F180='iON Digital Zone iDZ  Zoo Park Tirupathi', G180='Pranay Valanj', H180='940'
+  Row 181: A181='South 1', B181='Andhra Pradesh', C181='Visakhapatnam', D181='iDZ', E181='8827', F181='iON Digital Zone iDZ  Sheela Nagar ', G181='Pranay Valanj', H181='560'
+  Row 182: A182='South 1', B182='Andhra Pradesh', C182='Visakhapatnam', D182='iDZ', E182='9208', F182='iON Digital Zone iDZ 2 Chinamushidiwada', G182='Pranay Valanj', H182='955'
+  Row 183: A183='South 1', B183='Andhra Pradesh', C183='Visakhapatnam', D183='iDZ', E183='9417', F183='iON Digital Zone iDZ 1 Chinamushidiwada', G183='Pranay Valanj', H183='475'
+  Row 184: A184='South 1', B184='Andhra Pradesh', C184='Vizianagaram', D184='iDZ', E184='8754', F184='iON Digital Zone iDZ  Gajularega', G184='Pranay Valanj', H184='490'
+  Row 185: A185='South 1', B185='Karnataka', C185='Belagavi(Belgaum)', D185='iDZ', E185='11398', F185='iON Digital Zone iDZ Airport Road', G185='Pranay Valanj', H185='480'
+  Row 186: A186='South 1', B186='Karnataka', C186='Bengaluru', D186='iDZ', E186='7974', F186='iON Digital Zone iDZ  Rajarajeswari Medical College and Hospital', G186='Pranay Valanj', H186='240'
+  Row 187: A187='South 1', B187='Karnataka', C187='Bengaluru', D187='LISP', E187='40168', F187='Digimetrics', G187='Pranay Valanj', H187='350'
+  Row 188: A188='South 1', B188='Karnataka', C188='Kalaburagi(Gulbarga)', D188='LISP', E188='40041', F188='Sharanabasaweshwar Vidya Vardhak Sangha', G188='Pranay Valanj', H188='460'
+  Row 189: A189='South 1', B189='Karnataka', C189='Shivamogga(Shimoga)', D189='iDZ', E189='8560', F189='iON Digital Zone iDZ  Machenahalli ', G189='Pranay Valanj', H189='380'
+  Row 190: A190='South 1', B190='Karnataka', C190='Udupi', D190='iDZ', E190='7975', F190='iON Digital Zone iDZ  Milk Diary Road', G190='Pranay Valanj', H190='216'
+  Row 191: A191='South 1', B191='Telangana', C191='Hyderabad', D191='iDZ', E191='41585', F191='iON Digital Zone iDZ Ibrahimpatnam', G191='Pranay Valanj', H191='955'
+  Row 192: A192='South 1', B192='Telangana', C192='Karimnagar', D192='iDZ', E192='8682', F192='iON Digital Zone iDZ  Ramakrishna Colony', G192='SARANYA Mudliar', H192='718'
+  Row 193: A193='South 1', B193='Telangana', C193='Khammam', D193='LISP', E193='41864', F193='iON Digital Zone iDZ Khammam', G193='SARANYA Mudliar', H193='450'
+  Row 194: A194='South 2', B194='Tamil Nadu', C194='Madurai', D194='iDZ', E194='8773', F194='iON Digital Zone  iDZ Madurai IV', G194='SARANYA Mudliar', H194='220'
+  Row 195: A195='South 2', B195='Tamil Nadu', C195='Tiruchirappalli', D195='iDZ', E195='8774', F195='iON Digital Zone  IDZ Trichy II', G195='SARANYA Mudliar', H195='455'
+  Row 196: A196='West 1', B196='Gujarat', C196='Bhavnagar', D196='LISP', E196='39062', F196='JPM Infotech', G196='SARANYA Mudliar', H196='85'
+  Row 197: A197='West 1', B197='Gujarat', C197='Gandhinagar', D197='LISP', E197='37550', F197='Kaavyaratna Info Services', G197='SARANYA Mudliar', H197='400'
+  Row 198: A198='West 1', B198='Gujarat', C198='Mehsana', D198='iDZ', E198='8133', F198='iON Digital Zone iDZ Manav Ashram', G198='SARANYA Mudliar', H198='210'
+  Row 199: A199='West 1', B199='Gujarat', C199='Rajkot', D199='iDZ', E199='7873', F199='iON Digital Zone iDZ 1  Metoda', G199='SARANYA Mudliar', H199='200'
+  Row 200: A200='West 1', B200='Gujarat', C200='Rajkot', D200='iDZ', E200='8039', F200='iON Digital Zone iDZ 2  Metoda', G200='SARANYA Mudliar', H200='200'
+  Row 201: A201='West 1', B201='Gujarat', C201='Rajkot', D201='iDZ', E201='8208', F201='iON Digital Zone iDZ 3  Metoda', G201='SARANYA Mudliar', H201='200'
+  Row 202: A202='West 1', B202='Maharashtra', C202='Akola', D202='LISP', E202='2764', F202='College Of Engineering And Technology  Akola', G202='SARANYA Mudliar', H202='145'
+  Row 203: A203='West 1', B203='Maharashtra', C203='Ambajogai', D203='LISP', E203='26801', F203='Professional Career Orientation Center Ambajogai', G203='SARANYA Mudliar', H203='130'
+  Row 204: A204='West 1', B204='Maharashtra', C204='Amravati', D204='LISP', E204='85', F204='Sipna College of Engineering and Technology', G204='SARANYA Mudliar', H204='110'
+  Row 205: A205='West 1', B205='Maharashtra', C205='Amravati', D205='iDZ', E205='7993', F205='iON DIGITAL Zone iDZ  University Camp Area', G205='SARANYA Mudliar', H205='230'
+  Row 206: A206='West 1', B206='Maharashtra', C206='Amravati', D206='iDZ', E206='8553', F206='iON DIGITAL ZONE iDZ  Cityland', G206='SARANYA Mudliar', H206='470'
+  Row 207: A207='West 1', B207='Maharashtra', C207='Dhule', D207='LISP', E207='4595', F207='Bharti Multipurpose Trust', G207='SARANYA Mudliar', H207='250'
+  Row 208: A208='West 1', B208='Maharashtra', C208='Jalgaon', D208='LISP', E208='33971', F208='Online Examination Center Kavyatri Bahinabai Chaudhari North Maharashtra University Jalgaon', G208='SARANYA Mudliar', H208='200'
+  Row 209: A209='West 1', B209='Maharashtra', C209='Kolhapur', D209='iDZ', E209='8564', F209='iON Digital Zone  iDZ Shiye', G209='SARANYA Mudliar', H209='470'
+  Row 210: A210='West 1', B210='Maharashtra', C210='Nagpur', D210='iDZ', E210='8554', F210='iON DIGITAL ZONE  iDZ 2   WADI MIDC', G210='SARANYA Mudliar', H210='660'
+  Row 211: A211='West 1', B211='Maharashtra', C211='Nagpur', D211='iDZ', E211='9451', F211='iON Digital Zone iDZ 3 Wadi MIDC Techgressor Soft Solutions Pvt. Ltd. Nagpur', G211='SARANYA Mudliar', H211='470'
+  Row 212: A212='West 1', B212='Maharashtra', C212='Nagpur', D212='LISP', E212='25019', F212='Jindal Edutech Pvt Ltd Gondkhairi Nagpur', G212='SARANYA Mudliar', H212='410'
+  Row 213: A213='West 1', B213='Maharashtra', C213='Nagpur', D213='LISP', E213='30630', F213='MKH Sancheti Public School Besa Nagpur', G213='Sakshi Raut', H213='330'
+  Row 214: A214='West 1', B214='Maharashtra', C214='Nanded', D214='iDZ', E214='7998', F214='iON DIGITAL Zone iDZ  Vishnupuri', G214='Sakshi Raut', H214='470'
+  Row 215: A215='West 1', B215='Maharashtra', C215='Nanded', D215='LISP', E215='35649', F215='Shri Sambhaji College Of Management And Technology Nanded', G215='Sakshi Raut', H215='100'
+  Row 216: A216='West 1', B216='Maharashtra', C216='Sangli', D216='LISP', E216='4347', F216='Vasantdada Patil Institute Management Studies And Research', G216='Sakshi Raut', H216='250'
+  Row 217: A217='West 1', B217='Maharashtra', C217='SOLAPUR', D217='LISP', E217='30727', F217='Solapur Digital Hub', G217='Sakshi Raut', H217='180'
+  Row 218: A218='West 2', B218='Chhattisgarh', C218='Bhilai Nagar', D218='LISP', E218='24189', F218='Mansa College', G218='Sakshi Raut', H218='250'
+  Row 219: A219='West 2', B219='Chhattisgarh', C219='Bhilai Nagar', D219='LISP', E219='42360', F219='Parthivi College Digital Zone', G219='Sakshi Raut', H219='400'
+  Row 220: A220='West 2', B220='Chhattisgarh', C220='Bilaspur', D220='LISP', E220='42395', F220='Prajna Mandapam', G220='Sakshi Raut', H220='900'
+  Row 221: A221='West 2', B221='Chhattisgarh', C221='Raipur', D221='iDZ', E221='8747', F221='ION Digital Zone iDZ  SARONA', G221='Sakshi Raut', H221='958'
+  Row 222: A222='West 2', B222='Madhya Pradesh', C222='Bhopal', D222='LISP', E222='544', F222='Radharaman Group of Institution', G222='Sakshi Raut', H222='200'
+  Row 223: A223='West 2', B223='Madhya Pradesh', C223='Bhopal', D223='LISP', E223='4170', F223='SAM COLLEGE OF ENGINEERING AND TECHNOLOGY', G223='Sakshi Raut', H223='200'
+  Row 224: A224='West 2', B224='Madhya Pradesh', C224='Bhopal', D224='iDZ', E224='40196', F224='iON Digital Zone iDZ, Prestige 1 - Shree Jairam Education Society', G224='Sakshi Raut', H224='400'
+  Row 225: A225='West 2', B225='Madhya Pradesh', C225='Bhopal', D225='iDZ', E225='40197', F225='iON Digital Zone iDZ, Prestige 2 - Shree Jairam Education Society', G225='Sakshi Raut', H225='838'
+  Row 226: A226='West 2', B226='Madhya Pradesh', C226='Bhopal', D226='iDZ', E226='40660', F226='iON Digital Zone iDZ RGPM Sankhedi', G226='Sakshi Raut', H226='790'
+  Row 227: A227='West 2', B227='Madhya Pradesh', C227='Bhopal', D227='LTL', E227='40938', F227='iON Digital Zone iDZ Radharaman', G227='Sakshi Raut', H227='215'
+  Row 228: A228='West 2', B228='Madhya Pradesh', C228='Indore', D228='LTL', E228='40223', F228='iON Digital Zone iDZ Sri Aurobindo', G228='Sakshi Raut', H228='477'
+  Row 229: A229='West 2', B229='Madhya Pradesh', C229='Jabalpur', D229='iDZ', E229='8481', F229='iON Digital Zone iDZ  Gram Raigawan  Near Patan Bypass', G229='Sakshi Raut', H229='1201'
+  Row 230: A230='West 2', B230='Madhya Pradesh', C230='Sagar', D230='LISP', E230='718', F230='Adina Institute of Science and Technology', G230='Sakshi Raut', H230='230'
+  Row 231: A231='West 2', B231='Madhya Pradesh', C231='Sagar', D231='LISP', E231='8419', F231='SSHC Jain Institute of Management and Research', G231='Sakshi Raut', H231='170'
+  Row 232: A232='West 2', B232='Madhya Pradesh', C232='Satna', D232='iDZ', E232='8366', F232='iON Digital Zone iDZ Karhi Road Amoudha', G232='Sakshi Raut', H232='477'
+  Row 233: A233='West 2', B233='Madhya Pradesh', C233='Ujjain', D233='iDZ', E233='7966', F233='iON Digital Zone iDZ Gram Gangedi Near Mahaveer Tapobhumi', G233='Sakshi Raut', H233='461'
+  Row 234: A234='', B234='', C234='', D234='', E234='', F234='', G234='', H234=''
+  Row 235: A235='', B235='', C235='', D235='', E235='', F235='', G235='', H235=''
+  Row 236: A236='', B236='', C236='', D236='', E236='', F236='', G236='', H236=''
+  Row 237: A237='', B237='', C237='', D237='', E237='', F237='', G237='', H237=''
+  Row 238: A238='', B238='', C238='', D238='', E238='', F238='', G238='', H238=''
+  Row 239: A239='', B239='', C239='', D239='', E239='', F239='', G239='', H239=''
+  Row 240: A240='', B240='', C240='', D240='', E240='', F240='', G240='', H240=''
+  Row 241: A241='', B241='', C241='', D241='', E241='', F241='', G241='', H241=''
+  Row 242: A242='', B242='', C242='', D242='', E242='', F242='', G242='', H242=''
+  Row 243: A243='', B243='', C243='', D243='', E243='', F243='', G243='', H243=''
+  Row 244: A244='', B244='', C244='', D244='', E244='', F244='', G244='', H244=''
+  Row 245: A245='', B245='', C245='', D245='', E245='', F245='', G245='', H245=''
+  Row 246: A246='', B246='', C246='', D246='', E246='', F246='', G246='', H246=''
+  Row 247: A247='', B247='', C247='', D247='', E247='', F247='', G247='', H247=''
+  Row 248: A248='', B248='', C248='', D248='', E248='', F248='', G248='', H248=''
+  Row 249: A249='', B249='', C249='', D249='', E249='', F249='', G249='', H249=''
+  Row 250: A250='', B250='', C250='', D250='', E250='', F250='', G250='', H250=''
+  Row 251: A251='', B251='', C251='', D251='', E251='', F251='', G251='', H251=''
+  Row 252: A252='', B252='', C252='', D252='', E252='', F252='', G252='', H252=''
+  Row 253: A253='', B253='', C253='', D253='', E253='', F253='', G253='', H253=''
+  Row 254: A254='', B254='', C254='', D254='', E254='', F254='', G254='', H254=''
+  Row 255: A255='', B255='', C255='', D255='', E255='', F255='', G255='', H255=''
+  Row 256: A256='', B256='', C256='', D256='', E256='', F256='', G256='', H256=''
+  Row 257: A257='', B257='', C257='', D257='', E257='', F257='', G257='', H257=''
+  Row 258: A258='', B258='', C258='', D258='', E258='', F258='', G258='', H258=''
+  Row 259: A259='', B259='', C259='', D259='', E259='', F259='', G259='', H259=''
+  Row 260: A260='', B260='', C260='', D260='', E260='', F260='', G260='', H260=''
+  Row 261: A261='', B261='', C261='', D261='', E261='', F261='', G261='', H261=''
+  Row 262: A262='', B262='', C262='', D262='', E262='', F262='', G262='', H262=''
+  Row 263: A263='', B263='', C263='', D263='', E263='', F263='', G263='', H263=''
+  Row 264: A264='', B264='', C264='', D264='', E264='', F264='', G264='', H264=''
+  Row 265: A265='', B265='', C265='', D265='', E265='', F265='', G265='', H265=''
+  Row 266: A266='', B266='', C266='', D266='', E266='', F266='', G266='', H266=''
+  Row 267: A267='', B267='', C267='', D267='', E267='', F267='', G267='', H267=''
+  Row 268: A268='', B268='', C268='', D268='', E268='', F268='', G268='', H268=''
+  Row 269: A269='', B269='', C269='', D269='', E269='', F269='', G269='', H269=''
+  Row 270: A270='', B270='', C270='', D270='', E270='', F270='', G270='', H270=''
+  Row 271: A271='', B271='', C271='', D271='', E271='', F271='', G271='', H271=''
+  Row 272: A272='', B272='', C272='', D272='', E272='', F272='', G272='', H272=''
+  Row 273: A273='', B273='', C273='', D273='', E273='', F273='', G273='', H273=''
+  Row 274: A274='', B274='', C274='', D274='', E274='', F274='', G274='', H274=''
+  Row 275: A275='', B275='', C275='', D275='', E275='', F275='', G275='', H275=''
+  Row 276: A276='', B276='', C276='', D276='', E276='', F276='', G276='', H276=''
+  Row 277: A277='', B277='', C277='', D277='', E277='', F277='', G277='', H277=''
+  Row 278: A278='', B278='', C278='', D278='', E278='', F278='', G278='', H278=''
+  Row 279: A279='', B279='', C279='', D279='', E279='', F279='', G279='', H279=''
+  Row 280: A280='', B280='', C280='', D280='', E280='', F280='', G280='', H280=''
+  Row 281: A281='', B281='', C281='', D281='', E281='', F281='', G281='', H281=''
+  Row 282: A282='', B282='', C282='', D282='', E282='', F282='', G282='', H282=''
+  Row 283: A283='', B283='', C283='', D283='', E283='', F283='', G283='', H283=''
+  Row 284: A284='', B284='', C284='', D284='', E284='', F284='', G284='', H284=''
+  Row 285: A285='', B285='', C285='', D285='', E285='', F285='', G285='', H285=''
+  Row 286: A286='', B286='', C286='', D286='', E286='', F286='', G286='', H286=''
+  Row 287: A287='', B287='', C287='', D287='', E287='', F287='', G287='', H287=''
+  Row 288: A288='', B288='', C288='', D288='', E288='', F288='', G288='', H288=''
+  Row 289: A289='', B289='', C289='', D289='', E289='', F289='', G289='', H289=''
+  Row 290: A290='', B290='', C290='', D290='', E290='', F290='', G290='', H290=''
+  Row 291: A291='', B291='', C291='', D291='', E291='', F291='', G291='', H291=''
+  Row 292: A292='', B292='', C292='', D292='', E292='', F292='', G292='', H292=''
+  Row 293: A293='', B293='', C293='', D293='', E293='', F293='', G293='', H293=''
+  Row 294: A294='', B294='', C294='', D294='', E294='', F294='', G294='', H294=''
+  Row 295: A295='', B295='', C295='', D295='', E295='', F295='', G295='', H295=''
+  Row 296: A296='', B296='', C296='', D296='', E296='', F296='', G296='', H296=''
+  Row 297: A297='', B297='', C297='', D297='', E297='', F297='', G297='', H297=''
+  Row 298: A298='', B298='', C298='', D298='', E298='', F298='', G298='', H298=''
+  Row 299: A299='', B299='', C299='', D299='', E299='', F299='', G299='', H299=''
+  Row 300: A300='', B300='', C300='', D300='', E300='', F300='', G300='', H300=''
+  Row 301: A301='', B301='', C301='', D301='', E301='', F301='', G301='', H301=''
+  Row 302: A302='', B302='', C302='', D302='', E302='', F302='', G302='', H302=''
+  Row 303: A303='', B303='', C303='', D303='', E303='', F303='', G303='', H303=''
+  Row 304: A304='', B304='', C304='', D304='', E304='', F304='', G304='', H304=''
+  Row 305: A305='', B305='', C305='', D305='', E305='', F305='', G305='', H305=''
+  Row 306: A306='', B306='', C306='', D306='', E306='', F306='', G306='', H306=''
+  Row 307: A307='', B307='', C307='', D307='', E307='', F307='', G307='', H307=''
+  Row 308: A308='', B308='', C308='', D308='', E308='', F308='', G308='', H308=''
+  Row 309: A309='', B309='', C309='', D309='', E309='', F309='', G309='', H309=''
+  Row 310: A310='', B310='', C310='', D310='', E310='', F310='', G310='', H310=''
+  Row 311: A311='', B311='', C311='', D311='', E311='', F311='', G311='', H311=''
+  Row 312: A312='', B312='', C312='', D312='', E312='', F312='', G312='', H312=''
+  Row 313: A313='', B313='', C313='', D313='', E313='', F313='', G313='', H313=''
+  Row 314: A314='', B314='', C314='', D314='', E314='', F314='', G314='', H314=''
+  Row 315: A315='', B315='', C315='', D315='', E315='', F315='', G315='', H315=''
+  Row 316: A316='', B316='', C316='', D316='', E316='', F316='', G316='', H316=''
+  Row 317: A317='', B317='', C317='', D317='', E317='', F317='', G317='', H317=''
+  Row 318: A318='', B318='', C318='', D318='', E318='', F318='', G318='', H318=''
+  Row 319: A319='', B319='', C319='', D319='', E319='', F319='', G319='', H319=''
+  Row 320: A320='', B320='', C320='', D320='', E320='', F320='', G320='', H320=''
+  Row 321: A321='', B321='', C321='', D321='', E321='', F321='', G321='', H321=''
+  Row 322: A322='', B322='', C322='', D322='', E322='', F322='', G322='', H322=''
+  Row 323: A323='', B323='', C323='', D323='', E323='', F323='', G323='', H323=''
+  Row 324: A324='', B324='', C324='', D324='', E324='', F324='', G324='', H324=''
+  Row 325: A325='', B325='', C325='', D325='', E325='', F325='', G325='', H325=''
+  Row 326: A326='', B326='', C326='', D326='', E326='', F326='', G326='', H326=''
+  Row 327: A327='', B327='', C327='', D327='', E327='', F327='', G327='', H327=''
+  Row 328: A328='', B328='', C328='', D328='', E328='', F328='', G328='', H328=''
+  Row 329: A329='', B329='', C329='', D329='', E329='', F329='', G329='', H329=''
+  Row 330: A330='', B330='', C330='', D330='', E330='', F330='', G330='', H330=''
+  Row 331: A331='', B331='', C331='', D331='', E331='', F331='', G331='', H331=''
+  Row 332: A332='', B332='', C332='', D332='', E332='', F332='', G332='', H332=''
+  Row 333: A333='', B333='', C333='', D333='', E333='', F333='', G333='', H333=''
+  Row 334: A334='', B334='', C334='', D334='', E334='', F334='', G334='', H334=''
+  Row 335: A335='', B335='', C335='', D335='', E335='', F335='', G335='', H335=''
+  Row 336: A336='', B336='', C336='', D336='', E336='', F336='', G336='', H336=''
+  Row 337: A337='', B337='', C337='', D337='', E337='', F337='', G337='', H337=''
+  Row 338: A338='', B338='', C338='', D338='', E338='', F338='', G338='', H338=''
+  Row 339: A339='', B339='', C339='', D339='', E339='', F339='', G339='', H339=''
+  Row 340: A340='', B340='', C340='', D340='', E340='', F340='', G340='', H340=''
+  Row 341: A341='', B341='', C341='', D341='', E341='', F341='', G341='', H341=''
+  Row 342: A342='', B342='', C342='', D342='', E342='', F342='', G342='', H342=''
+  Row 343: A343='', B343='', C343='', D343='', E343='', F343='', G343='', H343=''
+  Row 344: A344='', B344='', C344='', D344='', E344='', F344='', G344='', H344=''
+  Row 345: A345='', B345='', C345='', D345='', E345='', F345='', G345='', H345=''
+  Row 346: A346='', B346='', C346='', D346='', E346='', F346='', G346='', H346=''
+  Row 347: A347='', B347='', C347='', D347='', E347='', F347='', G347='', H347=''
+  Row 348: A348='', B348='', C348='', D348='', E348='', F348='', G348='', H348=''
+  Row 349: A349='', B349='', C349='', D349='', E349='', F349='', G349='', H349=''
+  Row 350: A350='', B350='', C350='', D350='', E350='', F350='', G350='', H350=''
+  Row 351: A351='', B351='', C351='', D351='', E351='', F351='', G351='', H351=''
+  Row 352: A352='', B352='', C352='', D352='', E352='', F352='', G352='', H352=''
+  Row 353: A353='', B353='', C353='', D353='', E353='', F353='', G353='', H353=''
+  Row 354: A354='', B354='', C354='', D354='', E354='', F354='', G354='', H354=''
+  Row 355: A355='', B355='', C355='', D355='', E355='', F355='', G355='', H355=''
+  Row 356: A356='', B356='', C356='', D356='', E356='', F356='', G356='', H356=''
+  Row 357: G357=''
+  Row 358: G358=''
+  Row 359: G359=''
+  Row 360: G360=''
+  Row 361: G361=''
+  Row 362: G362=''
+  Row 363: G363=''
+  Row 364: G364=''
+  Row 365: G365=''
+  Row 366: G366=''
+  Row 367: G367=''
+  Row 368: G368=''
+  Row 369: G369=''
+  Row 370: G370=''
+  Row 371: G371=''
+  Row 372: G372=''
+  Row 373: G373=''
+
+=== SHEET: Shift 3 ===
+  Row 1: A1='Zone', B1='State', C1='City', D1='TC Type', E1='TC Code', F1='TC Name', G1='Assigned To', H1='Candidate Count'
+  Row 2: A2='East 1', B2='Bihar', C2='Bhagalpur', D2='iDZ', E2='9286', F2='iON Digital Zone iDZ Bhagalpur', G2='Md. Haqique', H2='465'
+  Row 3: A3='East 1', B3='Bihar', C3='Gaya', D3='LISP', E3='33901', F3='Shree Ganesh Innovative', G3='Md. Haqique', H3='260'
+  Row 4: A4='East 1', B4='Bihar', C4='Muzaffarpur', D4='iDZ', E4='9287', F4='iON Digital Zone iDZ Kanti', G4='Md. Haqique', H4='470'
+  Row 5: A5='East 1', B5='Bihar', C5='Muzaffarpur', D5='LISP', E5='15028', F5='Azad Infotech', G5='Md. Haqique', H5='340'
+  Row 6: A6='East 1', B6='Bihar', C6='Muzaffarpur', D6='iDZ', E6='41826', F6='iON Digital Zone iDZ Bhikhanpur - Muzaffarpur', G6='Md. Haqique', H6='225'
+  Row 7: A7='East 1', B7='Bihar', C7='Patna', D7='iDZ', E7='9000', F7='iON Digital Zone iDZ Sandalpur', G7='Md. Haqique', H7='470'
+  Row 8: A8='East 1', B8='Bihar', C8='Patna', D8='iDZ', E8='9564', F8='iON Digital Zone iDZ Phulwarisharif', G8='Md. Haqique', H8='230'
+  Row 9: A9='East 1', B9='Bihar', C9='Patna', D9='LISP', E9='38247', F9='Unique IT Point Private Limited', G9='Md. Haqique', H9='245'
+  Row 10: A10='East 1', B10='Bihar', C10='Patna', D10='LISP', E10='41553', F10='Bapu Pariksha Parisar Zone - 1', G10='Md. Haqique', H10='970'
+  Row 11: A11='East 1', B11='Bihar', C11='Patna', D11='LISP', E11='41554', F11='Bapu Pariksha Parisar Zone - 2', G11='Md. Haqique', H11='1700'
+  Row 12: A12='East 1', B12='Bihar', C12='Purnea', D12='iDZ', E12='11365', F12='iON Digital Zone  iDZ Purnea', G12='Md. Haqique', H12='470'
+  Row 13: A13='East 1', B13='Jharkhand', C13='Bokaro Steel City', D13='LISP', E13='22988', F13='Alpha ICT Centre', G13='Md. Haqique', H13='234'
+  Row 14: A14='East 1', B14='Jharkhand', C14='Daltonganj', D14='LISP', E14='15869', F14='Oxford Public School Daltonganj', G14='Md. Haqique', H14='220'
+  Row 15: A15='East 1', B15='Jharkhand', C15='Dhanbad', D15='iDZ', E15='41479', F15='iON DIGITAL ZONE, iDZ Amagraha', G15='Md. Haqique', H15='935'
+  Row 16: A16='East 1', B16='Jharkhand', C16='Jamshedpur', D16='LISP', E16='37332', F16='Govind Vidyalaya', G16='Md. Haqique', H16='230'
+  Row 17: A17='East 1', B17='Jharkhand', C17='Jamshedpur', D17='LISP', E17='40082', F17='Creative Computer', G17='Md. Haqique', H17='315'
+  Row 18: A18='East 1', B18='Jharkhand', C18='Ranchi', D18='LISP', E18='3493', F18='Oxford Public School Ranchi', G18='Md. Haqique', H18='410'
+  Row 19: A19='East 1', B19='Jharkhand', C19='Ranchi', D19='iDZ', E19='8320', F19='iON Digital Zone iDZ Tupudana', G19='Md. Haqique', H19='1640'
+  Row 20: A20='East 1', B20='Jharkhand', C20='Ranchi', D20='LISP', E20='16665', F20='Arunuma Technical Services Private Limited', G20='Md. Haqique', H20='390'
+  Row 21: A21='East 1', B21='Odisha', C21='Balasore', D21='iDZ', E21='7906', F21='iON Digital Zone iDZ Harida', G21='Md. Haqique', H21='230'
+  Row 22: A22='East 1', B22='Odisha', C22='Berhampur-Ganjam', D22='LISP', E22='1295', F22='SMIT Degree Engineering College', G22='Jay Lund', H22='233'
+  Row 23: A23='East 1', B23='Odisha', C23='Berhampur-Ganjam', D23='iDZ', E23='4869', F23='iON Digital Zone iDZ Khallikote College Area', G23='Jay Lund', H23='230'
+  Row 24: A24='East 1', B24='Odisha', C24='Bhubaneswar', D24='LISP', E24='583', F24='GITA Autonomous College', G24='Jay Lund', H24='450'
+  Row 25: A25='East 1', B25='Odisha', C25='Bhubaneswar', D25='iDZ', E25='7908', F25='iON Digital Zone iDZ1 Patia', G25='Jay Lund', H25='459'
+  Row 26: A26='East 1', B26='Odisha', C26='Bhubaneswar', D26='LISP', E26='15284', F26='Innovinc Tech Lab', G26='Jay Lund', H26='180'
+  Row 27: A27='East 1', B27='Odisha', C27='Bhubaneswar', D27='LISP', E27='16698', F27='Eglobetech India Private Limited', G27='Jay Lund', H27='170'
+  Row 28: A28='East 1', B28='Odisha', C28='Bhubaneswar', D28='LISP', E28='16699', F28='Utkal Institute Of Engineering And Technology', G28='Jay Lund', H28='180'
+  Row 29: A29='East 1', B29='Odisha', C29='Bhubaneswar', D29='LISP', E29='16700', F29='Radha Raman Assessment Services Private Limited', G29='Jay Lund', H29='305'
+  Row 30: A30='East 1', B30='Odisha', C30='Bhubaneswar', D30='LISP', E30='37362', F30='Buddham Technology', G30='Jay Lund', H30='162'
+  Row 31: A31='East 1', B31='Odisha', C31='Bhubaneswar', D31='LISP', E31='37364', F31='SBG Digital Center', G31='Jay Lund', H31='186'
+  Row 32: A32='East 1', B32='Odisha', C32='Bhubaneswar', D32='LISP', E32='37365', F32='Ganesh Institute Of Management Studies', G32='Jay Lund', H32='126'
+  Row 33: A33='East 1', B33='Odisha', C33='Cuttack', D33='LISP', E33='15902', F33='Jagannath Institute Of Engineering And Technology', G33='Jay Lund', H33='234'
+  Row 34: A34='East 1', B34='Odisha', C34='Cuttack', D34='LISP', E34='34022', F34='Kshetrabasi Industrial Training Institute', G34='Jay Lund', H34='198'
+  Row 35: A35='East 1', B35='Odisha', C35='Cuttack', D35='LISP', E35='40670', F35='Shree Siddhivinayak SSR', G35='Jay Lund', H35='360'
+  Row 36: A36='East 1', B36='Odisha', C36='Cuttack', D36='LISP', E36='41547', F36='Dash Advanced Engineering', G36='Jay Lund', H36='432'
+  Row 37: A37='East 1', B37='Odisha', C37='Cuttack', D37='LISP', E37='42141', F37='Dhabaleswar Institute of Polytechnic', G37='Jay Lund', H37='180'
+  Row 38: A38='East 1', B38='Odisha', C38='Dhenkanal', D38='iDZ', E38='7995', F38='iON Digital Zone iDZ Banamaliprasad', G38='Jay Lund', H38='230'
+  Row 39: A39='East 1', B39='Odisha', C39='Dhenkanal', D39='LISP', E39='23515', F39='Orissa Institute Of Engineering And Technology', G39='Jay Lund', H39='172'
+  Row 40: A40='East 1', B40='Odisha', C40='Dhenkanal', D40='LISP', E40='41881', F40='DMS Institute', G40='Jay Lund', H40='173'
+  Row 41: A41='East 1', B41='Odisha', C41='Rourkela', D41='iDZ', E41='7984', F41='iON Digital Zone iDZ Sector 4', G41='Jay Lund', H41='460'
+  Row 42: A42='East 1', B42='Odisha', C42='Rourkela', D42='LISP', E42='34045', F42='Sai Institute Of Technology', G42='Jay Lund', H42='180'
+  Row 43: A43='East 2', B43='Tripura', C43='Agartala', D43='LISP', E43='15134', F43='Tripura Info.Com', G43='Khan Saadat Shamim', H43='170'
+  Row 44: A44='East 2', B44='Tripura', C44='Agartala', D44='LISP', E44='34031', F44='Tripura Institute Of Technology', G44='Khan Saadat Shamim', H44='100'
+  Row 45: A45='East 2', B45='West Bengal', C45='Asansol', D45='iDZ', E45='7932', F45='iON Digital Zone iDZ  Asansol', G45='Khan Saadat Shamim', H45='475'
+  Row 46: A46='East 2', B46='West Bengal', C46='Burdwan', D46='LISP', E46='15135', F46='Dr. Kalam Academy', G46='Khan Saadat Shamim', H46='250'
+  Row 47: A47='East 2', B47='West Bengal', C47='Durgapur', D47='LISP', E47='1262', F47='Aryabhatta Institute of Engineering and Management', G47='Khan Saadat Shamim', H47='330'
+  Row 48: A48='East 2', B48='West Bengal', C48='Durgapur', D48='LISP', E48='1897', F48='Sanaka Educational Trust Group of Institutions', G48='Khan Saadat Shamim', H48='470'
+  Row 49: A49='East 2', B49='West Bengal', C49='Durgapur', D49='LISP', E49='16678', F49='ABS Academy of Competitive Exams', G49='Khan Saadat Shamim', H49='430'
+  Row 50: A50='East 2', B50='West Bengal', C50='Kalyani', D50='iDZ', E50='8777', F50='iON Digital Zone iDZ  Kalyani', G50='Khan Saadat Shamim', H50='475'
+  Row 51: A51='East 2', B51='West Bengal', C51='Kolkata', D51='LISP', E51='609', F51='Webel Human Resource Development Center', G51='Khan Saadat Shamim', H51='165'
+  Row 52: A52='East 2', B52='West Bengal', C52='Kolkata', D52='iDZ', E52='7931', F52='iON Digital Zone iDZ  Madhyamgram', G52='Khan Saadat Shamim', H52='235'
+  Row 53: A53='East 2', B53='West Bengal', C53='Kolkata', D53='iDZ', E53='7933', F53='iON Digital Zone iDZ  Baruipur', G53='Khan Saadat Shamim', H53='235'
+  Row 54: A54='East 2', B54='West Bengal', C54='Kolkata', D54='iDZ', E54='8116', F54='TCS Gito Bitan', G54='Khan Saadat Shamim', H54='3230'
+  Row 55: A55='East 2', B55='West Bengal', C55='Siliguri', D55='LISP', E55='643', F55='Surendra Institute of Engineering and Management', G55='Khan Saadat Shamim', H55='540'
+  Row 56: A56='East 2', B56='West Bengal', C56='Siliguri', D56='LISP', E56='7797', F56='Umang Infotech', G56='Khan Saadat Shamim', H56='195'
+  Row 57: A57='East 2', B57='West Bengal', C57='Siliguri', D57='iDZ', E57='8800', F57='iON Digital Zone iDZ  Siliguri', G57='Khan Saadat Shamim', H57='710'
+  Row 58: A58='East 2', B58='West Bengal', C58='Siliguri', D58='LISP', E58='13299', F58='Bhawani Infotech', G58='Khan Saadat Shamim', H58='120'
+  Row 59: A59='North 1', B59='Delhi', C59='New Delhi', D59='LISP', E59='4202', F59='Online Infra', G59='Khan Saadat Shamim', H59='240'
+  Row 60: A60='North 1', B60='Delhi', C60='New Delhi', D60='LISP', E60='14403', F60='Indraprastha Public School', G60='Khan Saadat Shamim', H60='696'
+  Row 61: A61='North 1', B61='Delhi', C61='New Delhi', D61='LISP', E61='14411', F61='SANGWAN ACADEMY', G61='Khan Saadat Shamim', H61='520'
+  Row 62: A62='North 1', B62='Delhi', C62='New Delhi', D62='LISP', E62='30677', F62='Webinfotron Technologies Pvt. Ltd.', G62='Khan Saadat Shamim', H62='820'
+  Row 63: A63='North 1', B63='Delhi', C63='New Delhi', D63='LISP', E63='40713', F63='SUNSHINE CONVENT SCHOOL ONLINE EXAM CENTER', G63='Khan Saadat Shamim', H63='190'
+  Row 64: A64='North 1', B64='Delhi', C64='New Delhi', D64='LISP', E64='42080', F64='Royal international school online exam center', G64='Pankaj Zingade', H64='180'
+  Row 65: A65='North 1', B65='Delhi', C65='New Delhi', D65='LISP', E65='42224', F65='Ksk online examination centre', G65='Pankaj Zingade', H65='450'
+  Row 66: A66='North 1', B66='Haryana', C66='Faridabad', D66='iDZ', E66='9245', F66='iON Dizital Zone  Faridabad', G66='Pankaj Zingade', H66='460'
+  Row 67: A67='North 1', B67='Uttar Pradesh', C67='Ghaziabad', D67='LISP', E67='8548', F67='BBDIT A Block Duhai', G67='Pankaj Zingade', H67='400'
+  Row 68: A68='North 1', B68='Uttar Pradesh', C68='Ghaziabad', D68='iDZ', E68='8992', F68='iON Digital Zone iDZ 2 Duhai', G68='Pankaj Zingade', H68='450'
+  Row 69: A69='North 1', B69='Uttar Pradesh', C69='Ghaziabad', D69='LISP', E69='38816', F69='Diamond Public School', G69='Pankaj Zingade', H69='380'
+  Row 70: A70='North 1', B70='Uttar Pradesh', C70='Greater Noida', D70='LISP', E70='37301', F70='Pt.Salagram Inter College', G70='Pankaj Zingade', H70='435'
+  Row 71: A71='North 1', B71='Uttar Pradesh', C71='Meerut', D71='LISP', E71='26487', F71='Bharat Institute of Technology', G71='Pankaj Zingade', H71='410'
+  Row 72: A72='North 1', B72='Uttar Pradesh', C72='Noida', D72='iDZ', E72='8043', F72='iON Digital Zone iDZ 2  Sector 62', G72='Pankaj Zingade', H72='1650'
+  Row 73: A73='North 1', B73='Uttar Pradesh', C73='Noida', D73='iDZ', E73='8044', F73='iON Digital Zone iDZ 1 Sector 62', G73='Pankaj Zingade', H73='1470'
+  Row 74: A74='North 2', B74='Uttar Pradesh', C74='Agra', D74='iDZ', E74='7946', F74='iON Digital Zone iDZ  Kuberpur', G74='Pankaj Zingade', H74='675'
+  Row 75: A75='North 2', B75='Uttar Pradesh', C75='Agra', D75='LISP', E75='9695', F75='Smt. Bhudevi P.G College Agra', G75='Pankaj Zingade', H75='215'
+  Row 76: A76='North 2', B76='Uttar Pradesh', C76='Agra', D76='LISP', E76='11395', F76='Sant Ram Krishna Mahavidhyalya', G76='Pankaj Zingade', H76='290'
+  Row 77: A77='North 2', B77='Uttar Pradesh', C77='Agra', D77='LISP', E77='15024', F77='G.B Infotech', G77='Pankaj Zingade', H77='430'
+  Row 78: A78='North 2', B78='Uttar Pradesh', C78='Agra', D78='iDZ', E78='41723', F78='iON Digital Zone ITAURA', G78='Pankaj Zingade', H78='460'
+  Row 79: A79='North 2', B79='Uttar Pradesh', C79='Agra', D79='LISP', E79='42462', F79='GSS Infosystems', G79='Pankaj Zingade', H79='180'
+  Row 80: A80='North 2', B80='Uttar Pradesh', C80='Agra', D80='LISP', E80='42463', F80='Innovative Sikandra', G80='Pankaj Zingade', H80='180'
+  Row 81: A81='North 2', B81='Uttar Pradesh', C81='Aligarh', D81='iDZ', E81='7976', F81='iON Digital Zone iDZ  Karsua', G81='Pankaj Zingade', H81='450'
+  Row 82: A82='North 2', B82='Uttar Pradesh', C82='Ayodhya', D82='LISP', E82='38758', F82='Narayana Infotech', G82='Pankaj Zingade', H82='180'
+  Row 83: A83='North 2', B83='Uttar Pradesh', C83='Ayodhya', D83='LISP', E83='38960', F83='SRS Digital Institute', G83='Pankaj Zingade', H83='100'
+  Row 84: A84='North 2', B84='Uttar Pradesh', C84='Bareilly', D84='LISP', E84='926', F84='Shri Siddhi Vinayak Institute Of Technology', G84='Pankaj Zingade', H84='700'
+  Row 85: A85='North 2', B85='Uttar Pradesh', C85='Bareilly', D85='iDZ', E85='8017', F85='iON Digital Zone iDZ  Dohna', G85='Adinath Chaugule', H85='950'
+  Row 86: A86='North 2', B86='Uttar Pradesh', C86='Ghazipur', D86='LISP', E86='26433', F86='Data World Computer Services', G86='Adinath Chaugule', H86='145'
+  Row 87: A87='North 2', B87='Uttar Pradesh', C87='Ghazipur', D87='LISP', E87='28910', F87='Institute of Computer Education', G87='Adinath Chaugule', H87='220'
+  Row 88: A88='North 2', B88='Uttar Pradesh', C88='Gorakhpur', D88='LISP', E88='857', F88='Buddha Institute Of Technology', G88='Adinath Chaugule', H88='190'
+  Row 89: A89='North 2', B89='Uttar Pradesh', C89='Gorakhpur', D89='LISP', E89='11378', F89='Suryoday Online', G89='Adinath Chaugule', H89='280'
+  Row 90: A90='North 2', B90='Uttar Pradesh', C90='Gorakhpur', D90='LISP', E90='24832', F90='Neta Jee Subhash Chandra Bose Online Examination Center', G90='Adinath Chaugule', H90='220'
+  Row 91: A91='North 2', B91='Uttar Pradesh', C91='Gorakhpur', D91='LISP', E91='24868', F91='Parvati Digital Zone', G91='Adinath Chaugule', H91='220'
+  Row 92: A92='North 2', B92='Uttar Pradesh', C92='Gorakhpur', D92='LISP', E92='33404', F92='Cavalier Animation - Education Foundation', G92='Adinath Chaugule', H92='290'
+  Row 93: A93='North 2', B93='Uttar Pradesh', C93='Gorakhpur', D93='LISP', E93='40666', F93='Oxford Public School', G93='Adinath Chaugule', H93='430'
+  Row 94: A94='North 2', B94='Uttar Pradesh', C94='Gorakhpur', D94='LISP', E94='40915', F94='i Tech Zone', G94='Adinath Chaugule', H94='230'
+  Row 95: A95='North 2', B95='Uttar Pradesh', C95='Kanpur', D95='iDZ', E95='8765', F95='iON Digital Zone iDZ 1  Hathipur', G95='Adinath Chaugule', H95='450'
+  Row 96: A96='North 2', B96='Uttar Pradesh', C96='Kanpur', D96='LISP', E96='9120', F96='UNZIP TECHNOLOGY LLP.', G96='Adinath Chaugule', H96='400'
+  Row 97: A97='North 2', B97='Uttar Pradesh', C97='Kanpur', D97='LISP', E97='27849', F97='Shri S N Technologies', G97='Adinath Chaugule', H97='210'
+  Row 98: A98='North 2', B98='Uttar Pradesh', C98='Kanpur', D98='LISP', E98='41615', F98='iON Digital Zone iDZ Bhailamau', G98='Adinath Chaugule', H98='950'
+  Row 99: A99='North 2', B99='Uttar Pradesh', C99='Lucknow', D99='LISP', E99='4404', F99='Thirumala Education Academy', G99='Adinath Chaugule', H99='160'
+  Row 100: A100='North 2', B100='Uttar Pradesh', C100='Lucknow', D100='iDZ', E100='7973', F100='iON Digital Zone iDZ  Azad Puram', G100='Adinath Chaugule', H100='450'
+  Row 101: A101='North 2', B101='Uttar Pradesh', C101='Lucknow', D101='LISP', E101='9669', F101='SINCO LEARNING CENTER', G101='Adinath Chaugule', H101='265'
+  Row 102: A102='North 2', B102='Uttar Pradesh', C102='Lucknow', D102='LISP', E102='14089', F102='City Law College', G102='Adinath Chaugule', H102='460'
+  Row 103: A103='North 2', B103='Uttar Pradesh', C103='Lucknow', D103='LISP', E103='15806', F103='Tech Testing Solution ', G103='Adinath Chaugule', H103='350'
+  Row 104: A104='North 2', B104='Uttar Pradesh', C104='Lucknow', D104='LISP', E104='23441', F104='A.P. Computer', G104='Adinath Chaugule', H104='253'
+  Row 105: A105='North 2', B105='Uttar Pradesh', C105='Lucknow', D105='LISP', E105='23443', F105='BR Online Services', G105='Adinath Chaugule', H105='330'
+  Row 106: A106='North 2', B106='Uttar Pradesh', C106='Lucknow', D106='LISP', E106='23445', F106='Sun Testing Center', G106='Shakti Kumar', H106='585'
+  Row 107: A107='North 2', B107='Uttar Pradesh', C107='Lucknow', D107='LISP', E107='28847', F107='Metro Network Solutions', G107='Shakti Kumar', H107='250'
+  Row 108: A108='North 2', B108='Uttar Pradesh', C108='Lucknow', D108='LISP', E108='29042', F108='Om Infotech Solutions', G108='Shakti Kumar', H108='380'
+  Row 109: A109='North 2', B109='Uttar Pradesh', C109='Lucknow', D109='LISP', E109='33399', F109='Basudev Digital Center', G109='Shakti Kumar', H109='353'
+  Row 110: A110='North 2', B110='Uttar Pradesh', C110='Lucknow', D110='LISP', E110='33400', F110='Sultan Foundation', G110='Shakti Kumar', H110='350'
+  Row 111: A111='North 2', B111='Uttar Pradesh', C111='Lucknow', D111='LISP', E111='40671', F111='SS Compuage LLP', G111='Shakti Kumar', H111='350'
+  Row 112: A112='North 2', B112='Uttar Pradesh', C112='Moradabad', D112='iDZ', E112='7949', F112='iON Digital Zone iDZ  Ram Ganga Vihar Phase 2', G112='Shakti Kumar', H112='480'
+  Row 113: A113='North 2', B113='Uttar Pradesh', C113='Muzaffarnagar', D113='iDZ', E113='7952', F113='iON Digital Zone iDZ - 1  Mandi Samiti Road ', G113='Shakti Kumar', H113='360'
+  Row 114: A114='North 2', B114='Uttar Pradesh', C114='Prayagraj', D114='iDZ', E114='7955', F114='iON Digital Zone iDZ Sallahapur', G114='Shakti Kumar', H114='230'
+  Row 115: A115='North 2', B115='Uttar Pradesh', C115='Prayagraj', D115='LISP', E115='9499', F115='Shambhunath Institute Of Engineering And Technology - Mac', G115='Shakti Kumar', H115='200'
+  Row 116: A116='North 2', B116='Uttar Pradesh', C116='Prayagraj', D116='LISP', E116='9500', F116='Madhu Vachaspati Inter College', G116='Shakti Kumar', H116='318'
+  Row 117: A117='North 2', B117='Uttar Pradesh', C117='Prayagraj', D117='LISP', E117='14439', F117='i-Tech Zone', G117='Shakti Kumar', H117='500'
+  Row 118: A118='North 2', B118='Uttar Pradesh', C118='Prayagraj', D118='LISP', E118='14995', F118='S.P. Education Institute of IT & Management', G118='Shakti Kumar', H118='180'
+  Row 119: A119='North 2', B119='Uttar Pradesh', C119='Prayagraj', D119='LISP', E119='23466', F119='Gyanoday Technical Institute', G119='Shakti Kumar', H119='240'
+  Row 120: A120='North 2', B120='Uttar Pradesh', C120='Prayagraj', D120='LISP', E120='33952', F120='Campus 2 AIIT Management College', G120='Shakti Kumar', H120='180'
+  Row 121: A121='North 2', B121='Uttar Pradesh', C121='Prayagraj', D121='LISP', E121='41908', F121='iON Digital Zone iDZ Sarai Inayat', G121='Shakti Kumar', H121='440'
+  Row 122: A122='North 2', B122='Uttar Pradesh', C122='Varanasi', D122='LISP', E122='2220', F122='JeevanDeep Institute of Management & Technology', G122='Shakti Kumar', H122='142'
+  Row 123: A123='North 2', B123='Uttar Pradesh', C123='Varanasi', D123='LISP', E123='7806', F123='ARYA MAHILA PG COLLEGE', G123='Shakti Kumar', H123='236'
+  Row 124: A124='North 2', B124='Uttar Pradesh', C124='Varanasi', D124='iDZ', E124='7945', F124='iON Digital Zone iDZ Harahuwa Chauraha', G124='Shakti Kumar', H124='220'
+  Row 125: A125='North 2', B125='Uttar Pradesh', C125='Varanasi', D125='LISP', E125='9519', F125='Dr. Ghanshyam Singh College Of Education', G125='Shakti Kumar', H125='610'
+  Row 126: A126='North 2', B126='Uttar Pradesh', C126='Varanasi', D126='LISP', E126='9633', F126='Institute of Hardware Networking And Communication Center Sarnath', G126='Shakti Kumar', H126='220'
+  Row 127: A127='North 2', B127='Uttar Pradesh', C127='Varanasi', D127='LISP', E127='13302', F127='Dewa Mahila Mahavidyalaya', G127='Saurabh Kumar', H127='500'
+  Row 128: A128='North 2', B128='Uttar Pradesh', C128='Varanasi', D128='LISP', E128='14112', F128='Gyanada Institute Of Computer Training', G128='Saurabh Kumar', H128='200'
+  Row 129: A129='North 2', B129='Uttar Pradesh', C129='Varanasi', D129='LISP', E129='15792', F129='Purnodaya Mahila Mahavidyalaya', G129='Saurabh Kumar', H129='400'
+  Row 130: A130='North 2', B130='Uttar Pradesh', C130='Varanasi', D130='LISP', E130='23401', F130='IHNC Mahaveer Bazar', G130='Saurabh Kumar', H130='140'
+  Row 131: A131='North 2', B131='Uttar Pradesh', C131='Varanasi', D131='LISP', E131='23883', F131='Digitrack IT Services', G131='Saurabh Kumar', H131='290'
+  Row 132: A132='North 2', B132='Uttar Pradesh', C132='Varanasi', D132='LISP', E132='34017', F132='Sheetala Institute of Technology', G132='Saurabh Kumar', H132='225'
+  Row 133: A133='North 2', B133='Uttar Pradesh', C133='Varanasi', D133='LISP', E133='41079', F133='DROTCA - Dhannu Ram Online Test & Computer Application Pvt. Ltd', G133='Saurabh Kumar', H133='260'
+  Row 134: A134='North 2', B134='Uttar Pradesh', C134='Varanasi', D134='iDZ', E134='41668', F134='iON Digital Zone iDZ Ayar Bazar 2', G134='Saurabh Kumar', H134='225'
+  Row 135: A135='North 2', B135='Uttar Pradesh', C135='Varanasi', D135='LISP', E135='42226', F135='iON Digital Zone iDZ Chaubeypur', G135='Saurabh Kumar', H135='440'
+  Row 136: A136='North 2', B136='Uttarakhand', C136='Dehradun', D136='LISP', E136='30632', F136='iCreate Solutions - LISP', G136='Saurabh Kumar', H136='673'
+  Row 137: A137='North 2', B137='Uttarakhand', C137='Haldwani', D137='iDZ', E137='9338', F137='iON Digital Zone iDZ  Teenpani', G137='Saurabh Kumar', H137='235'
+  Row 138: A138='North 2', B138='Uttarakhand', C138='Haldwani', D138='LISP', E138='9729', F138='Queens Public School', G138='Saurabh Kumar', H138='227'
+  Row 139: A139='North 2', B139='Uttarakhand', C139='Haldwani', D139='LISP', E139='14451', F139='Queens Public School Damuadhunga', G139='Saurabh Kumar', H139='250'
+  Row 140: A140='North 2', B140='Uttarakhand', C140='Haldwani', D140='LISP', E140='25807', F140='Swami Vivekanand College of Management and Technology', G140='Saurabh Kumar', H140='276'
+  Row 141: A141='North 2', B141='Uttarakhand', C141='Haldwani', D141='iDZ', E141='41711', F141='iON Digital Zone, Halduchaur', G141='Saurabh Kumar', H141='235'
+  Row 142: A142='North 2', B142='Uttarakhand', C142='Roorkee', D142='LISP', E142='14947', F142='City Degree College Of Management & Technology', G142='Saurabh Kumar', H142='200'
+  Row 143: A143='North 2', B143='Uttarakhand', C143='Roorkee', D143='LISP', E143='37507', F143='BRD College Roorkee', G143='Saurabh Kumar', H143='250'
+  Row 144: A144='North 3', B144='Rajasthan', C144='Bikaner', D144='iDZ', E144='8665', F144='iON Digital Zone iDZ Naino Ka Bas', G144='Saurabh Kumar', H144='479'
+  Row 145: A145='North 3', B145='Rajasthan', C145='Hanumangarh', D145='LISP', E145='16066', F145='Times Public School', G145='Saurabh Kumar', H145='235'
+  Row 146: A146='North 3', B146='Rajasthan', C146='Jaipur', D146='LISP', E146='63', F146='Shankara Institute of Technology', G146='Saurabh Kumar', H146='300'
+  Row 147: A147='North 3', B147='Rajasthan', C147='Jaipur', D147='LISP', E147='141', F147='Yagyavalkya Institute of Technology', G147='Saurabh Kumar', H147='410'
+  Row 148: A148='North 3', B148='Rajasthan', C148='Jaipur', D148='LISP', E148='781', F148='Arya Institute of Engineering and Technology', G148='Kaveri Suryavanshi', H148='800'
+  Row 149: A149='North 3', B149='Rajasthan', C149='Jaipur', D149='LISP', E149='1118', F149='Jaipur Engineering College', G149='Kaveri Suryavanshi', H149='700'
+  Row 150: A150='North 3', B150='Rajasthan', C150='Jaipur', D150='LISP', E150='7745', F150='Alankar Mahila P.G. Mahavidyalaya', G150='Kaveri Suryavanshi', H150='380'
+  Row 151: A151='North 3', B151='Rajasthan', C151='Jaipur', D151='LISP', E151='8571', F151='Sri Balaji College Of Engineering And Technology', G151='Kaveri Suryavanshi', H151='932'
+  Row 152: A152='North 3', B152='Rajasthan', C152='Jaipur', D152='LISP', E152='10626', F152='Shankara Group Of Institutions', G152='Kaveri Suryavanshi', H152='190'
+  Row 153: A153='North 3', B153='Rajasthan', C153='Jaipur', D153='LISP', E153='15008', F153='Aurobindo International School Jaipur', G153='Kaveri Suryavanshi', H153='360'
+  Row 154: A154='North 3', B154='Rajasthan', C154='Jaipur', D154='iDZ', E154='41682', F154='iON Digital Zone iDZ Sitapura 1', G154='Kaveri Suryavanshi', H154='670'
+  Row 155: A155='North 3', B155='Rajasthan', C155='Jaipur', D155='iDZ', E155='41683', F155='iON Digital Zone iDZ Sitapura 2', G155='Kaveri Suryavanshi', H155='1850'
+  Row 156: A156='North 3', B156='Rajasthan', C156='Jodhpur', D156='iDZ', E156='8450', F156='iON Digital Zone iDZ Laxman Nagar', G156='Kaveri Suryavanshi', H156='690'
+  Row 157: A157='North 3', B157='Rajasthan', C157='Kota', D157='LISP', E157='10624', F157='Shiv Jyoti International School', G157='Kaveri Suryavanshi', H157='720'
+  Row 158: A158='North 3', B158='Rajasthan', C158='Kota', D158='LISP', E158='14449', F158='Viable Solutions', G158='Kaveri Suryavanshi', H158='420'
+  Row 159: A159='North 3', B159='Rajasthan', C159='Kota', D159='LISP', E159='15822', F159='Bits N Bytes Infocom', G159='Kaveri Suryavanshi', H159='330'
+  Row 160: A160='North 3', B160='Rajasthan', C160='Kota', D160='LISP', E160='33035', F160='Digital Desk', G160='Kaveri Suryavanshi', H160='410'
+  Row 161: A161='North 3', B161='Rajasthan', C161='Kota', D161='LISP', E161='40893', F161='PARIKALAK', G161='Kaveri Suryavanshi', H161='400'
+  Row 162: A162='North 3', B162='Rajasthan', C162='Sikar', D162='LISP', E162='1275', F162='Bhartiya Institute of Engineering and Technology', G162='Kaveri Suryavanshi', H162='405'
+  Row 163: A163='North 3', B163='Rajasthan', C163='Sikar', D163='LISP', E163='24271', F163='Khwaja Gharib Nawaz College of Nursing', G163='Kaveri Suryavanshi', H163='250'
+  Row 164: A164='North 3', B164='Rajasthan', C164='Sikar', D164='LISP', E164='38814', F164='Akhil Bharati Vidyapeeth College Of Nursing', G164='Kaveri Suryavanshi', H164='240'
+  Row 165: A165='North 4', B165='Haryana', C165='Ambala', D165='iDZ', E165='8683', F165='iON Digital Zone iDZ  Shahpur', G165='Kaveri Suryavanshi', H165='470'
+  Row 166: A166='North 4', B166='Punjab', C166='Bathinda', D166='iDZ', E166='8763', F166='iON Digital Zone iDZ  Bhucho kalan', G166='Kaveri Suryavanshi', H166='1350'
+  Row 167: A167='North 4', B167='Punjab', C167='Mohali', D167='LISP', E167='38190', F167='Tejas Online Examination Center', G167='Kaveri Suryavanshi', H167='500'
+  Row 168: A168='North 4', B168='Punjab', C168='Mohali', D168='LISP', E168='41822', F168='iON Digital Zone iDZ Rhombus', G168='Kaveri Suryavanshi', H168='230'
+  Row 169: A169='North 4', B169='Punjab', C169='Patiala', D169='iDZ', E169='8756', F169='iON Digital Zone iDZ Bahadurgarh   Patiala', G169='Pranay Valanj', H169='680'
+  Row 170: A170='South 1', B170='Andhra Pradesh', C170='Anantapur', D170='LTL', E170='37512', F170='National Council for the Church Social Action India', G170='Pranay Valanj', H170='455'
+  Row 171: A171='South 1', B171='Andhra Pradesh', C171='Guntur', D171='iDZ', E171='7996', F171='iON Digital Zone iDZ  Perecherla', G171='Pranay Valanj', H171='230'
+  Row 172: A172='South 1', B172='Andhra Pradesh', C172='Kakinada', D172='iDZ', E172='8027', F172='iON Digital Zone iDZ  Atchutapuram', G172='Pranay Valanj', H172='500'
+  Row 173: A173='South 1', B173='Andhra Pradesh', C173='Kurnool', D173='iDZ', E173='41590', F173='iON Digital Zone iDZ Kurnool', G173='Pranay Valanj', H173='955'
+  Row 174: A174='South 1', B174='Andhra Pradesh', C174='Nellore', D174='iDZ', E174='35626', F174='iON Digital Zone iDZ Pottepalem Village', G174='Pranay Valanj', H174='475'
+  Row 175: A175='South 1', B175='Andhra Pradesh', C175='Ongole', D175='LTL', E175='33430', F175='National council for the church social action india', G175='Pranay Valanj', H175='220'
+  Row 176: A176='South 1', B176='Andhra Pradesh', C176='Rajahmundry', D176='iDZ', E176='7954', F176='iON Digital Zone iDZ  Luthergiri', G176='Pranay Valanj', H176='940'
+  Row 177: A177='South 1', B177='Andhra Pradesh', C177='Srikakulam', D177='LISP', E177='38141', F177='CORE TECHNOLOGIES', G177='Pranay Valanj', H177='320'
+  Row 178: A178='South 1', B178='Andhra Pradesh', C178='Tirupathi', D178='iDZ', E178='9105', F178='iON Digital Zone iDZ  Zoo Park Tirupathi', G178='Pranay Valanj', H178='940'
+  Row 179: A179='South 1', B179='Andhra Pradesh', C179='Visakhapatnam', D179='iDZ', E179='8827', F179='iON Digital Zone iDZ  Sheela Nagar ', G179='Pranay Valanj', H179='560'
+  Row 180: A180='South 1', B180='Andhra Pradesh', C180='Visakhapatnam', D180='iDZ', E180='9208', F180='iON Digital Zone iDZ 2 Chinamushidiwada', G180='Pranay Valanj', H180='955'
+  Row 181: A181='South 1', B181='Andhra Pradesh', C181='Visakhapatnam', D181='iDZ', E181='9417', F181='iON Digital Zone iDZ 1 Chinamushidiwada', G181='Pranay Valanj', H181='475'
+  Row 182: A182='South 1', B182='Andhra Pradesh', C182='Vizianagaram', D182='iDZ', E182='8754', F182='iON Digital Zone iDZ  Gajularega', G182='Pranay Valanj', H182='490'
+  Row 183: A183='South 1', B183='Karnataka', C183='Belagavi(Belgaum)', D183='iDZ', E183='11398', F183='iON Digital Zone iDZ Airport Road', G183='Pranay Valanj', H183='480'
+  Row 184: A184='South 1', B184='Karnataka', C184='Bengaluru', D184='iDZ', E184='7974', F184='iON Digital Zone iDZ  Rajarajeswari Medical College and Hospital', G184='Pranay Valanj', H184='240'
+  Row 185: A185='South 1', B185='Karnataka', C185='Bengaluru', D185='LISP', E185='40168', F185='Digimetrics', G185='Pranay Valanj', H185='350'
+  Row 186: A186='South 1', B186='Karnataka', C186='Kalaburagi(Gulbarga)', D186='LISP', E186='40041', F186='Sharanabasaweshwar Vidya Vardhak Sangha', G186='Pranay Valanj', H186='460'
+  Row 187: A187='South 1', B187='Karnataka', C187='Shivamogga(Shimoga)', D187='iDZ', E187='8560', F187='iON Digital Zone iDZ  Machenahalli ', G187='Pranay Valanj', H187='380'
+  Row 188: A188='South 1', B188='Karnataka', C188='Udupi', D188='iDZ', E188='7975', F188='iON Digital Zone iDZ  Milk Diary Road', G188='Pranay Valanj', H188='216'
+  Row 189: A189='South 1', B189='Telangana', C189='Hyderabad', D189='iDZ', E189='41585', F189='iON Digital Zone iDZ Ibrahimpatnam', G189='Pranay Valanj', H189='955'
+  Row 190: A190='South 1', B190='Telangana', C190='Karimnagar', D190='iDZ', E190='8682', F190='iON Digital Zone iDZ  Ramakrishna Colony', G190='SARANYA Mudliar', H190='718'
+  Row 191: A191='South 1', B191='Telangana', C191='Khammam', D191='LISP', E191='41864', F191='iON Digital Zone iDZ Khammam', G191='SARANYA Mudliar', H191='450'
+  Row 192: A192='South 2', B192='Tamil Nadu', C192='Madurai', D192='iDZ', E192='8773', F192='iON Digital Zone  iDZ Madurai IV', G192='SARANYA Mudliar', H192='220'
+  Row 193: A193='South 2', B193='Tamil Nadu', C193='Tiruchirappalli', D193='iDZ', E193='8774', F193='iON Digital Zone  IDZ Trichy II', G193='SARANYA Mudliar', H193='454'
+  Row 194: A194='West 1', B194='Gujarat', C194='Bhavnagar', D194='LISP', E194='39062', F194='JPM Infotech', G194='SARANYA Mudliar', H194='85'
+  Row 195: A195='West 1', B195='Gujarat', C195='Gandhinagar', D195='LISP', E195='37550', F195='Kaavyaratna Info Services', G195='SARANYA Mudliar', H195='400'
+  Row 196: A196='West 1', B196='Gujarat', C196='Mehsana', D196='iDZ', E196='8133', F196='iON Digital Zone iDZ Manav Ashram', G196='SARANYA Mudliar', H196='210'
+  Row 197: A197='West 1', B197='Gujarat', C197='Rajkot', D197='iDZ', E197='7873', F197='iON Digital Zone iDZ 1  Metoda', G197='SARANYA Mudliar', H197='200'
+  Row 198: A198='West 1', B198='Gujarat', C198='Rajkot', D198='iDZ', E198='8039', F198='iON Digital Zone iDZ 2  Metoda', G198='SARANYA Mudliar', H198='200'
+  Row 199: A199='West 1', B199='Gujarat', C199='Rajkot', D199='iDZ', E199='8208', F199='iON Digital Zone iDZ 3  Metoda', G199='SARANYA Mudliar', H199='200'
+  Row 200: A200='West 1', B200='Maharashtra', C200='Akola', D200='LISP', E200='2764', F200='College Of Engineering And Technology  Akola', G200='SARANYA Mudliar', H200='145'
+  Row 201: A201='West 1', B201='Maharashtra', C201='Ambajogai', D201='LISP', E201='26801', F201='Professional Career Orientation Center Ambajogai', G201='SARANYA Mudliar', H201='130'
+  Row 202: A202='West 1', B202='Maharashtra', C202='Amravati', D202='LISP', E202='85', F202='Sipna College of Engineering and Technology', G202='SARANYA Mudliar', H202='110'
+  Row 203: A203='West 1', B203='Maharashtra', C203='Amravati', D203='iDZ', E203='7993', F203='iON DIGITAL Zone iDZ  University Camp Area', G203='SARANYA Mudliar', H203='230'
+  Row 204: A204='West 1', B204='Maharashtra', C204='Amravati', D204='iDZ', E204='8553', F204='iON DIGITAL ZONE iDZ  Cityland', G204='SARANYA Mudliar', H204='470'
+  Row 205: A205='West 1', B205='Maharashtra', C205='Dhule', D205='LISP', E205='4595', F205='Bharti Multipurpose Trust', G205='SARANYA Mudliar', H205='250'
+  Row 206: A206='West 1', B206='Maharashtra', C206='Jalgaon', D206='LISP', E206='33971', F206='Online Examination Center Kavyatri Bahinabai Chaudhari North Maharashtra University Jalgaon', G206='SARANYA Mudliar', H206='200'
+  Row 207: A207='West 1', B207='Maharashtra', C207='Kolhapur', D207='iDZ', E207='8564', F207='iON Digital Zone  iDZ Shiye', G207='SARANYA Mudliar', H207='470'
+  Row 208: A208='West 1', B208='Maharashtra', C208='Nagpur', D208='iDZ', E208='8554', F208='iON DIGITAL ZONE  iDZ 2   WADI MIDC', G208='SARANYA Mudliar', H208='660'
+  Row 209: A209='West 1', B209='Maharashtra', C209='Nagpur', D209='iDZ', E209='9451', F209='iON Digital Zone iDZ 3 Wadi MIDC Techgressor Soft Solutions Pvt. Ltd. Nagpur', G209='SARANYA Mudliar', H209='470'
+  Row 210: A210='West 1', B210='Maharashtra', C210='Nagpur', D210='LISP', E210='25019', F210='Jindal Edutech Pvt Ltd Gondkhairi Nagpur', G210='SARANYA Mudliar', H210='410'
+  Row 211: A211='West 1', B211='Maharashtra', C211='Nagpur', D211='LISP', E211='30630', F211='MKH Sancheti Public School Besa Nagpur', G211='Sakshi Raut', H211='330'
+  Row 212: A212='West 1', B212='Maharashtra', C212='Nanded', D212='iDZ', E212='7998', F212='iON DIGITAL Zone iDZ  Vishnupuri', G212='Sakshi Raut', H212='470'
+  Row 213: A213='West 1', B213='Maharashtra', C213='Nanded', D213='LISP', E213='35649', F213='Shri Sambhaji College Of Management And Technology Nanded', G213='Sakshi Raut', H213='100'
+  Row 214: A214='West 1', B214='Maharashtra', C214='Sangli', D214='LISP', E214='4347', F214='Vasantdada Patil Institute Management Studies And Research', G214='Sakshi Raut', H214='250'
+  Row 215: A215='West 1', B215='Maharashtra', C215='SOLAPUR', D215='LISP', E215='30727', F215='Solapur Digital Hub', G215='Sakshi Raut', H215='180'
+  Row 216: A216='West 2', B216='Chhattisgarh', C216='Bhilai Nagar', D216='LISP', E216='24189', F216='Mansa College', G216='Sakshi Raut', H216='250'
+  Row 217: A217='West 2', B217='Chhattisgarh', C217='Bhilai Nagar', D217='LISP', E217='42360', F217='Parthivi College Digital Zone', G217='Sakshi Raut', H217='400'
+  Row 218: A218='West 2', B218='Chhattisgarh', C218='Bilaspur', D218='LISP', E218='42395', F218='Prajna Mandapam', G218='Sakshi Raut', H218='900'
+  Row 219: A219='West 2', B219='Chhattisgarh', C219='Raipur', D219='iDZ', E219='8747', F219='ION Digital Zone iDZ  SARONA', G219='Sakshi Raut', H219='958'
+  Row 220: A220='West 2', B220='Madhya Pradesh', C220='Bhopal', D220='LISP', E220='544', F220='Radharaman Group of Institution', G220='Sakshi Raut', H220='200'
+  Row 221: A221='West 2', B221='Madhya Pradesh', C221='Bhopal', D221='LISP', E221='4170', F221='SAM COLLEGE OF ENGINEERING AND TECHNOLOGY', G221='Sakshi Raut', H221='200'
+  Row 222: A222='West 2', B222='Madhya Pradesh', C222='Bhopal', D222='iDZ', E222='40196', F222='iON Digital Zone iDZ, Prestige 1 - Shree Jairam Education Society', G222='Sakshi Raut', H222='400'
+  Row 223: A223='West 2', B223='Madhya Pradesh', C223='Bhopal', D223='iDZ', E223='40197', F223='iON Digital Zone iDZ, Prestige 2 - Shree Jairam Education Society', G223='Sakshi Raut', H223='838'
+  Row 224: A224='West 2', B224='Madhya Pradesh', C224='Bhopal', D224='iDZ', E224='40660', F224='iON Digital Zone iDZ RGPM Sankhedi', G224='Sakshi Raut', H224='790'
+  Row 225: A225='West 2', B225='Madhya Pradesh', C225='Bhopal', D225='LTL', E225='40938', F225='iON Digital Zone iDZ Radharaman', G225='Sakshi Raut', H225='215'
+  Row 226: A226='West 2', B226='Madhya Pradesh', C226='Indore', D226='LTL', E226='40223', F226='iON Digital Zone iDZ Sri Aurobindo', G226='Sakshi Raut', H226='475'
+  Row 227: A227='West 2', B227='Madhya Pradesh', C227='Jabalpur', D227='iDZ', E227='8481', F227='iON Digital Zone iDZ  Gram Raigawan  Near Patan Bypass', G227='Sakshi Raut', H227='1201'
+  Row 228: A228='West 2', B228='Madhya Pradesh', C228='Sagar', D228='LISP', E228='718', F228='Adina Institute of Science and Technology', G228='Sakshi Raut', H228='230'
+  Row 229: A229='West 2', B229='Madhya Pradesh', C229='Sagar', D229='LISP', E229='8419', F229='SSHC Jain Institute of Management and Research', G229='Sakshi Raut', H229='170'
+  Row 230: A230='West 2', B230='Madhya Pradesh', C230='Satna', D230='iDZ', E230='8366', F230='iON Digital Zone iDZ Karhi Road Amoudha', G230='Sakshi Raut', H230='477'
+  Row 231: A231='West 2', B231='Madhya Pradesh', C231='Ujjain', D231='iDZ', E231='7966', F231='iON Digital Zone iDZ Gram Gangedi Near Mahaveer Tapobhumi', G231='Sakshi Raut', H231='461'
+  Row 232: A232='', B232='', C232='', D232='', E232='', F232='', G232='', H232=''
+  Row 233: A233='', B233='', C233='', D233='', E233='', F233='', G233='', H233=''
+  Row 234: A234='', B234='', C234='', D234='', E234='', F234='', G234='', H234=''
+  Row 235: A235='', B235='', C235='', D235='', E235='', F235='', G235='', H235=''
+  Row 236: A236='', B236='', C236='', D236='', E236='', F236='', G236='', H236=''
+  Row 237: A237='', B237='', C237='', D237='', E237='', F237='', G237='', H237=''
+  Row 238: A238='', B238='', C238='', D238='', E238='', F238='', G238='', H238=''
+  Row 239: A239='', B239='', C239='', D239='', E239='', F239='', G239='', H239=''
+  Row 240: A240='', B240='', C240='', D240='', E240='', F240='', G240='', H240=''
+  Row 241: A241='', B241='', C241='', D241='', E241='', F241='', G241='', H241=''
+  Row 242: A242='', B242='', C242='', D242='', E242='', F242='', G242='', H242=''
+  Row 243: A243='', B243='', C243='', D243='', E243='', F243='', G243='', H243=''
+  Row 244: A244='', B244='', C244='', D244='', E244='', F244='', G244='', H244=''
+  Row 245: A245='', B245='', C245='', D245='', E245='', F245='', G245='', H245=''
+  Row 246: A246='', B246='', C246='', D246='', E246='', F246='', G246='', H246=''
+  Row 247: A247='', B247='', C247='', D247='', E247='', F247='', G247='', H247=''
+  Row 248: A248='', B248='', C248='', D248='', E248='', F248='', G248='', H248=''
+  Row 249: A249='', B249='', C249='', D249='', E249='', F249='', G249='', H249=''
+  Row 250: A250='', B250='', C250='', D250='', E250='', F250='', G250='', H250=''
+  Row 251: A251='', B251='', C251='', D251='', E251='', F251='', G251='', H251=''
+  Row 252: A252='', B252='', C252='', D252='', E252='', F252='', G252='', H252=''
+  Row 253: A253='', B253='', C253='', D253='', E253='', F253='', G253='', H253=''
+  Row 254: A254='', B254='', C254='', D254='', E254='', F254='', G254='', H254=''
+  Row 255: A255='', B255='', C255='', D255='', E255='', F255='', G255='', H255=''
+  Row 256: A256='', B256='', C256='', D256='', E256='', F256='', G256='', H256=''
+  Row 257: A257='', B257='', C257='', D257='', E257='', F257='', G257='', H257=''
+  Row 258: A258='', B258='', C258='', D258='', E258='', F258='', G258='', H258=''
+  Row 259: A259='', B259='', C259='', D259='', E259='', F259='', G259='', H259=''
+  Row 260: A260='', B260='', C260='', D260='', E260='', F260='', G260='', H260=''
+  Row 261: A261='', B261='', C261='', D261='', E261='', F261='', G261='', H261=''
+  Row 262: A262='', B262='', C262='', D262='', E262='', F262='', G262='', H262=''
+  Row 263: A263='', B263='', C263='', D263='', E263='', F263='', G263='', H263=''
+  Row 264: A264='', B264='', C264='', D264='', E264='', F264='', G264='', H264=''
+  Row 265: A265='', B265='', C265='', D265='', E265='', F265='', G265='', H265=''
+  Row 266: A266='', B266='', C266='', D266='', E266='', F266='', G266='', H266=''
+  Row 267: A267='', B267='', C267='', D267='', E267='', F267='', G267='', H267=''
+  Row 268: A268='', B268='', C268='', D268='', E268='', F268='', G268='', H268=''
+  Row 269: A269='', B269='', C269='', D269='', E269='', F269='', G269='', H269=''
+  Row 270: A270='', B270='', C270='', D270='', E270='', F270='', G270='', H270=''
+  Row 271: A271='', B271='', C271='', D271='', E271='', F271='', G271='', H271=''
+  Row 272: A272='', B272='', C272='', D272='', E272='', F272='', G272='', H272=''
+  Row 273: A273='', B273='', C273='', D273='', E273='', F273='', G273='', H273=''
+  Row 274: A274='', B274='', C274='', D274='', E274='', F274='', G274='', H274=''
+  Row 275: A275='', B275='', C275='', D275='', E275='', F275='', G275='', H275=''
+  Row 276: A276='', B276='', C276='', D276='', E276='', F276='', G276='', H276=''
+  Row 277: A277='', B277='', C277='', D277='', E277='', F277='', G277='', H277=''
+  Row 278: A278='', B278='', C278='', D278='', E278='', F278='', G278='', H278=''
+  Row 279: A279='', B279='', C279='', D279='', E279='', F279='', G279='', H279=''
+  Row 280: A280='', B280='', C280='', D280='', E280='', F280='', G280='', H280=''
+  Row 281: A281='', B281='', C281='', D281='', E281='', F281='', G281='', H281=''
+  Row 282: A282='', B282='', C282='', D282='', E282='', F282='', G282='', H282=''
+  Row 283: A283='', B283='', C283='', D283='', E283='', F283='', G283='', H283=''
+  Row 284: A284='', B284='', C284='', D284='', E284='', F284='', G284='', H284=''
+  Row 285: A285='', B285='', C285='', D285='', E285='', F285='', G285='', H285=''
+  Row 286: A286='', B286='', C286='', D286='', E286='', F286='', G286='', H286=''
+  Row 287: A287='', B287='', C287='', D287='', E287='', F287='', G287='', H287=''
+  Row 288: A288='', B288='', C288='', D288='', E288='', F288='', G288='', H288=''
+  Row 289: A289='', B289='', C289='', D289='', E289='', F289='', G289='', H289=''
+  Row 290: A290='', B290='', C290='', D290='', E290='', F290='', G290='', H290=''
+  Row 291: A291='', B291='', C291='', D291='', E291='', F291='', G291='', H291=''
+  Row 292: A292='', B292='', C292='', D292='', E292='', F292='', G292='', H292=''
+  Row 293: A293='', B293='', C293='', D293='', E293='', F293='', G293='', H293=''
+  Row 294: A294='', B294='', C294='', D294='', E294='', F294='', G294='', H294=''
+  Row 295: A295='', B295='', C295='', D295='', E295='', F295='', G295='', H295=''
+  Row 296: A296='', B296='', C296='', D296='', E296='', F296='', G296='', H296=''
+  Row 297: A297='', B297='', C297='', D297='', E297='', F297='', G297='', H297=''
+  Row 298: A298='', B298='', C298='', D298='', E298='', F298='', G298='', H298=''
+  Row 299: A299='', B299='', C299='', D299='', E299='', F299='', G299='', H299=''
+  Row 300: A300='', B300='', C300='', D300='', E300='', F300='', G300='', H300=''
+  Row 301: A301='', B301='', C301='', D301='', E301='', F301='', G301='', H301=''
+  Row 302: A302='', B302='', C302='', D302='', E302='', F302='', G302='', H302=''
+  Row 303: A303='', B303='', C303='', D303='', E303='', F303='', G303='', H303=''
+  Row 304: A304='', B304='', C304='', D304='', E304='', F304='', G304='', H304=''
+  Row 305: A305='', B305='', C305='', D305='', E305='', F305='', G305='', H305=''
+  Row 306: A306='', B306='', C306='', D306='', E306='', F306='', G306='', H306=''
+  Row 307: A307='', B307='', C307='', D307='', E307='', F307='', G307='', H307=''
+  Row 308: A308='', B308='', C308='', D308='', E308='', F308='', G308='', H308=''
+  Row 309: A309='', B309='', C309='', D309='', E309='', F309='', G309='', H309=''
+  Row 310: A310='', B310='', C310='', D310='', E310='', F310='', G310='', H310=''
+  Row 311: A311='', B311='', C311='', D311='', E311='', F311='', G311='', H311=''
+  Row 312: A312='', B312='', C312='', D312='', E312='', F312='', G312='', H312=''
+  Row 313: A313='', B313='', C313='', D313='', E313='', F313='', G313='', H313=''
+  Row 314: A314='', B314='', C314='', D314='', E314='', F314='', G314='', H314=''
+  Row 315: A315='', B315='', C315='', D315='', E315='', F315='', G315='', H315=''
+  Row 316: A316='', B316='', C316='', D316='', E316='', F316='', G316='', H316=''
+  Row 317: A317='', B317='', C317='', D317='', E317='', F317='', G317='', H317=''
+  Row 318: A318='', B318='', C318='', D318='', E318='', F318='', G318='', H318=''
+  Row 319: A319='', B319='', C319='', D319='', E319='', F319='', G319='', H319=''
+  Row 320: A320='', B320='', C320='', D320='', E320='', F320='', G320='', H320=''
+  Row 321: A321='', B321='', C321='', D321='', E321='', F321='', G321='', H321=''
+  Row 322: G322=''
+  Row 323: G323=''
+  Row 324: G324=''
+  Row 325: G325=''
+  Row 326: G326=''
+  Row 327: G327=''
+  Row 328: G328=''
+  Row 329: G329=''
+  Row 330: G330=''
+  Row 331: G331=''
+  Row 332: G332=''
+  Row 333: G333=''
+  Row 334: G334=''
+  Row 335: G335=''
+  Row 336: G336=''
+  Row 337: G337=''
+  Row 338: G338=''
+  Row 339: G339=''
+  Row 340: G340=''
+  Row 341: G341=''
+  Row 342: G342=''
+  Row 343: G343=''
+  Row 344: G344=''
+  Row 345: G345=''
+  Row 346: G346=''
+  Row 347: G347=''
+  Row 348: G348=''
+  Row 349: G349=''
+  Row 350: G350=''
+  Row 351: G351=''
+  Row 352: G352=''
+  Row 353: G353=''
+  Row 354: G354=''
+  Row 355: G355=''
+  Row 356: G356=''
+  Row 357: G357=''
+  Row 358: G358=''
+  Row 359: G359=''
+  Row 360: G360=''
+  Row 361: G361=''
+  Row 362: G362=''
+  Row 363: G363=''
+  Row 364: G364=''
+  Row 365: G365=''
+  Row 366: G366=''
+  Row 367: G367=''
+  Row 368: G368=''
+  Row 369: G369=''
+  Row 370: G370=''
+  Row 371: G371=''
+  Row 372: G372=''
+
+=== SHEET: Issue Category_Defination ===
+  Row 1: A1='Issue Category', B1='Column1', C1='Ex'
+  Row 2: A2='Camera Issue', B2='Problems related to the physical camera device or its functionality.', C2='Examples:\n1) Camera not powering on\n2) No video feed / black screen\n3) Blurry, distorted, or frozen images'
+  Row 3: A3='NAS/DVR/NVR Related Issue', B3='Issues involving video recording, storage, or playback devices used with cameras.', C3='Examples:\n1) Recording not happening\n2) HDD/SSD failure or not detected\n3) Playback failure or corrupted recordings\n4) Device not booting or frequently restarting\n5) NVR/DVR offline or inaccessible'
+  Row 4: A4='Internet Issue', B4='Problems related to ISP connectivity affecting live streaming services.', C4='Examples:\n1) No internet connectivity\n2) Frequent internet disconnection\nISP outage\n3) Unable to access cameras live streaming'
+  Row 5: A5='IP Related Issue', B5='Issues caused due to incorrect or conflicting IP network configuration.', C5='Examples:\n\n1) IP address conflict\n2) Incorrect subnet or gateway\n3) Camera/NVR not reachable within LAN\n4) Wrong static IP configuration'
+  Row 6: A6='Proxy System Issue', B6='Problems caused by proxy servers affecting application or network communication.', C6='Examples:\n1) Camera/NVR unable to connect to due to proxy\n2) Proxy authentication failure(SOE)\n3) Proxy not booting(HDD issue, Power issue)\n'
+  Row 7: A7='Port Related Issue', B7='not required now', C7=''
+  Row 8: A8='Power Issue', B8='Issues caused by inadequate, unstable, or disrupted power supply.', C8='Examples:\n\n1) Power outage at venue\n2) Faulty power adapter or PoE Switch\n3) Camera/NVR rebooting frequently'
+  Row 9: A9='Router/Switch Issue', B9='not required now', C9=''
+  Row 10: A10='Operational Issue', B10='Issues caused by incorrect usage, process gaps, or human error.', C10='Examples:\n\n1) Camera accidentally unplugged\n2) Incorrect device configuration\n3) Password mismanagement'
+  Row 11: A11='iCamera Application Issue', B11='', C11=''
+  Row 12: A12='Network Related Issue', B12='', C12=''
+  Row 13: A13='SOE Related Issues', B13='', C13=''
+
+=== SHEET: Dropdown ===
+  Row 1: A1='Issue Category', D1='Camera_Issue', E1='NAS_DVR_NVR_Related_Issue', F1='Internet_Issue', G1='IP_Related_Issue', H1='Proxy_System_Issue', I1='Encode_Related_Issue', J1='Power_Issue', K1='Router_Switch_Issue', L1='Operational_Issue', M1='iCamera_Application_Issue', N1=' ', O1='SOE_Related_Issues'
+  Row 2: A2='Camera_Issue', D2='RTSP URL not working', E2='NAS/DVR/NVR Login Issue', F2='TCSiON URL not accessible', G2='Camera IP change issue', H2='HDD crash issue', I2='Camera Encode Not Supported', J2='UPS Power Issue', K2='Port Issue', L2='CCTV spoc not available for trouble shooting', M2='iCamera service not starting Issue', N2='Connection Issue', O2='Zscalar login issue'
+  Row 3: A3='NAS_DVR_NVR_Related_Issue', D3='Incorrect configuration', E3='Incorrect configuration', F3='Slow internet speed', G3='NVR/DVR IP change issue', H3='MBD issue', I3='NVR/ DVR Encode Not Supported', J3='Raw Power Issue', K3='Power Issue', L3='No response from the Test Center', M3='iCamera application corrupt Issue', N3='Ping Issue', O3='SOE OS installation issue'
+  Row 4: A4='Internet_Issue', D4='Time Sync Issue', E4='Time sync issue', F4='Internet Down from ISP', G4='Proxy System IP Change', H4='100% CPU/RAM utilization issue', I4='Camera Encode Changed', J4='DG Power Issue', K4='', L4='CMDB data not received', M4='iCamera Proxy Up feeds not visible', N4='LAN Cable issue', O4='User admin Rights issue(elevation required)'
+  Row 5: A5='IP_Related_Issue', D5='Camera login Issue', E5='Not Working', F5='Connectivity Issue', G5='', H5='LAN Cable issue', I5='NVR/ DVR Encode Changed', J5='Camera Power Supply Issue', K5='', L5='Incorrect CMDB', M5='MAC ID Changed', N5='POE Switch Port Issue', O5='SOE Credential not available'
+  Row 6: A6='Proxy_System_Issue', D6='Camera not working', E6='', F6='', G6='', H6='Time sync issue', I6='Encode Changed in Camera & NVR/DVR', J6='Network Switch Power Supply Issue', K6='', L6='Camera Not Added', M6='Service Restarted', N6='', O6=''
+  Row 7: A7='Encode_Related_Issue', D7='Feed Fluctuations', E7='', F7='', G7='', H7='OS crash issue', I7='', J7='Proxy System Power Supply Issue', K7='', L7='Proxy System Not Started', M7='Delay in Going Live (Unidentified Issue)', N7='', O7=''
+  Row 8: A8='Power_Issue', D8='', E8='', F8='', G8='', H8='Restarted Proxy System', I8='', J8='', K8='', L8='Blind Spot', M8='', N8='', O8=''
+  Row 9: A9='Router_Switch_Issue', H9='Firewall Enabled', L9='Knowledge Gap'
+  Row 10: A10='Operational_Issue', H10='MAC ID Changed', L10='Lanscape not done'
+  Row 11: A11='iCamera_Application_Issue', H11='System Hanged'
+  Row 12: A12='Network_Related_Issue'
+  Row 13: A13='SOE_Related_Issues'
