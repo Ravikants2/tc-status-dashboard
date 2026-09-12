@@ -27,14 +27,27 @@ const drill = { d: {}, s: {} };
 
 // ── Init ───────────────────────────────────────────────────
 function init() {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  records = saved ? JSON.parse(saved) : [];
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    records = saved ? JSON.parse(saved) : [];
+    if (!Array.isArray(records)) records = [];
+  } catch(e) {
+    console.warn('localStorage parse error, resetting:', e);
+    records = [];
+    localStorage.removeItem(STORAGE_KEY);
+  }
   populateIssueCategories();
   renderAll();
   startClock();
 }
 
-function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); }
+function save() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+  } catch(e) {
+    console.warn('localStorage save error:', e);
+  }
+}
 
 function startClock() {
   const el = document.getElementById('live-clock');
@@ -113,12 +126,12 @@ function renderDrill(prefix) {
   const base = filteredByDrill(prefix);
 
   if (!d.examDate) {
-    // Show exam dates
     const dates = [...new Set(records.map(r => r.examDate).filter(Boolean))].sort();
-    if (!dates.length) { drillEl.innerHTML = '<p class="no-data">No data uploaded yet.</p>'; return; }
-    drillEl.innerHTML = buildSummaryCards(prefix, 'examDate', dates, base, 'examDate');
+    if (!dates.length) { drillEl.innerHTML = '<p class="no-data">No data uploaded yet. Go to Upload tab to add TC data.</p>'; return; }
+    drillEl.innerHTML = buildSummaryCards(prefix, 'examDate', dates, records, 'examDate');
     return;
   }
+  // base is already filtered by examDate at this point
   if (!d.client) {
     const vals = [...new Set(base.map(r => r.client).filter(Boolean))].sort();
     drillEl.innerHTML = buildSummaryCards(prefix, 'client', vals, base, 'client');
@@ -317,13 +330,11 @@ function updateStatus(key, val) {
   if (!r) return;
   r.status = val;
   save();
-  // re-render only the table wrap to preserve remarks input focus
+  // update _statusList reference too so filter re-render is correct
+  const idx = (window._statusList || []).findIndex(x => tcKey(x) === key);
+  if (idx >= 0) window._statusList[idx] = r;
   const wrap = document.getElementById('st-table-wrap');
-  if (wrap) {
-    wrap.innerHTML = renderStatusRows(window._statusList || []);
-  } else {
-    renderAll();
-  }
+  if (wrap) wrap.innerHTML = renderStatusRows(window._statusList || []);
 }
 
 // ── Records tab ────────────────────────────────────────────
@@ -467,12 +478,29 @@ function handleFile(file) {
 }
 
 function parseCSV(text) {
-  const lines = text.trim().split('\n');
-  const keys  = lines[0].split(',').map(k => k.trim());
+  // RFC-4180 compliant parser — handles quoted fields with commas inside
+  const lines = text.trim().split(/\r?\n/);
+  const keys  = splitCSVLine(lines[0]);
   return lines.slice(1).filter(l => l.trim()).map(line => {
-    const vals = line.split(',').map(v => v.trim());
-    return Object.fromEntries(keys.map((k, i) => [k, vals[i] || '']));
+    const vals = splitCSVLine(line);
+    return Object.fromEntries(keys.map((k, i) => [k, vals[i] !== undefined ? vals[i] : '']));
   });
+}
+
+function splitCSVLine(line) {
+  const result = [];
+  let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQ && line[i+1] === '"') { cur += '"'; i++; }
+      else inQ = !inQ;
+    } else if (ch === ',' && !inQ) {
+      result.push(cur.trim()); cur = '';
+    } else cur += ch;
+  }
+  result.push(cur.trim());
+  return result;
 }
 
 function enrichRow(r, examDate, client, post) {
