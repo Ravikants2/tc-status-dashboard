@@ -70,7 +70,14 @@
     "examDate": "2026-09-12",
     "client": "RRB",
     "post": "JE",
-    "status": "offline"
+    "status": "live",
+    "log": [
+      {
+        "type": "status",
+        "detail": "Status changed: Offline → Live",
+        "time": "12 Sept 2026, 11:39:58 am"
+      }
+    ]
   },
   {
     "tcCode": "8992",
