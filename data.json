@@ -1,0 +1,26 @@
+[
+  {
+    "tcCode": "TC001",
+    "zone": "North",
+    "city": "Delhi",
+    "state": "Delhi",
+    "tcName": "Alpha TC",
+    "status": "live"
+  },
+  {
+    "tcCode": "TC002",
+    "zone": "South",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "tcName": "Beta TC",
+    "status": "partial"
+  },
+  {
+    "tcCode": "TC003",
+    "zone": "West",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "tcName": "Gamma TC",
+    "status": "offline"
+  }
+]

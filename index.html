@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TC Status Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>📡 TC Status Dashboard</h1>
+</header>
+
+<!-- Summary Cards -->
+<div class="summary">
+  <div class="card live">
+    <span id="count-live">0</span>
+    <p>Live</p>
+  </div>
+  <div class="card partial">
+    <span id="count-partial">0</span>
+    <p>Partial Live</p>
+  </div>
+  <div class="card offline">
+    <span id="count-offline">0</span>
+    <p>Offline</p>
+  </div>
+</div>
+
+<!-- Toolbar -->
+<div class="toolbar">
+  <input id="search" type="text" placeholder="Search by TC Code, Name, City…" />
+  <select id="filter">
+    <option value="all">All Status</option>
+    <option value="live">Live</option>
+    <option value="partial">Partial Live</option>
+    <option value="offline">Offline</option>
+  </select>
+  <button class="btn-primary" onclick="openAdd()">+ Add TC</button>
+</div>
+
+<!-- Table -->
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>TC Code</th>
+        <th>TC Name</th>
+        <th>Zone</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<!-- Add / Edit Modal -->
+<div id="modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <h2 id="modal-title">Add TC</h2>
+    <form id="tc-form">
+      <div class="form-group">
+        <label>TC Code *</label>
+        <input id="tcCode" required placeholder="e.g. TC004" />
+      </div>
+      <div class="form-group">
+        <label>TC Name *</label>
+        <input id="tcName" required placeholder="e.g. Delta TC" />
+      </div>
+      <div class="form-group">
+        <label>Zone *</label>
+        <input id="zone" required placeholder="e.g. East" />
+      </div>
+      <div class="form-group">
+        <label>City *</label>
+        <input id="city" required placeholder="e.g. Kolkata" />
+      </div>
+      <div class="form-group">
+        <label>State *</label>
+        <input id="state" required placeholder="e.g. West Bengal" />
+      </div>
+      <div class="form-group">
+        <label>Status *</label>
+        <select id="status" required>
+          <option value="live">Live</option>
+          <option value="partial">Partial Live</option>
+          <option value="offline">Offline</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button type="button" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
