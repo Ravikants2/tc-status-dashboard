@@ -19,33 +19,29 @@
   <div id="live-clock"></div>
 </header>
 
-<!-- Tabs -->
 <nav class="tabs">
-  <button class="tab active" onclick="switchTab('dashboard', this)">📊 Dashboard</button>
-  <button class="tab" onclick="switchTab('status', this)">📡 Status</button>
-  <button class="tab" onclick="switchTab('upload', this)">⬆ Upload</button>
-  <button class="tab" onclick="switchTab('records', this)">🗂 Records</button>
+  <button class="tab active" onclick="switchTab('dashboard',this)">📊 Dashboard</button>
+  <button class="tab" onclick="switchTab('status',this)">📡 Status</button>
+  <button class="tab" onclick="switchTab('upload',this)">⬆ Upload</button>
+  <button class="tab" onclick="switchTab('records',this)">🗂 Records</button>
 </nav>
 
-<!-- ── TAB: Dashboard ── -->
+<!-- ── DASHBOARD ── -->
 <div id="tab-dashboard" class="tab-content active">
+
+  <!-- Exam / Client / Post / Shift filters -->
+  <div class="hier-bar">
+    <select id="d-exam" onchange="onHierChange('d')"><option value="">All Exam Dates</option></select>
+    <select id="d-client" onchange="onHierChange('d')"><option value="">All Clients</option></select>
+    <select id="d-post" onchange="onHierChange('d')"><option value="">All Posts</option></select>
+    <select id="d-shift" onchange="onHierChange('d')"><option value="">All Shifts</option></select>
+  </div>
+
   <div class="summary">
-    <div class="card live" onclick="switchTabByStatus('live')">
-      <span id="count-live">0</span>
-      <p>Live</p>
-    </div>
-    <div class="card partial" onclick="switchTabByStatus('partial')">
-      <span id="count-partial">0</span>
-      <p>Partial Live</p>
-    </div>
-    <div class="card offline" onclick="switchTabByStatus('offline')">
-      <span id="count-offline">0</span>
-      <p>Offline</p>
-    </div>
-    <div class="card total">
-      <span id="count-total">0</span>
-      <p>Total TCs</p>
-    </div>
+    <div class="card live" onclick="filterStatusTab('live')"><span id="count-live">0</span><p>Live</p></div>
+    <div class="card partial" onclick="filterStatusTab('partial')"><span id="count-partial">0</span><p>Partial Live</p></div>
+    <div class="card offline" onclick="filterStatusTab('offline')"><span id="count-offline">0</span><p>Offline</p></div>
+    <div class="card total"><span id="count-total">0</span><p>Total TCs</p></div>
   </div>
 
   <div class="section-title">Zone-wise Summary</div>
@@ -57,11 +53,17 @@
   </div>
 </div>
 
-<!-- ── TAB: Status ── -->
+<!-- ── STATUS ── -->
 <div id="tab-status" class="tab-content">
+  <div class="hier-bar">
+    <select id="s-exam" onchange="onHierChange('s')"><option value="">All Exam Dates</option></select>
+    <select id="s-client" onchange="onHierChange('s')"><option value="">All Clients</option></select>
+    <select id="s-post" onchange="onHierChange('s')"><option value="">All Posts</option></select>
+    <select id="s-shift" onchange="onHierChange('s')"><option value="">All Shifts</option></select>
+  </div>
   <div class="toolbar">
-    <input id="search" type="text" placeholder="Search TC Code, Name, City…" />
-    <select id="filter">
+    <input id="s-search" type="text" placeholder="Search TC Code, Name, City…" oninput="renderStatus()" />
+    <select id="s-filter" onchange="renderStatus()">
       <option value="all">All Status</option>
       <option value="live">Live</option>
       <option value="partial">Partial Live</option>
@@ -71,23 +73,39 @@
   <div class="table-wrap">
     <table>
       <thead>
-        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th><th>Change Status</th></tr>
+        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>TC Type</th><th>Assigned To</th><th>Candidates</th><th>Shift</th><th>Status</th><th>Change Status</th><th>Issue</th></tr>
       </thead>
       <tbody id="status-tbody"></tbody>
     </table>
   </div>
 </div>
 
-<!-- ── TAB: Upload ── -->
+<!-- ── UPLOAD ── -->
 <div id="tab-upload" class="tab-content">
   <div class="upload-box">
     <h2>Bulk Upload TC Data</h2>
-    <p>Upload a <strong>JSON</strong> or <strong>CSV</strong> file to import TC records.</p>
+    <p>Upload the <strong>Excel template</strong> (xlsx) or a <strong>CSV/JSON</strong> file. Each sheet = one Shift.</p>
+
+    <!-- Exam metadata -->
+    <div class="upload-meta">
+      <div class="form-group">
+        <label>Exam Date *</label>
+        <input type="date" id="up-exam" />
+      </div>
+      <div class="form-group">
+        <label>Client Name *</label>
+        <input type="text" id="up-client" placeholder="e.g. UPSC" />
+      </div>
+      <div class="form-group">
+        <label>Post Name *</label>
+        <input type="text" id="up-post" placeholder="e.g. Junior Engineer" />
+      </div>
+    </div>
 
     <div class="drop-zone" id="drop-zone">
       <span>📂 Drag & drop file here or</span>
       <label class="btn-primary" style="margin-top:10px;display:inline-block;cursor:pointer;">
-        Browse File <input type="file" id="file-input" accept=".json,.csv" hidden />
+        Browse File <input type="file" id="file-input" accept=".json,.csv,.xlsx" hidden />
       </label>
     </div>
 
@@ -95,7 +113,7 @@
       <div class="upload-info" id="upload-info"></div>
       <div class="table-wrap" style="margin-top:12px">
         <table>
-          <thead><tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th></tr></thead>
+          <thead><tr><th>Shift</th><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>TC Type</th><th>Assigned To</th><th>Candidates</th></tr></thead>
           <tbody id="preview-tbody"></tbody>
         </table>
       </div>
@@ -113,49 +131,64 @@
   </div>
 </div>
 
-<!-- ── TAB: Records ── -->
+<!-- ── RECORDS ── -->
 <div id="tab-records" class="tab-content">
+  <div class="hier-bar">
+    <select id="r-exam" onchange="onHierChange('r')"><option value="">All Exam Dates</option></select>
+    <select id="r-client" onchange="onHierChange('r')"><option value="">All Clients</option></select>
+    <select id="r-post" onchange="onHierChange('r')"><option value="">All Posts</option></select>
+    <select id="r-shift" onchange="onHierChange('r')"><option value="">All Shifts</option></select>
+  </div>
   <div class="toolbar">
-    <input id="rec-search" type="text" placeholder="Search records…" />
+    <input id="r-search" type="text" placeholder="Search records…" oninput="renderRecords()" />
     <button class="btn-primary" onclick="openAdd()">+ Add TC</button>
   </div>
   <div class="table-wrap">
     <table>
       <thead>
-        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>Status</th><th>Actions</th></tr>
+        <tr><th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th><th>TC Type</th><th>Assigned To</th><th>Candidates</th><th>Shift</th><th>Client</th><th>Post</th><th>Exam Date</th><th>Status</th><th>Actions</th></tr>
       </thead>
       <tbody id="rec-tbody"></tbody>
     </table>
   </div>
 </div>
 
-<!-- Add / Edit Modal -->
+<!-- Add/Edit Modal -->
 <div id="modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <h2 id="modal-title">Add TC</h2>
     <form id="tc-form">
-      <div class="form-group">
-        <label>TC Code *</label>
-        <input id="tcCode" required placeholder="e.g. TC004" />
+      <div class="form-row">
+        <div class="form-group"><label>TC Code *</label><input id="tcCode" required placeholder="e.g. 9286" /></div>
+        <div class="form-group"><label>TC Name *</label><input id="tcName" required placeholder="TC Name" /></div>
       </div>
-      <div class="form-group">
-        <label>TC Name *</label>
-        <input id="tcName" required placeholder="e.g. Delta TC" />
+      <div class="form-row">
+        <div class="form-group"><label>Zone *</label><input id="zone" required placeholder="e.g. East 1" /></div>
+        <div class="form-group"><label>State *</label><input id="state" required placeholder="e.g. Bihar" /></div>
       </div>
-      <div class="form-group">
-        <label>Zone *</label>
-        <input id="zone" required placeholder="e.g. East" />
+      <div class="form-row">
+        <div class="form-group"><label>City *</label><input id="city" required placeholder="e.g. Patna" /></div>
+        <div class="form-group"><label>TC Type</label><input id="tcType" placeholder="iDZ / LISP / LTL" /></div>
       </div>
-      <div class="form-group">
-        <label>City *</label>
-        <input id="city" required placeholder="e.g. Kolkata" />
+      <div class="form-row">
+        <div class="form-group"><label>Assigned To</label><input id="assignedTo" placeholder="Name" /></div>
+        <div class="form-group"><label>Candidate Count</label><input id="candidateCount" type="number" placeholder="0" /></div>
       </div>
-      <div class="form-group">
-        <label>State *</label>
-        <input id="state" required placeholder="e.g. West Bengal" />
+      <div class="form-row">
+        <div class="form-group"><label>Exam Date *</label><input id="examDate" type="date" required /></div>
+        <div class="form-group"><label>Client *</label><input id="client" required placeholder="e.g. UPSC" /></div>
       </div>
-      <div class="form-group">
-        <label>Status *</label>
+      <div class="form-row">
+        <div class="form-group"><label>Post *</label><input id="post" required placeholder="e.g. JE" /></div>
+        <div class="form-group"><label>Shift *</label>
+          <select id="shift" required>
+            <option value="Shift 1">Shift 1</option>
+            <option value="Shift 2">Shift 2</option>
+            <option value="Shift 3">Shift 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Status *</label>
         <select id="status" required>
           <option value="live">Live</option>
           <option value="partial">Partial Live</option>
@@ -167,6 +200,31 @@
         <button type="submit" class="btn-primary">Save</button>
       </div>
     </form>
+  </div>
+</div>
+
+<!-- Issue Modal -->
+<div id="issue-modal" class="modal-overlay" onclick="if(event.target===this)closeIssueModal()">
+  <div class="modal">
+    <h2>Log Issue — <span id="issue-tc-label"></span></h2>
+    <div class="form-group">
+      <label>Issue Category</label>
+      <select id="issue-cat" onchange="renderSubIssues()">
+        <option value="">Select Category</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Sub Issue</label>
+      <select id="issue-sub"><option value="">Select Sub Issue</option></select>
+    </div>
+    <div class="form-group">
+      <label>Remarks</label>
+      <textarea id="issue-remarks" rows="3" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:6px;font-size:.9rem"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button onclick="closeIssueModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveIssue()">Save Issue</button>
+    </div>
   </div>
 </div>
 
