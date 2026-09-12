@@ -210,11 +210,17 @@
     "status": "live",
     "log": [
       {
+        "type": "remarks",
+        "detail": "Remarks: \"Test saving\"",
+        "time": "12 Sept 2026, 12:27:28 pm"
+      },
+      {
         "type": "status",
         "detail": "Status changed: Offline -> Live",
         "time": "12 Sept 2026, 12:27:09 pm"
       }
-    ]
+    ],
+    "remarks": "Test saving"
   },
   {
     "tcCode": "30632",
