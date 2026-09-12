@@ -26,6 +26,7 @@ function tcKey(r) { return `${r.tcCode}|${r.examDate}|${r.client}|${r.post}|${r.
 function labelOf(s) { return s === 'partial' ? 'Partial Live' : s.charAt(0).toUpperCase() + s.slice(1); }
 function now() { return new Date().toLocaleString('en-IN', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true }); }
 function addLog(r, type, detail) { if (!r.log) r.log = []; r.log.unshift({ type, detail, time: now() }); }
+function todayISO() { return new Date().toISOString().slice(0,10); }
 
 function setSyncStatus(type, msg) {
   const el = document.getElementById('sync-status');
@@ -59,6 +60,10 @@ function save() {
 
 async function init() {
   setSyncStatus('loading', '⏳ Loading…');
+  // Set today's date on all date inputs
+  const today = todayISO();
+  document.getElementById('up-exam').value = today;
+  document.getElementById('examDate').value = today;
   let loaded = await ghLoad();
   if (Array.isArray(loaded) && loaded.length > 0) {
     records = loaded; saveLocal(); setSyncStatus('ok', '✅ Synced with GitHub');
@@ -262,8 +267,9 @@ function renderStatusRows(list) {
   </tr></thead><tbody>`;
   list.forEach(r => {
     const key = tcKey(r);
-    const issueHtml = r.issue
-      ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub||''}" onclick="openIssue('${key}')" style="cursor:pointer">${r.issue.category}</span>`
+    const issueCount = (r.issues||[]).length;
+    const issueHtml = issueCount
+      ? `<button class="btn-issue btn-sm issue-logged" onclick="openIssue('${key}')">${issueCount} Issue${issueCount>1?'s':''}</button>`
       : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
     const safeR = (r.remarks||'').replace(/"/g,'&quot;').replace(/</g,'&lt;');
     const cnt   = (r.log||[]).length;
@@ -288,7 +294,7 @@ function renderStatusRows(list) {
 function updateStatus(key, val) {
   const r = records.find(x=>tcKey(x)===key); if (!r) return;
   const prev = r.status; r.status = val;
-  addLog(r, 'status', `Status changed: ${labelOf(prev)} → ${labelOf(val)}`);
+  addLog(r, 'status', `Status changed: ${labelOf(prev)} &#8594; ${labelOf(val)}`);
   save();
   const idx = (window._statusList||[]).findIndex(x=>tcKey(x)===key);
   if (idx>=0) window._statusList[idx]=r;
@@ -346,6 +352,7 @@ function openAdd() {
   document.getElementById('modal-title').textContent = 'Add TC';
   document.getElementById('tc-form').reset();
   document.getElementById('tcCode').disabled = false;
+  document.getElementById('examDate').value = todayISO();
   document.getElementById('modal').classList.add('open');
 }
 function openEdit(key) {
@@ -392,24 +399,32 @@ function populateIssueCategories() {
 }
 function renderSubIssues() {
   const cat = document.getElementById('issue-cat').value;
-  document.getElementById('issue-sub').innerHTML = '<option value="">Select Sub Issue</option>' +
-    (ISSUE_CATEGORIES[cat]||[]).map(s=>`<option value="${s}">${s}</option>`).join('');
+  const subs = ISSUE_CATEGORIES[cat]||[];
+  document.getElementById('issue-sub-list').innerHTML = subs.length
+    ? subs.map(s=>`<label class="sub-check"><input type="checkbox" value="${s}"> ${s}</label>`).join('')
+    : '<span style="color:#999;font-size:.85rem">Select a category first</span>';
 }
 function openIssue(key) {
   issueTcKey = key;
   const r = records.find(x=>tcKey(x)===key);
   document.getElementById('issue-tc-label').textContent = `${r.tcCode} — ${r.tcName}`;
-  document.getElementById('issue-cat').value = r.issue?.category||''; renderSubIssues();
-  document.getElementById('issue-sub').value = r.issue?.sub||'';
-  document.getElementById('issue-remarks').value = r.issue?.remarks||'';
+  document.getElementById('issue-cat').value = ''; renderSubIssues();
+  document.getElementById('issue-remarks').value = '';
   document.getElementById('issue-modal').classList.add('open');
 }
 function closeIssueModal() { document.getElementById('issue-modal').classList.remove('open'); }
 function saveIssue() {
   const r = records.find(x=>tcKey(x)===issueTcKey); if (!r) return;
-  const cat=document.getElementById('issue-cat').value, sub=document.getElementById('issue-sub').value, rem=document.getElementById('issue-remarks').value.trim();
-  r.issue = { category:cat, sub, remarks:rem, time:now() };
-  addLog(r, 'issue', `Issue: ${cat}${sub?' › '+sub:''}${rem?' — '+rem:''}`);
+  const cat = document.getElementById('issue-cat').value;
+  if (!cat) { alert('Please select an Issue Category.'); return; }
+  const subs = [...document.querySelectorAll('#issue-sub-list input:checked')].map(x=>x.value);
+  const rem  = document.getElementById('issue-remarks').value.trim();
+  if (!r.issues) r.issues = [];
+  r.issues.push({ category:cat, subs, remarks:rem, time:now() });
+  // keep r.issue for backward compat display
+  r.issue = { category:cat, sub: subs.join(', '), remarks:rem, time:now() };
+  const subStr = subs.length ? ' &#8250; ' + subs.join(', ') : '';
+  addLog(r, 'issue', `Issue: ${cat}${subStr}${rem?' &#8212; '+rem:''}`);
   save(); closeIssueModal(); renderAll();
 }
 

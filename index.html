@@ -166,7 +166,7 @@
 <!-- Issue Modal -->
 <div id="issue-modal" class="modal-overlay" onclick="if(event.target===this)closeIssueModal()">
   <div class="modal">
-    <h2>Log Issue — <span id="issue-tc-label"></span></h2>
+    <h2>Log Issue &mdash; <span id="issue-tc-label"></span></h2>
     <div class="form-group">
       <label>Issue Category</label>
       <select id="issue-cat" onchange="renderSubIssues()">
@@ -174,8 +174,8 @@
       </select>
     </div>
     <div class="form-group">
-      <label>Sub Issue</label>
-      <select id="issue-sub"><option value="">Select Sub Issue</option></select>
+      <label>Sub Issues <small style="color:#888">(select all that apply)</small></label>
+      <div id="issue-sub-list" class="sub-check-list"><span style="color:#999;font-size:.85rem">Select a category first</span></div>
     </div>
     <div class="form-group">
       <label>Remarks</label>

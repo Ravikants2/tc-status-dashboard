@@ -56,6 +56,13 @@ button { padding:8px 16px; border:none; border-radius:6px; cursor:pointer; font-
 .btn-sm { padding:4px 10px; font-size:.78rem; }
 .btn-issue { background:#7b1fa2; color:#fff; }
 .btn-issue:hover { background:#6a1b9a; }
+.btn-issue.issue-logged { background:#e53935; }
+.btn-issue.issue-logged:hover { background:#b71c1c; }
+
+/* Sub-issue checkbox list */
+.sub-check-list { display:flex; flex-wrap:wrap; gap:6px; padding:8px; border:1px solid #ddd; border-radius:6px; background:#fafafa; max-height:160px; overflow-y:auto; }
+.sub-check { display:flex; align-items:center; gap:5px; font-size:.83rem; background:#fff; border:1px solid #e0e0e0; border-radius:5px; padding:4px 8px; cursor:pointer; white-space:nowrap; }
+.sub-check input { cursor:pointer; }
 
 /* Table */
 .table-wrap { overflow-x:auto; }
