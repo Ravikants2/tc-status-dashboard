@@ -51,7 +51,7 @@
       },
       {
         "type": "status",
-        "detail": "Status changed: Offline → Live",
+        "detail": "Status changed: Offline â Live",
         "time": "12 Sept 2026, 11:39:49 am"
       }
     ],
@@ -74,17 +74,17 @@
     "log": [
       {
         "type": "status",
-        "detail": "Status changed: Partial Live → Offline",
+        "detail": "Status changed: Partial Live â Offline",
         "time": "12 Sept 2026, 11:40:02 am"
       },
       {
         "type": "status",
-        "detail": "Status changed: Live → Partial Live",
+        "detail": "Status changed: Live â Partial Live",
         "time": "12 Sept 2026, 11:40:00 am"
       },
       {
         "type": "status",
-        "detail": "Status changed: Offline → Live",
+        "detail": "Status changed: Offline â Live",
         "time": "12 Sept 2026, 11:39:58 am"
       }
     ]
@@ -207,7 +207,14 @@
     "examDate": "2026-09-12",
     "client": "RRB",
     "post": "JE",
-    "status": "offline"
+    "status": "live",
+    "log": [
+      {
+        "type": "status",
+        "detail": "Status changed: Offline -> Live",
+        "time": "12 Sept 2026, 12:27:09 pm"
+      }
+    ]
   },
   {
     "tcCode": "30632",
