@@ -294,7 +294,7 @@ function renderStatusRows(list) {
 function updateStatus(key, val) {
   const r = records.find(x=>tcKey(x)===key); if (!r) return;
   const prev = r.status; r.status = val;
-  addLog(r, 'status', `Status changed: ${labelOf(prev)} &#8594; ${labelOf(val)}`);
+  addLog(r, 'status', `Status changed: ${labelOf(prev)} -> ${labelOf(val)}`);
   save();
   const idx = (window._statusList||[]).findIndex(x=>tcKey(x)===key);
   if (idx>=0) window._statusList[idx]=r;
@@ -319,9 +319,14 @@ function openTimeline(key) {
     ? log.map((e,i) => {
         const icon = e.type==='status'?'🔄':e.type==='issue'?'⚠️':'📝';
         const cls  = e.type==='status'?'tl-status':e.type==='issue'?'tl-issue':'tl-remarks';
+        const safeDetail = e.detail
+          .replace(/&(?!#?\w+;)/g,'&amp;')
+          .replace(/→/g,'&#8594;')
+          .replace(/›/g,'&#8250;')
+          .replace(/—/g,'&#8212;');
         return `<div class="tl-item ${i===0?'tl-latest':''}">
           <div class="tl-dot ${cls}"></div>
-          <div class="tl-content"><div class="tl-detail">${icon} ${e.detail}</div><div class="tl-time">${e.time}</div></div>
+          <div class="tl-content"><div class="tl-detail">${icon} ${safeDetail}</div><div class="tl-time">${e.time}</div></div>
         </div>`;
       }).join('')
     : '<p class="no-data" style="padding:20px">No activity yet.</p>';
@@ -423,8 +428,8 @@ function saveIssue() {
   r.issues.push({ category:cat, subs, remarks:rem, time:now() });
   // keep r.issue for backward compat display
   r.issue = { category:cat, sub: subs.join(', '), remarks:rem, time:now() };
-  const subStr = subs.length ? ' &#8250; ' + subs.join(', ') : '';
-  addLog(r, 'issue', `Issue: ${cat}${subStr}${rem?' &#8212; '+rem:''}`);
+  const subStr = subs.length ? ' > ' + subs.join(', ') : '';
+  addLog(r, 'issue', `Issue: ${cat}${subStr}${rem?' - '+rem:''}`);
   save(); closeIssueModal(); renderAll();
 }
 
