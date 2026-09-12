@@ -73,6 +73,11 @@
     "status": "offline",
     "log": [
       {
+        "type": "issue",
+        "detail": "Issue: NAS/DVR/NVR Related Issue > Time sync issue",
+        "time": "12 Sept 2026, 12:28:26 pm"
+      },
+      {
         "type": "status",
         "detail": "Status changed: Partial Live â Offline",
         "time": "12 Sept 2026, 11:40:02 am"
@@ -87,7 +92,23 @@
         "detail": "Status changed: Offline â Live",
         "time": "12 Sept 2026, 11:39:58 am"
       }
-    ]
+    ],
+    "issues": [
+      {
+        "category": "NAS/DVR/NVR Related Issue",
+        "subs": [
+          "Time sync issue"
+        ],
+        "remarks": "",
+        "time": "12 Sept 2026, 12:28:26 pm"
+      }
+    ],
+    "issue": {
+      "category": "NAS/DVR/NVR Related Issue",
+      "sub": "Time sync issue",
+      "remarks": "",
+      "time": "12 Sept 2026, 12:28:26 pm"
+    }
   },
   {
     "tcCode": "8992",
@@ -207,20 +228,7 @@
     "examDate": "2026-09-12",
     "client": "RRB",
     "post": "JE",
-    "status": "live",
-    "log": [
-      {
-        "type": "remarks",
-        "detail": "Remarks: \"Test saving\"",
-        "time": "12 Sept 2026, 12:27:28 pm"
-      },
-      {
-        "type": "status",
-        "detail": "Status changed: Offline -> Live",
-        "time": "12 Sept 2026, 12:27:09 pm"
-      }
-    ],
-    "remarks": "Test saving"
+    "status": "offline"
   },
   {
     "tcCode": "30632",
@@ -235,41 +243,7 @@
     "examDate": "2026-09-12",
     "client": "RRB",
     "post": "JE",
-    "status": "partial",
-    "log": [
-      {
-        "type": "issue",
-        "detail": "Issue: NAS/DVR/NVR Related Issue > Time sync issue",
-        "time": "12 Sept 2026, 12:28:15 pm"
-      },
-      {
-        "type": "remarks",
-        "detail": "Remarks: \"Camera 2 offline\"",
-        "time": "12 Sept 2026, 12:27:55 pm"
-      },
-      {
-        "type": "status",
-        "detail": "Status changed: Offline -> Partial Live",
-        "time": "12 Sept 2026, 12:27:40 pm"
-      }
-    ],
-    "remarks": "Camera 2 offline",
-    "issues": [
-      {
-        "category": "NAS/DVR/NVR Related Issue",
-        "subs": [
-          "Time sync issue"
-        ],
-        "remarks": "",
-        "time": "12 Sept 2026, 12:28:15 pm"
-      }
-    ],
-    "issue": {
-      "category": "NAS/DVR/NVR Related Issue",
-      "sub": "Time sync issue",
-      "remarks": "",
-      "time": "12 Sept 2026, 12:28:15 pm"
-    }
+    "status": "offline"
   },
   {
     "tcCode": "9338",
