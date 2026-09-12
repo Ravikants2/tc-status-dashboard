@@ -57,6 +57,13 @@ function startClock() {
 
 function tcKey(r) { return `${r.tcCode}|${r.examDate}|${r.client}|${r.post}|${r.shift}`; }
 function labelOf(s) { return s === 'partial' ? 'Partial Live' : s.charAt(0).toUpperCase() + s.slice(1); }
+function now() { return new Date().toLocaleString('en-IN', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true }); }
+
+// ── Activity log ───────────────────────────────────────────
+function addLog(r, type, detail) {
+  if (!r.log) r.log = [];
+  r.log.unshift({ type, detail, time: now() }); // newest first
+}
 
 // ── Tab switching ──────────────────────────────────────────
 function switchTab(name, btn) {
@@ -293,7 +300,7 @@ function renderStatusRows(list) {
   let html = `<table><thead><tr>
     <th>TC Code</th><th>TC Name</th><th>Zone</th><th>City</th><th>State</th>
     <th>TC Type</th><th>Assigned To</th><th>Candidates</th>
-    <th>Status</th><th>Change Status</th><th>Remarks</th><th>Issue</th>
+    <th>Status</th><th>Change Status</th><th>Remarks</th><th>Issue</th><th>Timeline</th>
   </tr></thead><tbody>`;
   list.forEach(r => {
     const key = tcKey(r);
@@ -301,6 +308,8 @@ function renderStatusRows(list) {
       ? `<span class="issue-tag" title="${r.issue.category}: ${r.issue.sub || ''}" onclick="openIssue('${key}')" style="cursor:pointer">${r.issue.category}</span>`
       : `<button class="btn-issue btn-sm" onclick="openIssue('${key}')">+ Issue</button>`;
     const safeRemarks = (r.remarks || '').replace(/"/g, '&quot;').replace(/</g,'&lt;');
+    const logCount = (r.log || []).length;
+    const tlBadge = logCount ? `<span class="tl-count">${logCount}</span>` : '';
     html += `<tr>
       <td>${r.tcCode}</td><td>${r.tcName}</td><td>${r.zone}</td>
       <td>${r.city}</td><td>${r.state}</td><td>${r.tcType || ''}</td>
@@ -314,23 +323,57 @@ function renderStatusRows(list) {
       <td><input class="remarks-input" value="${safeRemarks}" placeholder="Add remarks…"
            onblur="saveRemarks('${key}',this.value)" /></td>
       <td>${issueHtml}</td>
+      <td><button class="btn-tl btn-sm" onclick="openTimeline('${key}')" title="View Timeline">🕐${tlBadge}</button></td>
     </tr>`;
   });
   html += '</tbody></table>';
   return html;
 }
 
+// ── Timeline Modal ─────────────────────────────────────────
+function openTimeline(key) {
+  const r = records.find(x => tcKey(x) === key);
+  if (!r) return;
+  document.getElementById('tl-title').textContent = `${r.tcCode} — ${r.tcName}`;
+  const log = r.log || [];
+  const body = document.getElementById('tl-body');
+  if (!log.length) {
+    body.innerHTML = '<p class="no-data" style="padding:20px">No activity recorded yet.</p>';
+  } else {
+    body.innerHTML = log.map((e, i) => {
+      const icon = e.type === 'status' ? '🔄' : e.type === 'issue' ? '⚠️' : '📝';
+      const cls  = e.type === 'status' ? 'tl-status' : e.type === 'issue' ? 'tl-issue' : 'tl-remarks';
+      return `<div class="tl-item ${i === 0 ? 'tl-latest' : ''}">
+        <div class="tl-dot ${cls}"></div>
+        <div class="tl-content">
+          <div class="tl-detail">${icon} ${e.detail}</div>
+          <div class="tl-time">${e.time}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+  document.getElementById('tl-modal').classList.add('open');
+}
+
+function closeTimeline() { document.getElementById('tl-modal').classList.remove('open'); }
+
 function saveRemarks(key, val) {
   const r = records.find(x => tcKey(x) === key);
-  if (r) { r.remarks = val.trim(); save(); }
+  if (!r) return;
+  const trimmed = val.trim();
+  if (trimmed === (r.remarks || '').trim()) return; // no change
+  r.remarks = trimmed;
+  if (trimmed) addLog(r, 'remarks', `Remarks updated: "${trimmed}"`);
+  save();
 }
 
 function updateStatus(key, val) {
   const r = records.find(x => tcKey(x) === key);
   if (!r) return;
+  const prev = r.status;
   r.status = val;
+  addLog(r, 'status', `Status changed: ${labelOf(prev)} → ${labelOf(val)}`);
   save();
-  // update _statusList reference too so filter re-render is correct
   const idx = (window._statusList || []).findIndex(x => tcKey(x) === key);
   if (idx >= 0) window._statusList[idx] = r;
   const wrap = document.getElementById('st-table-wrap');
@@ -441,12 +484,11 @@ function closeIssueModal() { document.getElementById('issue-modal').classList.re
 function saveIssue() {
   const r = records.find(x => tcKey(x) === issueTcKey);
   if (!r) return;
-  r.issue = {
-    category: document.getElementById('issue-cat').value,
-    sub:      document.getElementById('issue-sub').value,
-    remarks:  document.getElementById('issue-remarks').value.trim(),
-    time:     new Date().toLocaleString(),
-  };
+  const cat = document.getElementById('issue-cat').value;
+  const sub = document.getElementById('issue-sub').value;
+  const rem = document.getElementById('issue-remarks').value.trim();
+  r.issue = { category: cat, sub, remarks: rem, time: now() };
+  addLog(r, 'issue', `Issue logged: ${cat}${sub ? ' › ' + sub : ''}${rem ? ' — ' + rem : ''}`);
   save(); closeIssueModal(); renderAll();
 }
 

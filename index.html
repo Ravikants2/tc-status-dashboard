@@ -184,6 +184,18 @@
   </div>
 </div>
 
+<!-- Timeline Modal -->
+<div id="tl-modal" class="modal-overlay" onclick="if(event.target===this)closeTimeline()">
+  <div class="modal" style="width:520px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <h2 style="margin:0">🕐 Activity Timeline</h2>
+      <button onclick="closeTimeline()" style="background:none;font-size:1.2rem;color:#666;padding:4px 8px">×</button>
+    </div>
+    <div class="tl-tc-name" id="tl-title"></div>
+    <div class="tl-container" id="tl-body"></div>
+  </div>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>

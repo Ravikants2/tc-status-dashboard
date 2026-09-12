@@ -123,3 +123,23 @@ tbody tr:hover { background:#e8f0fe; }
 /* Remarks inline input */
 .remarks-input { width:140px; padding:4px 7px; border:1px solid #ddd; border-radius:5px; font-size:.8rem; background:#fffde7; }
 .remarks-input:focus { outline:none; border-color:#f9a825; background:#fff; }
+
+/* Timeline button */
+.btn-tl { background:#e8f0fe; color:#1a73e8; border:1px solid #c5d8fb; position:relative; padding:4px 8px; font-size:.82rem; }
+.btn-tl:hover { background:#d2e3fc; }
+.tl-count { position:absolute; top:-6px; right:-6px; background:#e53935; color:#fff; font-size:.6rem; font-weight:700; border-radius:50%; width:16px; height:16px; display:flex; align-items:center; justify-content:center; }
+
+/* Timeline modal */
+.tl-tc-name { font-size:.85rem; color:#555; background:#f5f8ff; padding:8px 12px; border-radius:6px; margin-bottom:16px; }
+.tl-container { max-height:420px; overflow-y:auto; padding-right:4px; }
+.tl-item { display:flex; gap:14px; padding-bottom:18px; position:relative; }
+.tl-item:not(:last-child)::before { content:''; position:absolute; left:9px; top:20px; bottom:0; width:2px; background:#e0e0e0; }
+.tl-dot { width:20px; height:20px; border-radius:50%; flex-shrink:0; margin-top:2px; border:3px solid #fff; box-shadow:0 0 0 2px #ccc; }
+.tl-dot.tl-status  { background:#1a73e8; box-shadow:0 0 0 2px #1a73e8; }
+.tl-dot.tl-issue   { background:#e53935; box-shadow:0 0 0 2px #e53935; }
+.tl-dot.tl-remarks { background:#f9a825; box-shadow:0 0 0 2px #f9a825; }
+.tl-content { flex:1; }
+.tl-detail { font-size:.87rem; color:#222; line-height:1.4; }
+.tl-time { font-size:.75rem; color:#888; margin-top:3px; }
+.tl-latest .tl-detail { font-weight:600; }
+.tl-latest .tl-dot { transform:scale(1.15); }
