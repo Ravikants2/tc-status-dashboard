@@ -51,7 +51,7 @@
       },
       {
         "type": "status",
-        "detail": "Status changed: Offline â Live",
+        "detail": "Status changed: Offline Ã¢ÂÂ Live",
         "time": "12 Sept 2026, 11:39:49 am"
       }
     ],
@@ -79,17 +79,17 @@
       },
       {
         "type": "status",
-        "detail": "Status changed: Partial Live â Offline",
+        "detail": "Status changed: Partial Live Ã¢ÂÂ Offline",
         "time": "12 Sept 2026, 11:40:02 am"
       },
       {
         "type": "status",
-        "detail": "Status changed: Live â Partial Live",
+        "detail": "Status changed: Live Ã¢ÂÂ Partial Live",
         "time": "12 Sept 2026, 11:40:00 am"
       },
       {
         "type": "status",
-        "detail": "Status changed: Offline â Live",
+        "detail": "Status changed: Offline Ã¢ÂÂ Live",
         "time": "12 Sept 2026, 11:39:58 am"
       }
     ],
@@ -423,7 +423,14 @@
     "examDate": "2026-09-11",
     "client": "NTA",
     "post": "JEE Mains",
-    "status": "offline"
+    "status": "partial",
+    "log": [
+      {
+        "type": "status",
+        "detail": "Status changed: Offline -> Partial Live",
+        "time": "19 Sept 2026, 09:15:42 pm"
+      }
+    ]
   },
   {
     "tcCode": "33901",
